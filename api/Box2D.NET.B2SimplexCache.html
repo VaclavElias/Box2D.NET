@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct B2SimplexCache | Box2D API ">
       
-      
+      <meta name="description" content="Used to warm start the GJK simplex. If you call this function multiple times with nearby transforms this might improve performance. Otherwise you can zero initialize this. The distance cache must be initialized to zero on the first call. Users should generally just zero initialize this structure for each call.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2SimplexCache" data-uid="Box2D.NET.B2SimplexCache" class="text-break">
-Struct B2SimplexCache  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SimplexCache.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Struct B2SimplexCache  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SimplexCache.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,11 @@ Struct B2SimplexCache  <a class="header-action link-secondary" title="View sourc
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Used to warm start the GJK simplex. If you call this function multiple times with nearby
+transforms this might improve performance. Otherwise you can zero initialize this.
+The distance cache must be initialized to zero on the first call.
+Users should generally just zero initialize this structure for each call.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -145,10 +149,11 @@ Struct B2SimplexCache  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Box2D_NET_B2SimplexCache_count" data-uid="Box2D.NET.B2SimplexCache.count">
   count
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SimplexCache.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SimplexCache.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The number of stored simplex points</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,10 +180,11 @@ Struct B2SimplexCache  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Box2D_NET_B2SimplexCache_indexA" data-uid="Box2D.NET.B2SimplexCache.indexA">
   indexA
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SimplexCache.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SimplexCache.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The cached simplex indices on shape A</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -205,10 +211,11 @@ Struct B2SimplexCache  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Box2D_NET_B2SimplexCache_indexB" data-uid="Box2D.NET.B2SimplexCache.indexB">
   indexB
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SimplexCache.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SimplexCache.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The cached simplex indices on shape B</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -236,7 +243,7 @@ Struct B2SimplexCache  <a class="header-action link-secondary" title="View sourc
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SimplexCache.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SimplexCache.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class B2ArenaAllocatorTyped&lt;T&gt; | Box2D API ">
       
-      
+      <meta name="description" content="This is a stack-like arena allocator used for fast per step allocations. You must nest allocate/free pairs. The code will Debug.Assert if you try to interleave multiple allocate/free pairs. This allocator uses the heap if space is insufficient. I could remove the need to free entries individually.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2ArenaAllocatorTyped_1" data-uid="Box2D.NET.B2ArenaAllocatorTyped`1" class="text-break">
-Class B2ArenaAllocatorTyped&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L17"><i class="bi bi-code-slash"></i></a>
+Class B2ArenaAllocatorTyped&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,12 @@ Class B2ArenaAllocatorTyped&lt;T&gt;  <a class="header-action link-secondary" ti
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This is a stack-like arena allocator used for fast per step allocations.
+You must nest allocate/free pairs. The code will Debug.Assert
+if you try to interleave multiple allocate/free pairs.
+This allocator uses the heap if space is insufficient.
+I could remove the need to free entries individually.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -166,7 +171,7 @@ Class B2ArenaAllocatorTyped&lt;T&gt;  <a class="header-action link-secondary" ti
 
   <h3 id="Box2D_NET_B2ArenaAllocatorTyped_1_data" data-uid="Box2D.NET.B2ArenaAllocatorTyped`1.data">
   data
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -196,7 +201,7 @@ Class B2ArenaAllocatorTyped&lt;T&gt;  <a class="header-action link-secondary" ti
 
   <h3 id="Box2D_NET_B2ArenaAllocatorTyped_1_entries" data-uid="Box2D.NET.B2ArenaAllocatorTyped`1.entries">
   entries
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -231,7 +236,7 @@ Class B2ArenaAllocatorTyped&lt;T&gt;  <a class="header-action link-secondary" ti
 
   <h3 id="Box2D_NET_B2ArenaAllocatorTyped_1_allocation" data-uid="Box2D.NET.B2ArenaAllocatorTyped`1.allocation">
   allocation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -262,7 +267,7 @@ Class B2ArenaAllocatorTyped&lt;T&gt;  <a class="header-action link-secondary" ti
 
   <h3 id="Box2D_NET_B2ArenaAllocatorTyped_1_capacity" data-uid="Box2D.NET.B2ArenaAllocatorTyped`1.capacity">
   capacity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -293,7 +298,7 @@ Class B2ArenaAllocatorTyped&lt;T&gt;  <a class="header-action link-secondary" ti
 
   <h3 id="Box2D_NET_B2ArenaAllocatorTyped_1_index" data-uid="Box2D.NET.B2ArenaAllocatorTyped`1.index">
   index
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -324,7 +329,7 @@ Class B2ArenaAllocatorTyped&lt;T&gt;  <a class="header-action link-secondary" ti
 
   <h3 id="Box2D_NET_B2ArenaAllocatorTyped_1_maxAllocation" data-uid="Box2D.NET.B2ArenaAllocatorTyped`1.maxAllocation">
   maxAllocation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -359,7 +364,7 @@ Class B2ArenaAllocatorTyped&lt;T&gt;  <a class="header-action link-secondary" ti
 
   <h3 id="Box2D_NET_B2ArenaAllocatorTyped_1_Destroy" data-uid="Box2D.NET.B2ArenaAllocatorTyped`1.Destroy">
   Destroy()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -385,7 +390,7 @@ Class B2ArenaAllocatorTyped&lt;T&gt;  <a class="header-action link-secondary" ti
 
   <h3 id="Box2D_NET_B2ArenaAllocatorTyped_1_Grow" data-uid="Box2D.NET.B2ArenaAllocatorTyped`1.Grow">
   Grow()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -416,7 +421,7 @@ Class B2ArenaAllocatorTyped&lt;T&gt;  <a class="header-action link-secondary" ti
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L17" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ArenaAllocatorTyped.cs/#L19" class="edit-link">Edit this page</a>
         </div>
 
 

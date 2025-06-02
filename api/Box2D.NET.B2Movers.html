@@ -156,10 +156,12 @@ Class B2Movers  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Box2D_NET_B2Movers_b2ClipVector_Box2D_NET_B2Vec2_System_Span_Box2D_NET_B2CollisionPlane__System_Int32_" data-uid="Box2D.NET.B2Movers.b2ClipVector(Box2D.NET.B2Vec2,System.Span{Box2D.NET.B2CollisionPlane},System.Int32)">
   b2ClipVector(B2Vec2, Span&lt;B2CollisionPlane&gt;, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Movers.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Movers.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Clips the velocity against the given collision planes. Planes with zero push or clipVelocity
+set to false are skipped.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -196,10 +198,14 @@ Class B2Movers  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Box2D_NET_B2Movers_b2SolvePlanes_Box2D_NET_B2Vec2_System_Span_Box2D_NET_B2CollisionPlane__System_Int32_" data-uid="Box2D.NET.B2Movers.b2SolvePlanes(Box2D.NET.B2Vec2,System.Span{Box2D.NET.B2CollisionPlane},System.Int32)">
   b2SolvePlanes(B2Vec2, Span&lt;B2CollisionPlane&gt;, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Movers.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Movers.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Solves the position of a mover that satisfies the given collision planes.
+@param position this must be the position used to generate the collision planes
+@param planes the collision planes
+@param count the number of collision planes</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

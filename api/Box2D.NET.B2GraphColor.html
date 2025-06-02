@@ -145,10 +145,14 @@ Struct B2GraphColor  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Box2D_NET_B2GraphColor_bodySet" data-uid="Box2D.NET.B2GraphColor.bodySet">
   bodySet
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2GraphColor.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2GraphColor.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This bitset is indexed by bodyId so this is over-sized to encompass static bodies
+however I never traverse these bits or use the bit count for anything
+This bitset is unused on the overflow color.
+todo consider having a uint_16 per body that tracks the graph color membership</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,10 +179,11 @@ Struct B2GraphColor  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Box2D_NET_B2GraphColor_contactSims" data-uid="Box2D.NET.B2GraphColor.contactSims">
   contactSims
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2GraphColor.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2GraphColor.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>cache friendly arrays</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -205,7 +210,7 @@ Struct B2GraphColor  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Box2D_NET_B2GraphColor_jointSims" data-uid="Box2D.NET.B2GraphColor.jointSims">
   jointSims
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2GraphColor.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2GraphColor.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -235,7 +240,7 @@ Struct B2GraphColor  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Box2D_NET_B2GraphColor_overflowConstraints" data-uid="Box2D.NET.B2GraphColor.overflowConstraints">
   overflowConstraints
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2GraphColor.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2GraphColor.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -265,7 +270,7 @@ Struct B2GraphColor  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Box2D_NET_B2GraphColor_simdConstraints" data-uid="Box2D.NET.B2GraphColor.simdConstraints">
   simdConstraints
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2GraphColor.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2GraphColor.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>

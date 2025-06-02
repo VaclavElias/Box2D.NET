@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct B2BodyDef | Box2D API ">
       
-      
+      <meta name="description" content="A body definition holds all the data needed to construct a rigid body. You can safely re-use body definitions. Shapes are added to a body after construction. Body definitions are temporary objects used to bundle creation parameters. Must be initialized using b2DefaultBodyDef().  body">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2BodyDef" data-uid="Box2D.NET.B2BodyDef" class="text-break">
-Struct B2BodyDef  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L12"><i class="bi bi-code-slash"></i></a>
+Struct B2BodyDef  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,12 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A body definition holds all the data needed to construct a rigid body.
+You can safely re-use body definitions. Shapes are added to a body after construction.
+Body definitions are temporary objects used to bundle creation parameters.
+Must be initialized using b2DefaultBodyDef().
+@ingroup body</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -145,10 +150,12 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_allowFastRotation" data-uid="Box2D.NET.B2BodyDef.allowFastRotation">
   allowFastRotation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This allows this body to bypass rotational speed limits. Should only be used
+for circular objects, like wheels.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,10 +182,14 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_angularDamping" data-uid="Box2D.NET.B2BodyDef.angularDamping">
   angularDamping
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Angular damping is used to reduce the angular velocity. The damping parameter
+can be larger than 1.0f but the damping effect becomes sensitive to the
+time step when the damping parameter is large.
+Angular damping can be use slow down rotating bodies.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -205,10 +216,11 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_angularVelocity" data-uid="Box2D.NET.B2BodyDef.angularVelocity">
   angularVelocity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The initial angular velocity of the body. Radians per second.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -235,10 +247,11 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_enableSleep" data-uid="Box2D.NET.B2BodyDef.enableSleep">
   enableSleep
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set this flag to false if this body should never fall asleep.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -265,10 +278,11 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_fixedRotation" data-uid="Box2D.NET.B2BodyDef.fixedRotation">
   fixedRotation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L93"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Should this body be prevented from rotating? Useful for characters.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -295,10 +309,11 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_gravityScale" data-uid="Box2D.NET.B2BodyDef.gravityScale">
   gravityScale
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Scale the gravity applied to this body. Non-dimensional.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -325,10 +340,11 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_internalValue" data-uid="Box2D.NET.B2BodyDef.internalValue">
   internalValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Used internally to detect a valid definition. DO NOT SET.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -355,10 +371,11 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_isAwake" data-uid="Box2D.NET.B2BodyDef.isAwake">
   isAwake
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Is this body initially awake or sleeping?</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -385,10 +402,14 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_isBullet" data-uid="Box2D.NET.B2BodyDef.isBullet">
   isBullet
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Treat this body as high speed object that performs continuous collision detection
+against dynamic and kinematic bodies, but not other bullet bodies.
+@warning Bullets should be used sparingly. They are not a solution for general dynamic-versus-dynamic
+continuous collision. They may interfere with joint constraints.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -415,10 +436,11 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_isEnabled" data-uid="Box2D.NET.B2BodyDef.isEnabled">
   isEnabled
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Used to disable a body. A disabled body does not move or collide.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -445,10 +467,15 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_linearDamping" data-uid="Box2D.NET.B2BodyDef.linearDamping">
   linearDamping
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Linear damping is used to reduce the linear velocity. The damping parameter
+can be larger than 1 but the damping effect becomes sensitive to the
+time step when the damping parameter is large.
+Generally linear damping is undesirable because it makes objects move slowly
+as if they are floating.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -475,10 +502,11 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_linearVelocity" data-uid="Box2D.NET.B2BodyDef.linearVelocity">
   linearVelocity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The initial linear velocity of the body's origin. Usually in meters per second.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -505,10 +533,11 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_name" data-uid="Box2D.NET.B2BodyDef.name">
   name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Optional body name for debugging. Up to 31 characters (excluding null termination)</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -535,10 +564,13 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_position" data-uid="Box2D.NET.B2BodyDef.position">
   position
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The initial world position of the body. Bodies should be created with the desired position.
+@note Creating bodies at the origin and then moving them nearly doubles the cost of body creation, especially
+if the body is moved after shapes have been added.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -565,10 +597,11 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_rotation" data-uid="Box2D.NET.B2BodyDef.rotation">
   rotation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The initial world rotation of the body. Use b2MakeRot() if you have an angle.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -595,10 +628,11 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_sleepThreshold" data-uid="Box2D.NET.B2BodyDef.sleepThreshold">
   sleepThreshold
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sleep speed threshold, default is 0.05 meters per second</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -625,10 +659,11 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_type" data-uid="Box2D.NET.B2BodyDef.type">
   type
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The body type: static, kinematic, or dynamic.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -655,10 +690,11 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2BodyDef_userData" data-uid="Box2D.NET.B2BodyDef.userData">
   userData
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Use this to store application specific body data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -686,7 +722,7 @@ Struct B2BodyDef  <a class="header-action link-secondary" title="View source" hr
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L12" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyDef.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

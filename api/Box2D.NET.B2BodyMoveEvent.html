@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct B2BodyMoveEvent | Box2D API ">
       
-      
+      <meta name="description" content="Body move events triggered when a body moves. Triggered when a body moves due to simulation. Not reported for bodies moved by the user. This also has a flag to indicate that the body went to sleep so the application can also sleep that actor/entity/object associated with the body. On the other hand if the flag does not indicate the body went to sleep then the application can treat the actor/entity/object associated with the body as awake. This is an efficient way for an application to update game object transforms rather than calling functions such as b2Body_GetTransform() because this data is delivered as a contiguous array and it is only populated with bodies that have moved.  If sleeping is disabled all dynamic and kinematic bodies will trigger move events.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2BodyMoveEvent" data-uid="Box2D.NET.B2BodyMoveEvent" class="text-break">
-Struct B2BodyMoveEvent  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyMoveEvent.cs/#L17"><i class="bi bi-code-slash"></i></a>
+Struct B2BodyMoveEvent  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyMoveEvent.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,17 @@ Struct B2BodyMoveEvent  <a class="header-action link-secondary" title="View sour
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Body move events triggered when a body moves.
+Triggered when a body moves due to simulation. Not reported for bodies moved by the user.
+This also has a flag to indicate that the body went to sleep so the application can also
+sleep that actor/entity/object associated with the body.
+On the other hand if the flag does not indicate the body went to sleep then the application
+can treat the actor/entity/object associated with the body as awake.
+This is an efficient way for an application to update game object transforms rather than
+calling functions such as b2Body_GetTransform() because this data is delivered as a contiguous array
+and it is only populated with bodies that have moved.
+@note If sleeping is disabled all dynamic and kinematic bodies will trigger move events.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -145,7 +155,7 @@ Struct B2BodyMoveEvent  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Box2D_NET_B2BodyMoveEvent_bodyId" data-uid="Box2D.NET.B2BodyMoveEvent.bodyId">
   bodyId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyMoveEvent.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyMoveEvent.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -175,7 +185,7 @@ Struct B2BodyMoveEvent  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Box2D_NET_B2BodyMoveEvent_fellAsleep" data-uid="Box2D.NET.B2BodyMoveEvent.fellAsleep">
   fellAsleep
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyMoveEvent.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyMoveEvent.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -205,7 +215,7 @@ Struct B2BodyMoveEvent  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Box2D_NET_B2BodyMoveEvent_transform" data-uid="Box2D.NET.B2BodyMoveEvent.transform">
   transform
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyMoveEvent.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyMoveEvent.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -235,7 +245,7 @@ Struct B2BodyMoveEvent  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Box2D_NET_B2BodyMoveEvent_userData" data-uid="Box2D.NET.B2BodyMoveEvent.userData">
   userData
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyMoveEvent.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyMoveEvent.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -266,7 +276,7 @@ Struct B2BodyMoveEvent  <a class="header-action link-secondary" title="View sour
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyMoveEvent.cs/#L17" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BodyMoveEvent.cs/#L19" class="edit-link">Edit this page</a>
         </div>
 
 

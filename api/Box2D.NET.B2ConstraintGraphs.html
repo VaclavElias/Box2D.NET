@@ -155,10 +155,12 @@ Class B2ConstraintGraphs  <a class="header-action link-secondary" title="View so
 
   <h3 id="Box2D_NET_B2ConstraintGraphs_B2_OVERFLOW_INDEX" data-uid="Box2D.NET.B2ConstraintGraphs.B2_OVERFLOW_INDEX">
   B2_OVERFLOW_INDEX
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This holds constraints that cannot fit the graph color limit. This happens when a single dynamic body
+is touching many other bodies.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -190,10 +192,13 @@ Class B2ConstraintGraphs  <a class="header-action link-secondary" title="View so
 
   <h3 id="Box2D_NET_B2ConstraintGraphs_b2AddContactToGraph_Box2D_NET_B2World_Box2D_NET_B2ContactSim_Box2D_NET_B2Contact_" data-uid="Box2D.NET.B2ConstraintGraphs.b2AddContactToGraph(Box2D.NET.B2World,Box2D.NET.B2ContactSim,Box2D.NET.B2Contact)">
   b2AddContactToGraph(B2World, B2ContactSim, B2Contact)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Contacts are always created as non-touching. They get cloned into the constraint
+graph once they are found to be touching.
+todo maybe kinematic bodies should not go into graph</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -225,7 +230,7 @@ Class B2ConstraintGraphs  <a class="header-action link-secondary" title="View so
 
   <h3 id="Box2D_NET_B2ConstraintGraphs_b2AddJointToGraph_Box2D_NET_B2World_Box2D_NET_B2JointSim_Box2D_NET_B2Joint_" data-uid="Box2D.NET.B2ConstraintGraphs.b2AddJointToGraph(Box2D.NET.B2World,Box2D.NET.B2JointSim,Box2D.NET.B2Joint)">
   b2AddJointToGraph(B2World, B2JointSim, B2Joint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L314"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -260,7 +265,7 @@ Class B2ConstraintGraphs  <a class="header-action link-secondary" title="View so
 
   <h3 id="Box2D_NET_B2ConstraintGraphs_b2AssignJointColor_Box2D_NET_B2ConstraintGraph__System_Int32_System_Int32_System_Boolean_System_Boolean_" data-uid="Box2D.NET.B2ConstraintGraphs.b2AssignJointColor(Box2D.NET.B2ConstraintGraph@,System.Int32,System.Int32,System.Boolean,System.Boolean)">
   b2AssignJointColor(ref B2ConstraintGraph, int, int, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L237"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -304,7 +309,7 @@ Class B2ConstraintGraphs  <a class="header-action link-secondary" title="View so
 
   <h3 id="Box2D_NET_B2ConstraintGraphs_b2CreateGraph_Box2D_NET_B2ConstraintGraph__System_Int32_" data-uid="Box2D.NET.B2ConstraintGraphs.b2CreateGraph(Box2D.NET.B2ConstraintGraph@,System.Int32)">
   b2CreateGraph(ref B2ConstraintGraph, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -337,7 +342,7 @@ Class B2ConstraintGraphs  <a class="header-action link-secondary" title="View so
 
   <h3 id="Box2D_NET_B2ConstraintGraphs_b2CreateJointInGraph_Box2D_NET_B2World_Box2D_NET_B2Joint_" data-uid="Box2D.NET.B2ConstraintGraphs.b2CreateJointInGraph(Box2D.NET.B2World,Box2D.NET.B2Joint)">
   b2CreateJointInGraph(B2World, B2Joint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L292"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -375,7 +380,7 @@ Class B2ConstraintGraphs  <a class="header-action link-secondary" title="View so
 
   <h3 id="Box2D_NET_B2ConstraintGraphs_b2DestroyGraph_Box2D_NET_B2ConstraintGraph__" data-uid="Box2D.NET.B2ConstraintGraphs.b2DestroyGraph(Box2D.NET.B2ConstraintGraph@)">
   b2DestroyGraph(ref B2ConstraintGraph)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -406,7 +411,7 @@ Class B2ConstraintGraphs  <a class="header-action link-secondary" title="View so
 
   <h3 id="Box2D_NET_B2ConstraintGraphs_b2RemoveContactFromGraph_Box2D_NET_B2World_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Box2D.NET.B2ConstraintGraphs.b2RemoveContactFromGraph(Box2D.NET.B2World,System.Int32,System.Int32,System.Int32,System.Int32)">
   b2RemoveContactFromGraph(B2World, int, int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L207"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -445,7 +450,7 @@ Class B2ConstraintGraphs  <a class="header-action link-secondary" title="View so
 
   <h3 id="Box2D_NET_B2ConstraintGraphs_b2RemoveJointFromGraph_Box2D_NET_B2World_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Box2D.NET.B2ConstraintGraphs.b2RemoveJointFromGraph(Box2D.NET.B2World,System.Int32,System.Int32,System.Int32,System.Int32)">
   b2RemoveJointFromGraph(B2World, int, int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ConstraintGraphs.cs/#L321"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>

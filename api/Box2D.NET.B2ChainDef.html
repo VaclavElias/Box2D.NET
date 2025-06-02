@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct B2ChainDef | Box2D API ">
       
-      
+      <meta name="description" content="Used to create a chain of line segments. This is designed to eliminate ghost collisions with some limitations.  chains are one-sided chains have no mass and should be used on static bodies chains have a counter-clockwise winding order (normal points right of segment direction) chains are either a loop or open a chain must have at least 4 points the distance between any two points must be greater than B2_LINEAR_SLOP a chain shape should not self intersect (this is not validated) an open chain shape has NO COLLISION on the first and final edge you may overlap two open chains on their first three and/or last three points to get smooth collision a chain shape creates multiple line segment shapes on the body https://en.wikipedia.org/wiki/Polygonal_chain Must be initialized using b2DefaultChainDef().  Do not use chain shapes unless you understand the limitations. This is an advanced feature.  shape">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2ChainDef" data-uid="Box2D.NET.B2ChainDef" class="text-break">
-Struct B2ChainDef  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L22"><i class="bi bi-code-slash"></i></a>
+Struct B2ChainDef  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,24 @@ Struct B2ChainDef  <a class="header-action link-secondary" title="View source" h
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Used to create a chain of line segments. This is designed to eliminate ghost collisions with some limitations.</p>
+<ul>
+<li>chains are one-sided</li>
+<li>chains have no mass and should be used on static bodies</li>
+<li>chains have a counter-clockwise winding order (normal points right of segment direction)</li>
+<li>chains are either a loop or open</li>
+<li>a chain must have at least 4 points</li>
+<li>the distance between any two points must be greater than B2_LINEAR_SLOP</li>
+<li>a chain shape should not self intersect (this is not validated)</li>
+<li>an open chain shape has NO COLLISION on the first and final edge</li>
+<li>you may overlap two open chains on their first three and/or last three points to get smooth collision</li>
+<li>a chain shape creates multiple line segment shapes on the body
+<a href="https://en.wikipedia.org/wiki/Polygonal_chain">https://en.wikipedia.org/wiki/Polygonal_chain</a>
+Must be initialized using b2DefaultChainDef().
+@warning Do not use chain shapes unless you understand the limitations. This is an advanced feature.
+@ingroup shape</li>
+</ul>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -145,10 +162,11 @@ Struct B2ChainDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ChainDef_count" data-uid="Box2D.NET.B2ChainDef.count">
   count
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The point count, must be 4 or more.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,10 +193,11 @@ Struct B2ChainDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ChainDef_enableSensorEvents" data-uid="Box2D.NET.B2ChainDef.enableSensorEvents">
   enableSensorEvents
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enable sensors to detect this chain. False by default.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -205,10 +224,11 @@ Struct B2ChainDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ChainDef_filter" data-uid="Box2D.NET.B2ChainDef.filter">
   filter
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Contact filtering data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -235,10 +255,11 @@ Struct B2ChainDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ChainDef_internalValue" data-uid="Box2D.NET.B2ChainDef.internalValue">
   internalValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Used internally to detect a valid definition. DO NOT SET.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -265,10 +286,11 @@ Struct B2ChainDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ChainDef_isLoop" data-uid="Box2D.NET.B2ChainDef.isLoop">
   isLoop
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates a closed chain formed by connecting the first and last points</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -295,10 +317,12 @@ Struct B2ChainDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ChainDef_materialCount" data-uid="Box2D.NET.B2ChainDef.materialCount">
   materialCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The material count. Must be 1 or count. This allows you to provide one
+material for all segments or a unique material per segment.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -325,10 +349,11 @@ Struct B2ChainDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ChainDef_materials" data-uid="Box2D.NET.B2ChainDef.materials">
   materials
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Surface materials for each segment. These are cloned.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -355,10 +380,11 @@ Struct B2ChainDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ChainDef_points" data-uid="Box2D.NET.B2ChainDef.points">
   points
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An array of at least 4 points. These are cloned and may be temporary.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -385,10 +411,11 @@ Struct B2ChainDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ChainDef_userData" data-uid="Box2D.NET.B2ChainDef.userData">
   userData
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Use this to store application specific shape data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -416,7 +443,7 @@ Struct B2ChainDef  <a class="header-action link-secondary" title="View source" h
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L22" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ChainDef.cs/#L24" class="edit-link">Edit this page</a>
         </div>
 
 

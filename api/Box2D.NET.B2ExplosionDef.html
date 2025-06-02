@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct B2ExplosionDef | Box2D API ">
       
-      
+      <meta name="description" content="The explosion definition is used to configure options for explosions. Explosions consider shape geometry when computing the impulse.  world">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2ExplosionDef" data-uid="Box2D.NET.B2ExplosionDef" class="text-break">
-Struct B2ExplosionDef  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ExplosionDef.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Struct B2ExplosionDef  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ExplosionDef.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,10 @@ Struct B2ExplosionDef  <a class="header-action link-secondary" title="View sourc
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The explosion definition is used to configure options for explosions. Explosions
+consider shape geometry when computing the impulse.
+@ingroup world</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -145,10 +148,11 @@ Struct B2ExplosionDef  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Box2D_NET_B2ExplosionDef_falloff" data-uid="Box2D.NET.B2ExplosionDef.falloff">
   falloff
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ExplosionDef.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ExplosionDef.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The falloff distance beyond the radius. Impulse is reduced to zero at this distance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,10 +179,13 @@ Struct B2ExplosionDef  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Box2D_NET_B2ExplosionDef_impulsePerLength" data-uid="Box2D.NET.B2ExplosionDef.impulsePerLength">
   impulsePerLength
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ExplosionDef.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ExplosionDef.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Impulse per unit length. This applies an impulse according to the shape perimeter that
+is facing the explosion. Explosions only apply to circles, capsules, and polygons. This
+may be negative for implosions.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -205,10 +212,11 @@ Struct B2ExplosionDef  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Box2D_NET_B2ExplosionDef_maskBits" data-uid="Box2D.NET.B2ExplosionDef.maskBits">
   maskBits
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ExplosionDef.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ExplosionDef.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Mask bits to filter shapes</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -235,10 +243,11 @@ Struct B2ExplosionDef  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Box2D_NET_B2ExplosionDef_position" data-uid="Box2D.NET.B2ExplosionDef.position">
   position
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ExplosionDef.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ExplosionDef.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The center of the explosion in world space</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -265,10 +274,11 @@ Struct B2ExplosionDef  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Box2D_NET_B2ExplosionDef_radius" data-uid="Box2D.NET.B2ExplosionDef.radius">
   radius
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ExplosionDef.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ExplosionDef.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The radius of the explosion</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -296,7 +306,7 @@ Struct B2ExplosionDef  <a class="header-action link-secondary" title="View sourc
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ExplosionDef.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ExplosionDef.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 

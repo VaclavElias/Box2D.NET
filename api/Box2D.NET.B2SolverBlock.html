@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class B2SolverBlock | Box2D API ">
       
-      
+      <meta name="description" content="Each block of work has a sync index that gets incremented when a worker claims the block. This ensures only a single worker claims a block, yet lets work be distributed dynamically across multiple workers (work stealing). This also reduces contention on a single block index atomic. For non-iterative stages the sync index is simply set to one. For iterative stages (solver iteration) the same block of work is executed once per iteration and the atomic sync index is shared across iterations, so it increases monotonically.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2SolverBlock" data-uid="Box2D.NET.B2SolverBlock" class="text-break">
-Class B2SolverBlock  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverBlock.cs/#L12"><i class="bi bi-code-slash"></i></a>
+Class B2SolverBlock  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverBlock.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,12 @@ Class B2SolverBlock  <a class="header-action link-secondary" title="View source"
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Each block of work has a sync index that gets incremented when a worker claims the block. This ensures only a single worker
+claims a block, yet lets work be distributed dynamically across multiple workers (work stealing). This also reduces contention
+on a single block index atomic. For non-iterative stages the sync index is simply set to one. For iterative stages (solver
+iteration) the same block of work is executed once per iteration and the atomic sync index is shared across iterations, so it
+increases monotonically.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -155,7 +160,7 @@ Class B2SolverBlock  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Box2D_NET_B2SolverBlock_blockType" data-uid="Box2D.NET.B2SolverBlock.blockType">
   blockType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverBlock.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverBlock.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -185,7 +190,7 @@ Class B2SolverBlock  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Box2D_NET_B2SolverBlock_count" data-uid="Box2D.NET.B2SolverBlock.count">
   count
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverBlock.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverBlock.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -215,7 +220,7 @@ Class B2SolverBlock  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Box2D_NET_B2SolverBlock_startIndex" data-uid="Box2D.NET.B2SolverBlock.startIndex">
   startIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverBlock.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverBlock.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -245,10 +250,11 @@ Class B2SolverBlock  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Box2D_NET_B2SolverBlock_syncIndex" data-uid="Box2D.NET.B2SolverBlock.syncIndex">
   syncIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverBlock.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverBlock.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>todo consider false sharing of this atomic</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -276,7 +282,7 @@ Class B2SolverBlock  <a class="header-action link-secondary" title="View source"
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverBlock.cs/#L12" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverBlock.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

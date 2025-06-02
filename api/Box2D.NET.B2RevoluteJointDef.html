@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct B2RevoluteJointDef | Box2D API ">
       
-      
+      <meta name="description" content="This requires defining an anchor point where the bodies are joined. The definition uses local anchor points so that the initial configuration can violate the constraint slightly. You also need to specify the initial relative angle for joint limits. This helps when saving and loading a game. The local anchor points are measured from the body&#39;s origin rather than the center of mass because:  you might not know where the center of mass will be if you add/remove shapes from a body and recompute the mass, the joints will be broken  revolute_joint">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2RevoluteJointDef" data-uid="Box2D.NET.B2RevoluteJointDef" class="text-break">
-Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L19"><i class="bi bi-code-slash"></i></a>
+Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,19 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This requires defining an anchor point where the bodies are joined.
+The definition uses local anchor points so that the
+initial configuration can violate the constraint slightly. You also need to
+specify the initial relative angle for joint limits. This helps when saving
+and loading a game.
+The local anchor points are measured from the body's origin
+rather than the center of mass because:</p>
+<ol>
+<li>you might not know where the center of mass will be</li>
+<li>if you add/remove shapes from a body and recompute the mass, the joints will be broken
+@ingroup revolute_joint</li>
+</ol>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -145,10 +157,11 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_bodyIdA" data-uid="Box2D.NET.B2RevoluteJointDef.bodyIdA">
   bodyIdA
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The first attached body</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,10 +188,11 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_bodyIdB" data-uid="Box2D.NET.B2RevoluteJointDef.bodyIdB">
   bodyIdB
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The second attached body</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -205,10 +219,11 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_collideConnected" data-uid="Box2D.NET.B2RevoluteJointDef.collideConnected">
   collideConnected
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set this flag to true if the attached bodies should collide</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -235,10 +250,11 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_dampingRatio" data-uid="Box2D.NET.B2RevoluteJointDef.dampingRatio">
   dampingRatio
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The spring damping ratio, non-dimensional</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -265,10 +281,11 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_drawSize" data-uid="Box2D.NET.B2RevoluteJointDef.drawSize">
   drawSize
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Scale the debug draw</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -295,10 +312,11 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_enableLimit" data-uid="Box2D.NET.B2RevoluteJointDef.enableLimit">
   enableLimit
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A flag to enable joint limits</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -325,10 +343,11 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_enableMotor" data-uid="Box2D.NET.B2RevoluteJointDef.enableMotor">
   enableMotor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A flag to enable the joint motor</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -355,10 +374,11 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_enableSpring" data-uid="Box2D.NET.B2RevoluteJointDef.enableSpring">
   enableSpring
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enable a rotational spring on the revolute hinge axis</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -385,10 +405,11 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_hertz" data-uid="Box2D.NET.B2RevoluteJointDef.hertz">
   hertz
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The spring stiffness Hertz, cycles per second</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -415,10 +436,11 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_internalValue" data-uid="Box2D.NET.B2RevoluteJointDef.internalValue">
   internalValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Used internally to detect a valid definition. DO NOT SET.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -445,10 +467,11 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_localAnchorA" data-uid="Box2D.NET.B2RevoluteJointDef.localAnchorA">
   localAnchorA
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The local anchor point relative to bodyA's origin</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -475,10 +498,11 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_localAnchorB" data-uid="Box2D.NET.B2RevoluteJointDef.localAnchorB">
   localAnchorB
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The local anchor point relative to bodyB's origin</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -505,10 +529,11 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_lowerAngle" data-uid="Box2D.NET.B2RevoluteJointDef.lowerAngle">
   lowerAngle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The lower angle for the joint limit in radians. Minimum of -0.99*pi radians.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -535,10 +560,11 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_maxMotorTorque" data-uid="Box2D.NET.B2RevoluteJointDef.maxMotorTorque">
   maxMotorTorque
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L93"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The maximum motor torque, typically in newton-meters</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -565,10 +591,11 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_motorSpeed" data-uid="Box2D.NET.B2RevoluteJointDef.motorSpeed">
   motorSpeed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The desired motor speed in radians per second</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -595,10 +622,12 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_referenceAngle" data-uid="Box2D.NET.B2RevoluteJointDef.referenceAngle">
   referenceAngle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The bodyB angle minus bodyA angle in the reference state (radians).
+This defines the zero angle for the joint limit.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -625,10 +654,12 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_targetAngle" data-uid="Box2D.NET.B2RevoluteJointDef.targetAngle">
   targetAngle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The target angle for the joint in radians. The spring-damper will drive
+to this angle.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -655,10 +686,11 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_upperAngle" data-uid="Box2D.NET.B2RevoluteJointDef.upperAngle">
   upperAngle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The upper angle for the joint limit in radians. Maximum of 0.99*pi radians.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -685,10 +717,11 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 
   <h3 id="Box2D_NET_B2RevoluteJointDef_userData" data-uid="Box2D.NET.B2RevoluteJointDef.userData">
   userData
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>User data pointer</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -716,7 +749,7 @@ Struct B2RevoluteJointDef  <a class="header-action link-secondary" title="View s
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L19" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2RevoluteJointDef.cs/#L21" class="edit-link">Edit this page</a>
         </div>
 
 

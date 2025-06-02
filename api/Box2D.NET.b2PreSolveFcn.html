@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Delegate b2PreSolveFcn | Box2D API ">
       
-      
+      <meta name="description" content="Prototype for a pre-solve callback. This is called after a contact is updated. This allows you to inspect a contact before it goes to the solver. If you are careful, you can modify the contact manifold (e.g. modify the normal). Notes:  this function must be thread-safe this is only called if the shape has enabled pre-solve events this is called only for awake dynamic bodies this is not called for sensors the supplied manifold has impulse values from the previous step Return false if you want to disable the contact this step  Do not attempt to modify the world inside this callback  world">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_b2PreSolveFcn" data-uid="Box2D.NET.b2PreSolveFcn" class="text-break">
-Delegate b2PreSolveFcn  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Delegates.cs/#L95"><i class="bi bi-code-slash"></i></a>
+Delegate b2PreSolveFcn  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Delegates.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,22 @@ Delegate b2PreSolveFcn  <a class="header-action link-secondary" title="View sour
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Prototype for a pre-solve callback.
+This is called after a contact is updated. This allows you to inspect a
+contact before it goes to the solver. If you are careful, you can modify the
+contact manifold (e.g. modify the normal).
+Notes:</p>
+<ul>
+<li>this function must be thread-safe</li>
+<li>this is only called if the shape has enabled pre-solve events</li>
+<li>this is called only for awake dynamic bodies</li>
+<li>this is not called for sensors</li>
+<li>the supplied manifold has impulse values from the previous step
+Return false if you want to disable the contact this step
+@warning Do not attempt to modify the world inside this callback
+@ingroup world</li>
+</ul>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -107,19 +122,19 @@ Delegate b2PreSolveFcn  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>shapeIdA</code> <a class="xref" href="Box2D.NET.B2ShapeId.html">B2ShapeId</a></dt>
-    <dd></dd>
+    <dd>Prototype for a pre-solve callback. This is called after a contact is updated. This allows you to inspect a contact before it goes to the solver. If you are careful, you can modify the contact manifold (e.g. modify the normal). Notes:  this function must be thread-safe this is only called if the shape has enabled pre-solve events this is called only for awake dynamic bodies this is not called for sensors the supplied manifold has impulse values from the previous step Return false if you want to disable the contact this step  Do not attempt to modify the world inside this callback  world</dd>
     <dt><code>shapeIdB</code> <a class="xref" href="Box2D.NET.B2ShapeId.html">B2ShapeId</a></dt>
-    <dd></dd>
+    <dd>Prototype for a pre-solve callback. This is called after a contact is updated. This allows you to inspect a contact before it goes to the solver. If you are careful, you can modify the contact manifold (e.g. modify the normal). Notes:  this function must be thread-safe this is only called if the shape has enabled pre-solve events this is called only for awake dynamic bodies this is not called for sensors the supplied manifold has impulse values from the previous step Return false if you want to disable the contact this step  Do not attempt to modify the world inside this callback  world</dd>
     <dt><code>manifold</code> <a class="xref" href="Box2D.NET.B2Manifold.html">B2Manifold</a></dt>
-    <dd></dd>
+    <dd>Prototype for a pre-solve callback. This is called after a contact is updated. This allows you to inspect a contact before it goes to the solver. If you are careful, you can modify the contact manifold (e.g. modify the normal). Notes:  this function must be thread-safe this is only called if the shape has enabled pre-solve events this is called only for awake dynamic bodies this is not called for sensors the supplied manifold has impulse values from the previous step Return false if you want to disable the contact this step  Do not attempt to modify the world inside this callback  world</dd>
     <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd>Prototype for a pre-solve callback. This is called after a contact is updated. This allows you to inspect a contact before it goes to the solver. If you are careful, you can modify the contact manifold (e.g. modify the normal). Notes:  this function must be thread-safe this is only called if the shape has enabled pre-solve events this is called only for awake dynamic bodies this is not called for sensors the supplied manifold has impulse values from the previous step Return false if you want to disable the contact this step  Do not attempt to modify the world inside this callback  world</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd>Prototype for a pre-solve callback. This is called after a contact is updated. This allows you to inspect a contact before it goes to the solver. If you are careful, you can modify the contact manifold (e.g. modify the normal). Notes:  this function must be thread-safe this is only called if the shape has enabled pre-solve events this is called only for awake dynamic bodies this is not called for sensors the supplied manifold has impulse values from the previous step Return false if you want to disable the contact this step  Do not attempt to modify the world inside this callback  world</dd>
   </dl>
 
 
@@ -136,7 +151,7 @@ Delegate b2PreSolveFcn  <a class="header-action link-secondary" title="View sour
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Delegates.cs/#L95" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Delegates.cs/#L115" class="edit-link">Edit this page</a>
         </div>
 
 

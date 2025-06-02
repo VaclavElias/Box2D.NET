@@ -225,10 +225,15 @@ Class B2SolverSets  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Box2D_NET_B2SolverSets_b2MergeSolverSets_Box2D_NET_B2World_System_Int32_System_Int32_" data-uid="Box2D.NET.B2SolverSets.b2MergeSolverSets(Box2D.NET.B2World,System.Int32,System.Int32)">
   b2MergeSolverSets(B2World, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSets.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSets.cs/#L455"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Merge set 2 into set 1 then destroy set 2.
+Warning: any pointers into these sets will be orphaned.
+This is called when joints are created between sets. I want to allow the sets
+to continue sleeping if both are asleep. Otherwise one set is waked.
+Islands will get merge when the set is waked.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -260,7 +265,7 @@ Class B2SolverSets  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Box2D_NET_B2SolverSets_b2TransferBody_Box2D_NET_B2World_Box2D_NET_B2SolverSet_Box2D_NET_B2SolverSet_Box2D_NET_B2Body_" data-uid="Box2D.NET.B2SolverSets.b2TransferBody(Box2D.NET.B2World,Box2D.NET.B2SolverSet,Box2D.NET.B2SolverSet,Box2D.NET.B2Body)">
   b2TransferBody(B2World, B2SolverSet, B2SolverSet, B2Body)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSets.cs/#L549"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSets.cs/#L553"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -297,7 +302,7 @@ Class B2SolverSets  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Box2D_NET_B2SolverSets_b2TransferJoint_Box2D_NET_B2World_Box2D_NET_B2SolverSet_Box2D_NET_B2SolverSet_Box2D_NET_B2Joint_" data-uid="Box2D.NET.B2SolverSets.b2TransferJoint(Box2D.NET.B2World,Box2D.NET.B2SolverSet,Box2D.NET.B2SolverSet,Box2D.NET.B2Joint)">
   b2TransferJoint(B2World, B2SolverSet, B2SolverSet, B2Joint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSets.cs/#L588"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSets.cs/#L592"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -334,7 +339,7 @@ Class B2SolverSets  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Box2D_NET_B2SolverSets_b2TrySleepIsland_Box2D_NET_B2World_System_Int32_" data-uid="Box2D.NET.B2SolverSets.b2TrySleepIsland(Box2D.NET.B2World,System.Int32)">
   b2TrySleepIsland(B2World, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSets.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSets.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -367,10 +372,18 @@ Class B2SolverSets  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Box2D_NET_B2SolverSets_b2WakeSolverSet_Box2D_NET_B2World_System_Int32_" data-uid="Box2D.NET.B2SolverSets.b2WakeSolverSet(Box2D.NET.B2World,System.Int32)">
   b2WakeSolverSet(B2World, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSets.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSets.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Wake a solver set. Does not merge islands.
+Contacts can be in several places:</p>
+<ol>
+<li>non-touching contacts in the disabled set</li>
+<li>non-touching contacts already in the awake set</li>
+<li>touching contacts in the sleeping set
+This handles contact types 1 and 3. Type 2 doesn't need any action.</li>
+</ol>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

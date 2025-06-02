@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class B2Islands | Box2D API ">
       
-      
+      <meta name="description" content="Collide all awake contacts Use bit array to emit start/stop touching events in defined order, per thread. Try using contact index, assuming contacts are created in a deterministic order. bit-wise OR together bit arrays and issue changes:  start touching: merge islands - temporary linked list - mark root island dirty - wake all - largest island is root stop touching: increment constraintRemoveCount">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2Islands" data-uid="Box2D.NET.B2Islands" class="text-break">
-Class B2Islands  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L25"><i class="bi bi-code-slash"></i></a>
+Class B2Islands  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,14 @@ Class B2Islands  <a class="header-action link-secondary" title="View source" hre
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Collide all awake contacts
+Use bit array to emit start/stop touching events in defined order, per thread. Try using contact index, assuming contacts are
+created in a deterministic order. bit-wise OR together bit arrays and issue changes:</p>
+<ul>
+<li>start touching: merge islands - temporary linked list - mark root island dirty - wake all - largest island is root</li>
+<li>stop touching: increment constraintRemoveCount</li>
+</ul>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -155,7 +162,7 @@ Class B2Islands  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Islands_B2_CONTACT_REMOVE_THRESHOLD" data-uid="Box2D.NET.B2Islands.B2_CONTACT_REMOVE_THRESHOLD">
   B2_CONTACT_REMOVE_THRESHOLD
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -190,7 +197,7 @@ Class B2Islands  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Islands_b2AddContactToIsland_Box2D_NET_B2World_System_Int32_Box2D_NET_B2Contact_" data-uid="Box2D.NET.B2Islands.b2AddContactToIsland(Box2D.NET.B2World,System.Int32,Box2D.NET.B2Contact)">
   b2AddContactToIsland(B2World, int, B2Contact)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -225,7 +232,7 @@ Class B2Islands  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Islands_b2AddJointToIsland_Box2D_NET_B2World_System_Int32_Box2D_NET_B2Joint_" data-uid="Box2D.NET.B2Islands.b2AddJointToIsland(Box2D.NET.B2World,System.Int32,Box2D.NET.B2Joint)">
   b2AddJointToIsland(B2World, int, B2Joint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L283"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -260,7 +267,7 @@ Class B2Islands  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Islands_b2CreateIsland_Box2D_NET_B2World_System_Int32_" data-uid="Box2D.NET.B2Islands.b2CreateIsland(Box2D.NET.B2World,System.Int32)">
   b2CreateIsland(B2World, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -298,7 +305,7 @@ Class B2Islands  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Islands_b2DestroyIsland_Box2D_NET_B2World_System_Int32_" data-uid="Box2D.NET.B2Islands.b2DestroyIsland(Box2D.NET.B2World,System.Int32)">
   b2DestroyIsland(B2World, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -331,10 +338,14 @@ Class B2Islands  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Islands_b2LinkContact_Box2D_NET_B2World_Box2D_NET_B2Contact_" data-uid="Box2D.NET.B2Islands.b2LinkContact(Box2D.NET.B2World,Box2D.NET.B2Contact)">
   b2LinkContact(B2World, B2Contact)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L132"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Link contacts into the island graph when it starts having contact points
+Link a contact into an island.
+This performs union-find and path compression to join islands.
+<a href="https://en.wikipedia.org/wiki/Disjoint-set_data_structure">https://en.wikipedia.org/wiki/Disjoint-set_data_structure</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -364,10 +375,11 @@ Class B2Islands  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Islands_b2LinkJoint_Box2D_NET_B2World_Box2D_NET_B2Joint_System_Boolean_" data-uid="Box2D.NET.B2Islands.b2LinkJoint(Box2D.NET.B2World,Box2D.NET.B2Joint,System.Boolean)">
   b2LinkJoint(B2World, B2Joint, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L313"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Link a joint into the island graph when it is created</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -399,10 +411,14 @@ Class B2Islands  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Islands_b2MergeAwakeIslands_Box2D_NET_B2World_" data-uid="Box2D.NET.B2Islands.b2MergeAwakeIslands(Box2D.NET.B2World)">
   b2MergeAwakeIslands(B2World)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L554"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L568"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Iterate over all awake islands and merge any that need merging
+Islands that get merged into a root island will be removed from the awake island array
+and returned to the pool.
+todo this might be faster if b2IslandSim held the connectivity data</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -430,10 +446,12 @@ Class B2Islands  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Islands_b2MergeIsland_Box2D_NET_B2World_Box2D_NET_B2Island_" data-uid="Box2D.NET.B2Islands.b2MergeIsland(Box2D.NET.B2World,Box2D.NET.B2Island)">
   b2MergeIsland(B2World, B2Island)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L444"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L456"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Merge an island into its root island.
+todo we can assume all islands are awake here</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -463,7 +481,7 @@ Class B2Islands  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Islands_b2SplitIsland_Box2D_NET_B2World_System_Int32_" data-uid="Box2D.NET.B2Islands.b2SplitIsland(Box2D.NET.B2World,System.Int32)">
   b2SplitIsland(B2World, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L616"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L630"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -496,10 +514,17 @@ Class B2Islands  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Islands_b2SplitIslandTask_System_Int32_System_Int32_System_UInt32_System_Object_" data-uid="Box2D.NET.B2Islands.b2SplitIslandTask(System.Int32,System.Int32,System.UInt32,System.Object)">
   b2SplitIslandTask(int, int, uint, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L867"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L883"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Split an island because some contacts and/or joints have been removed.
+This is called during the constraint solve while islands are not being touched. This uses DFS and touches a lot of memory,
+so it can be quite slow.
+Note: contacts/joints connected to static bodies must belong to an island but don't affect island connectivity
+Note: static bodies are never in an island
+Note: this task interacts with some allocators without locks under the assumption that no other tasks
+are interacting with these data structures.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -533,10 +558,12 @@ Class B2Islands  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Islands_b2UnlinkContact_Box2D_NET_B2World_Box2D_NET_B2Contact_" data-uid="Box2D.NET.B2Islands.b2UnlinkContact(Box2D.NET.B2World,Box2D.NET.B2Contact)">
   b2UnlinkContact(B2World, B2Contact)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L240"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Unlink contact from the island graph when it stops having contact points
+This is called when a contact no longer has contact points or when a contact is destroyed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -566,10 +593,11 @@ Class B2Islands  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Islands_b2UnlinkJoint_Box2D_NET_B2World_Box2D_NET_B2Joint_" data-uid="Box2D.NET.B2Islands.b2UnlinkJoint(Box2D.NET.B2World,Box2D.NET.B2Joint)">
   b2UnlinkJoint(B2World, B2Joint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L409"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Unlink a joint from the island graph when it is destroyed</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -599,7 +627,7 @@ Class B2Islands  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Islands_b2ValidateIsland_Box2D_NET_B2World_System_Int32_" data-uid="Box2D.NET.B2Islands.b2ValidateIsland(Box2D.NET.B2World,System.Int32)">
   b2ValidateIsland(B2World, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L995"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L1011"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -632,7 +660,7 @@ Class B2Islands  <a class="header-action link-secondary" title="View source" hre
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L25" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Islands.cs/#L27" class="edit-link">Edit this page</a>
         </div>
 
 

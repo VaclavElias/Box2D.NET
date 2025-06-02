@@ -455,7 +455,7 @@ Class B2Contacts  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2Contacts_b2ComputeManifold_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Shape_Box2D_NET_B2Transform_" data-uid="Box2D.NET.B2Contacts.b2ComputeManifold(Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Shape,Box2D.NET.B2Transform)">
   b2ComputeManifold(B2Shape, B2Transform, B2Shape, B2Transform)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L602"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L606"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -532,10 +532,19 @@ Class B2Contacts  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2Contacts_b2DestroyContact_Box2D_NET_B2World_Box2D_NET_B2Contact_System_Boolean_" data-uid="Box2D.NET.B2Contacts.b2DestroyContact(Box2D.NET.B2World,Box2D.NET.B2Contact,System.Boolean)">
   b2DestroyContact(B2World, B2Contact, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L305"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A contact is destroyed when:</p>
+<ul>
+<li>broad-phase proxies stop overlapping</li>
+<li>a body is destroyed</li>
+<li>a body is disabled</li>
+<li>a body changes type from dynamic to kinematic or static</li>
+<li>a shape is destroyed</li>
+<li>contact filtering is modified</li>
+</ul>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -567,7 +576,7 @@ Class B2Contacts  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2Contacts_b2GetContactSim_Box2D_NET_B2World_Box2D_NET_B2Contact_" data-uid="Box2D.NET.B2Contacts.b2GetContactSim(Box2D.NET.B2World,Box2D.NET.B2Contact)">
   b2GetContactSim(B2World, B2Contact)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L422"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L424"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -895,10 +904,12 @@ Class B2Contacts  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2Contacts_b2UpdateContact_Box2D_NET_B2World_Box2D_NET_B2ContactSim_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Vec2_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Vec2_" data-uid="Box2D.NET.B2Contacts.b2UpdateContact(Box2D.NET.B2World,Box2D.NET.B2ContactSim,Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Vec2,Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Vec2)">
   b2UpdateContact(B2World, B2ContactSim, B2Shape, B2Transform, B2Vec2, B2Shape, B2Transform, B2Vec2)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L443"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Update the contact manifold and touching status.
+Note: do not assume the shape AABBs are overlapping or are valid.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

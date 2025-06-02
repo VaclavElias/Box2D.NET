@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class B2SolverSet | Box2D API ">
       
-      
+      <meta name="description" content="This holds solver set data. The following sets are used:  static set for all static bodies (no contacts or joints) active set for all active bodies with body states (no contacts or joints) disabled set for disabled bodies and their joints all further sets are sleeping island sets along with their contacts and joints The purpose of solver sets is to achieve high memory locality. https://www.youtube.com/watch?v=nZNd5FjSquk">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2SolverSet" data-uid="Box2D.NET.B2SolverSet" class="text-break">
-Class B2SolverSet  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L16"><i class="bi bi-code-slash"></i></a>
+Class B2SolverSet  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,16 @@ Class B2SolverSet  <a class="header-action link-secondary" title="View source" h
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This holds solver set data. The following sets are used:</p>
+<ul>
+<li>static set for all static bodies (no contacts or joints)</li>
+<li>active set for all active bodies with body states (no contacts or joints)</li>
+<li>disabled set for disabled bodies and their joints</li>
+<li>all further sets are sleeping island sets along with their contacts and joints
+The purpose of solver sets is to achieve high memory locality.
+<a href="https://www.youtube.com/watch?v=nZNd5FjSquk">https://www.youtube.com/watch?v=nZNd5FjSquk</a></li>
+</ul>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -155,10 +164,11 @@ Class B2SolverSet  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2SolverSet_bodySims" data-uid="Box2D.NET.B2SolverSet.bodySims">
   bodySims
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Body array. Empty for unused set.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -185,10 +195,11 @@ Class B2SolverSet  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2SolverSet_bodyStates" data-uid="Box2D.NET.B2SolverSet.bodyStates">
   bodyStates
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Body state only exists for active set</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -215,10 +226,12 @@ Class B2SolverSet  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2SolverSet_contactSims" data-uid="Box2D.NET.B2SolverSet.contactSims">
   contactSims
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This holds all contacts for sleeping sets.
+This holds non-touching contacts for the awake set.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -245,10 +258,15 @@ Class B2SolverSet  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2SolverSet_islandSims" data-uid="Box2D.NET.B2SolverSet.islandSims">
   islandSims
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The awake set has an array of islands. Sleeping sets normally have a single islands. However, joints
+created between sleeping sets causes the sets to merge, leaving them with multiple islands. These sleeping
+islands will be naturally merged with the set is woken.
+The static and disabled sets have no islands.
+Islands live in the solver sets to limit the number of islands that need to be considered for sleeping.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -275,10 +293,11 @@ Class B2SolverSet  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2SolverSet_jointSims" data-uid="Box2D.NET.B2SolverSet.jointSims">
   jointSims
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This holds sleeping/disabled joints. Empty for static/active set.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -305,10 +324,11 @@ Class B2SolverSet  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2SolverSet_setIndex" data-uid="Box2D.NET.B2SolverSet.setIndex">
   setIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Aligns with b2World::solverSetIdPool. Used to create a stable id for body/contact/joint/islands.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -340,7 +360,7 @@ Class B2SolverSet  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2SolverSet_Clear" data-uid="Box2D.NET.B2SolverSet.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -366,7 +386,7 @@ Class B2SolverSet  <a class="header-action link-secondary" title="View source" h
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L16" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2SolverSet.cs/#L18" class="edit-link">Edit this page</a>
         </div>
 
 

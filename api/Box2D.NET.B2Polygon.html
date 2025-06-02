@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct B2Polygon | Box2D API ">
       
-      
+      <meta name="description" content="A solid convex polygon. It is assumed that the interior of the polygon is to the left of each edge. Polygons have a maximum number of vertices equal to B2_MAX_POLYGON_VERTICES. In most cases you should not need many vertices for a convex polygon.  DO NOT fill this out manually, instead use a helper function like b2MakePolygon or b2MakeBox.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2Polygon" data-uid="Box2D.NET.B2Polygon" class="text-break">
-Struct B2Polygon  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Polygon.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Struct B2Polygon  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Polygon.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,13 @@ Struct B2Polygon  <a class="header-action link-secondary" title="View source" hr
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A solid convex polygon. It is assumed that the interior of the polygon is to
+the left of each edge.
+Polygons have a maximum number of vertices equal to B2_MAX_POLYGON_VERTICES.
+In most cases you should not need many vertices for a convex polygon.
+@warning DO NOT fill this out manually, instead use a helper function like
+b2MakePolygon or b2MakeBox.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -145,10 +151,11 @@ Struct B2Polygon  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2Polygon_centroid" data-uid="Box2D.NET.B2Polygon.centroid">
   centroid
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Polygon.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Polygon.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The centroid of the polygon</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,10 +182,11 @@ Struct B2Polygon  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2Polygon_count" data-uid="Box2D.NET.B2Polygon.count">
   count
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Polygon.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Polygon.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The number of polygon vertices</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -205,10 +213,11 @@ Struct B2Polygon  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2Polygon_normals" data-uid="Box2D.NET.B2Polygon.normals">
   normals
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Polygon.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Polygon.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The outward normal vectors of the polygon sides</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -235,10 +244,11 @@ Struct B2Polygon  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2Polygon_radius" data-uid="Box2D.NET.B2Polygon.radius">
   radius
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Polygon.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Polygon.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The external radius for rounded polygons</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -265,10 +275,11 @@ Struct B2Polygon  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Box2D_NET_B2Polygon_vertices" data-uid="Box2D.NET.B2Polygon.vertices">
   vertices
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Polygon.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Polygon.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The polygon vertices</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -296,7 +307,7 @@ Struct B2Polygon  <a class="header-action link-secondary" title="View source" hr
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Polygon.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Polygon.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 

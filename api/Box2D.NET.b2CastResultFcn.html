@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Delegate b2CastResultFcn | Box2D API ">
       
-      
+      <meta name="description" content="Prototype callback for ray and shape casts. Called for each shape found in the query. You control how the ray cast proceeds by returning a float: return -1: ignore this shape and continue return 0: terminate the ray cast return fraction: clip the ray to this point return 1: don&#39;t clip the ray and continue A cast with initial overlap will return a zero fraction and a zero normal.  shapeId the shape hit by the ray  point the point of initial intersection  normal the normal vector at the point of intersection, zero for a shape cast with initial overlap  fraction the fraction along the ray at the point of intersection, zero for a shape cast with initial overlap  context the user context  -1 to filter, 0 to terminate, fraction to clip the ray for closest hit, 1 to continue  b2World_CastRay  world">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_b2CastResultFcn" data-uid="Box2D.NET.b2CastResultFcn" class="text-break">
-Delegate b2CastResultFcn  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Delegates.cs/#L120"><i class="bi bi-code-slash"></i></a>
+Delegate b2CastResultFcn  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Delegates.cs/#L144"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,23 @@ Delegate b2CastResultFcn  <a class="header-action link-secondary" title="View so
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Prototype callback for ray and shape casts.
+Called for each shape found in the query. You control how the ray cast
+proceeds by returning a float:
+return -1: ignore this shape and continue
+return 0: terminate the ray cast
+return fraction: clip the ray to this point
+return 1: don't clip the ray and continue
+A cast with initial overlap will return a zero fraction and a zero normal.
+@param shapeId the shape hit by the ray
+@param point the point of initial intersection
+@param normal the normal vector at the point of intersection, zero for a shape cast with initial overlap
+@param fraction the fraction along the ray at the point of intersection, zero for a shape cast with initial overlap
+@param context the user context
+@return -1 to filter, 0 to terminate, fraction to clip the ray for closest hit, 1 to continue
+@see b2World_CastRay
+@ingroup world</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -107,21 +123,21 @@ Delegate b2CastResultFcn  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>shapeId</code> <a class="xref" href="Box2D.NET.B2ShapeId.html">B2ShapeId</a></dt>
-    <dd></dd>
+    <dd>Prototype callback for ray and shape casts. Called for each shape found in the query. You control how the ray cast proceeds by returning a float: return -1: ignore this shape and continue return 0: terminate the ray cast return fraction: clip the ray to this point return 1: don't clip the ray and continue A cast with initial overlap will return a zero fraction and a zero normal.  shapeId the shape hit by the ray  point the point of initial intersection  normal the normal vector at the point of intersection, zero for a shape cast with initial overlap  fraction the fraction along the ray at the point of intersection, zero for a shape cast with initial overlap  context the user context  -1 to filter, 0 to terminate, fraction to clip the ray for closest hit, 1 to continue  b2World_CastRay  world</dd>
     <dt><code>point</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
-    <dd></dd>
+    <dd>Prototype callback for ray and shape casts. Called for each shape found in the query. You control how the ray cast proceeds by returning a float: return -1: ignore this shape and continue return 0: terminate the ray cast return fraction: clip the ray to this point return 1: don't clip the ray and continue A cast with initial overlap will return a zero fraction and a zero normal.  shapeId the shape hit by the ray  point the point of initial intersection  normal the normal vector at the point of intersection, zero for a shape cast with initial overlap  fraction the fraction along the ray at the point of intersection, zero for a shape cast with initial overlap  context the user context  -1 to filter, 0 to terminate, fraction to clip the ray for closest hit, 1 to continue  b2World_CastRay  world</dd>
     <dt><code>normal</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
-    <dd></dd>
+    <dd>Prototype callback for ray and shape casts. Called for each shape found in the query. You control how the ray cast proceeds by returning a float: return -1: ignore this shape and continue return 0: terminate the ray cast return fraction: clip the ray to this point return 1: don't clip the ray and continue A cast with initial overlap will return a zero fraction and a zero normal.  shapeId the shape hit by the ray  point the point of initial intersection  normal the normal vector at the point of intersection, zero for a shape cast with initial overlap  fraction the fraction along the ray at the point of intersection, zero for a shape cast with initial overlap  context the user context  -1 to filter, 0 to terminate, fraction to clip the ray for closest hit, 1 to continue  b2World_CastRay  world</dd>
     <dt><code>fraction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd>Prototype callback for ray and shape casts. Called for each shape found in the query. You control how the ray cast proceeds by returning a float: return -1: ignore this shape and continue return 0: terminate the ray cast return fraction: clip the ray to this point return 1: don't clip the ray and continue A cast with initial overlap will return a zero fraction and a zero normal.  shapeId the shape hit by the ray  point the point of initial intersection  normal the normal vector at the point of intersection, zero for a shape cast with initial overlap  fraction the fraction along the ray at the point of intersection, zero for a shape cast with initial overlap  context the user context  -1 to filter, 0 to terminate, fraction to clip the ray for closest hit, 1 to continue  b2World_CastRay  world</dd>
     <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd>Prototype callback for ray and shape casts. Called for each shape found in the query. You control how the ray cast proceeds by returning a float: return -1: ignore this shape and continue return 0: terminate the ray cast return fraction: clip the ray to this point return 1: don't clip the ray and continue A cast with initial overlap will return a zero fraction and a zero normal.  shapeId the shape hit by the ray  point the point of initial intersection  normal the normal vector at the point of intersection, zero for a shape cast with initial overlap  fraction the fraction along the ray at the point of intersection, zero for a shape cast with initial overlap  context the user context  -1 to filter, 0 to terminate, fraction to clip the ray for closest hit, 1 to continue  b2World_CastRay  world</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd>Prototype callback for ray and shape casts. Called for each shape found in the query. You control how the ray cast proceeds by returning a float: return -1: ignore this shape and continue return 0: terminate the ray cast return fraction: clip the ray to this point return 1: don't clip the ray and continue A cast with initial overlap will return a zero fraction and a zero normal.  shapeId the shape hit by the ray  point the point of initial intersection  normal the normal vector at the point of intersection, zero for a shape cast with initial overlap  fraction the fraction along the ray at the point of intersection, zero for a shape cast with initial overlap  context the user context  -1 to filter, 0 to terminate, fraction to clip the ray for closest hit, 1 to continue  b2World_CastRay  world</dd>
   </dl>
 
 
@@ -138,7 +154,7 @@ Delegate b2CastResultFcn  <a class="header-action link-secondary" title="View so
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Delegates.cs/#L120" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Delegates.cs/#L144" class="edit-link">Edit this page</a>
         </div>
 
 

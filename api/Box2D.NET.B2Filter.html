@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct B2Filter | Box2D API ">
       
-      
+      <meta name="description" content="This is used to filter collision on shapes. It affects shape-vs-shape collision and shape-versus-query collision (such as b2World_CastRay).  shape">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2Filter" data-uid="Box2D.NET.B2Filter" class="text-break">
-Struct B2Filter  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Filter.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Struct B2Filter  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Filter.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,10 @@ Struct B2Filter  <a class="header-action link-secondary" title="View source" hre
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This is used to filter collision on shapes. It affects shape-vs-shape collision
+and shape-versus-query collision (such as b2World_CastRay).
+@ingroup shape</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -146,7 +149,7 @@ Struct B2Filter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Filter__ctor_System_UInt64_System_UInt64_System_Int32_" data-uid="Box2D.NET.B2Filter.#ctor(System.UInt64,System.UInt64,System.Int32)">
   B2Filter(ulong, ulong, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Filter.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Filter.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -184,10 +187,22 @@ Struct B2Filter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Filter_categoryBits" data-uid="Box2D.NET.B2Filter.categoryBits">
   categoryBits
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Filter.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Filter.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The collision category bits. Normally you would just set one bit. The category bits should
+represent your application object types. For example:
+@code{.cpp}
+enum MyCategories
+{
+Static  = 0x00000001,
+Dynamic = 0x00000002,
+Debris  = 0x00000004,
+Player  = 0x00000008,
+// etc
+};
+@endcode</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -214,10 +229,16 @@ Struct B2Filter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Filter_groupIndex" data-uid="Box2D.NET.B2Filter.groupIndex">
   groupIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Filter.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Filter.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Collision groups allow a certain group of objects to never collide (negative)
+or always collide (positive). A group index of zero has no effect. Non-zero group filtering
+always wins against the mask bits.
+For example, you may want ragdolls to collide with other ragdolls but you don't want
+ragdoll self-collision. In this case you would give each ragdoll a unique negative group index
+and apply that group index to all shapes on the ragdoll.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -244,10 +265,17 @@ Struct B2Filter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Box2D_NET_B2Filter_maskBits" data-uid="Box2D.NET.B2Filter.maskBits">
   maskBits
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Filter.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Filter.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The collision mask bits. This states the categories that this
+shape would accept for collision.
+For example, you may want your player to only collide with static objects
+and other players.
+@code{.c}
+maskBits = Static | Player;
+@endcode</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -275,7 +303,7 @@ Struct B2Filter  <a class="header-action link-secondary" title="View source" hre
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Filter.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Filter.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -155,10 +155,11 @@ Class B2Constants  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2Constants_B2_ALIGNMENT" data-uid="Box2D.NET.B2Constants.B2_ALIGNMENT">
   B2_ALIGNMENT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Use 32 byte alignment for everything. Works with 256bit SIMD.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -185,10 +186,11 @@ Class B2Constants  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2Constants_B2_DEFAULT_CATEGORY_BITS" data-uid="Box2D.NET.B2Constants.B2_DEFAULT_CATEGORY_BITS">
   B2_DEFAULT_CATEGORY_BITS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>types</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -215,7 +217,7 @@ Class B2Constants  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2Constants_B2_DEFAULT_MASK_BITS" data-uid="Box2D.NET.B2Constants.B2_DEFAULT_MASK_BITS">
   B2_DEFAULT_MASK_BITS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -245,10 +247,12 @@ Class B2Constants  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2Constants_B2_GRAPH_COLOR_COUNT" data-uid="Box2D.NET.B2Constants.B2_GRAPH_COLOR_COUNT">
   B2_GRAPH_COLOR_COUNT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Maximum number of colors in the constraint graph. Constraints that cannot
+find a color are added to the overflow set which are solved single-threaded.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -275,10 +279,12 @@ Class B2Constants  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2Constants_B2_HASH_INIT" data-uid="Box2D.NET.B2Constants.B2_HASH_INIT">
   B2_HASH_INIT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>@base
+Simple djb2 hash function for determinism testing</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -305,10 +311,13 @@ Class B2Constants  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2Constants_B2_MAX_POLYGON_VERTICES" data-uid="Box2D.NET.B2Constants.B2_MAX_POLYGON_VERTICES">
   B2_MAX_POLYGON_VERTICES
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><h2 id="collision">collision</h2>
+<p>The maximum number of vertices on a convex polygon. Changing this affects performance even if you
+don't use more vertices.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -335,10 +344,13 @@ Class B2Constants  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2Constants_B2_MAX_ROTATION" data-uid="Box2D.NET.B2Constants.B2_MAX_ROTATION">
   B2_MAX_ROTATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The maximum rotation of a body per time step. This limit is very large and is used
+to prevent numerical problems. You shouldn't need to adjust this.
+@warning increasing this to 0.5f * b2_pi or greater will break continuous collision.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -365,10 +377,11 @@ Class B2Constants  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2Constants_B2_MAX_WORKERS" data-uid="Box2D.NET.B2Constants.B2_MAX_WORKERS">
   B2_MAX_WORKERS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Maximum parallel workers. Used to size some static arrays.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -395,10 +408,11 @@ Class B2Constants  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2Constants_B2_MAX_WORLDS" data-uid="Box2D.NET.B2Constants.B2_MAX_WORLDS">
   B2_MAX_WORLDS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Maximum number of simultaneous worlds that can be allocated</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -425,10 +439,11 @@ Class B2Constants  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2Constants_B2_NULL_INDEX" data-uid="Box2D.NET.B2Constants.B2_NULL_INDEX">
   B2_NULL_INDEX
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>core</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -455,10 +470,11 @@ Class B2Constants  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2Constants_B2_SECRET_COOKIE" data-uid="Box2D.NET.B2Constants.B2_SECRET_COOKIE">
   B2_SECRET_COOKIE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Use to validate definitions. Do not take my cookie.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -485,10 +501,13 @@ Class B2Constants  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2Constants_B2_SPECULATIVE_DISTANCE" data-uid="Box2D.NET.B2Constants.B2_SPECULATIVE_DISTANCE">
   B2_SPECULATIVE_DISTANCE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Box2D uses limited speculative collision. This reduces jitter.
+Normally this is 2cm.
+@warning modifying this can have a significant impact on performance and stability</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -515,10 +534,11 @@ Class B2Constants  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2Constants_B2_TIME_TO_SLEEP" data-uid="Box2D.NET.B2Constants.B2_TIME_TO_SLEEP">
   B2_TIME_TO_SLEEP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The time that a body must be still before it will go to sleep. In seconds.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -550,10 +570,14 @@ Class B2Constants  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2Constants_B2_AABB_MARGIN" data-uid="Box2D.NET.B2Constants.B2_AABB_MARGIN">
   B2_AABB_MARGIN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This is used to fatten AABBs in the dynamic tree. This allows proxies
+to move by a small amount without triggering a tree adjustment. This is in meters.
+Normally this is 5cm.
+@warning modifying this can have a significant impact on performance</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -581,10 +605,12 @@ Class B2Constants  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2Constants_B2_HUGE" data-uid="Box2D.NET.B2Constants.B2_HUGE">
   B2_HUGE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Used to detect bad values. Positions greater than about 16km will have precision
+problems, so 100km as a limit should be fine in all cases.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -612,10 +638,14 @@ Class B2Constants  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2Constants_B2_LINEAR_SLOP" data-uid="Box2D.NET.B2Constants.B2_LINEAR_SLOP">
   B2_LINEAR_SLOP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Constants.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A small length used as a collision and constraint tolerance. Usually it is
+chosen to be numerically significant, but visually insignificant. In meters.
+Normally this is 0.5cm.
+@warning modifying this can have a significant impact on stability</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

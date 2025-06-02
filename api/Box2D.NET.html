@@ -104,7 +104,12 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ArenaAllocatorTyped-1.html">B2ArenaAllocatorTyped&lt;T&gt;</a></dt>
-      <dd></dd>
+      <dd><p>This is a stack-like arena allocator used for fast per step allocations.
+You must nest allocate/free pairs. The code will Debug.Assert
+if you try to interleave multiple allocate/free pairs.
+This allocator uses the heap if space is insufficient.
+I could remove the need to free entries individually.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ArenaAllocators.html">B2ArenaAllocators</a></dt>
@@ -112,7 +117,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Arrays.html">B2Arrays</a></dt>
-      <dd></dd>
+      <dd><p>todo_erin consider code-gen: <a href="https://github.com/IbrahimHindawi/haikal">https://github.com/IbrahimHindawi/haikal</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Atomics.html">B2Atomics</a></dt>
@@ -132,19 +138,26 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Body.html">B2Body</a></dt>
-      <dd></dd>
+      <dd><p>Body organizational details that are not used in the solver.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2BodySim.html">B2BodySim</a></dt>
-      <dd></dd>
+      <dd><p>Body simulation data used for integration of position and velocity
+Transform data used for collision and solver preparation.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2BodyState.html">B2BodyState</a></dt>
-      <dd></dd>
+      <dd><p>32 bytes</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2BroadPhase.html">B2BroadPhase</a></dt>
-      <dd></dd>
+      <dd><p>The broad-phase is used for computing pairs and performing volume queries and ray casts.
+This broad-phase does not persist pairs. Instead, this reports potentially new pairs.
+It is up to the client to consume the new pairs and to track subsequent overlap.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Buffers.html">B2Buffers</a></dt>
@@ -172,11 +185,16 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Contact.html">B2Contact</a></dt>
-      <dd></dd>
+      <dd><p>Cold contact data. Used as a persistent handle and for persistent island
+connectivity.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ContactSim.html">B2ContactSim</a></dt>
-      <dd></dd>
+      <dd><p>The class manages contact between two shapes. A contact exists for each overlapping
+AABB in the broad-phase (except if filtered). Therefore a contact object may exist
+that has no contact points.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ContactSolvers.html">B2ContactSolvers</a></dt>
@@ -192,7 +210,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2DebugDraw.html">B2DebugDraw</a></dt>
-      <dd></dd>
+      <dd><p>This struct holds callbacks you can implement to draw a Box2D world.
+This structure should be zero initialized.
+@ingroup world</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Diagnostics.html">B2Diagnostics</a></dt>
@@ -208,7 +229,9 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
-      <dd></dd>
+      <dd><p>The dynamic tree structure. This should be considered private data.
+It is placed here for performance reasons.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2DynamicTrees.html">B2DynamicTrees</a></dt>
@@ -236,23 +259,38 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Island.html">B2Island</a></dt>
-      <dd></dd>
+      <dd><p>Persistent island for awake bodies, joints, and contacts
+<a href="https://en.wikipedia.org/wiki/Component_(graph_theory)">https://en.wikipedia.org/wiki/Component_(graph_theory)</a>
+<a href="https://en.wikipedia.org/wiki/Dynamic_connectivity">https://en.wikipedia.org/wiki/Dynamic_connectivity</a>
+map from int to solver set and index</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2IslandSim.html">B2IslandSim</a></dt>
-      <dd></dd>
+      <dd><p>This is used to move islands across solver sets</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Islands.html">B2Islands</a></dt>
-      <dd></dd>
+      <dd><p>Collide all awake contacts
+Use bit array to emit start/stop touching events in defined order, per thread. Try using contact index, assuming contacts are
+created in a deterministic order. bit-wise OR together bit arrays and issue changes:</p>
+<ul>
+<li>start touching: merge islands - temporary linked list - mark root island dirty - wake all - largest island is root</li>
+<li>stop touching: increment constraintRemoveCount</li>
+</ul>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Joint.html">B2Joint</a></dt>
-      <dd></dd>
+      <dd><p>Map from b2JointId to b2Joint in the solver sets</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2JointSim.html">B2JointSim</a></dt>
-      <dd></dd>
+      <dd><p>The @base joint class. Joints are used to constraint two bodies together in
+various fashions. Some joints also feature limits and motors.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Joints.html">B2Joints</a></dt>
@@ -296,7 +334,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2RayResult.html">B2RayResult</a></dt>
-      <dd></dd>
+      <dd><p>Result from b2World_RayCastClosest
+If there is initial overlap the fraction and normal will be zero while the point is an arbitrary point in the overlap region.
+@ingroup world</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2RevoluteJoints.html">B2RevoluteJoints</a></dt>
@@ -332,11 +373,25 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2SolverBlock.html">B2SolverBlock</a></dt>
-      <dd></dd>
+      <dd><p>Each block of work has a sync index that gets incremented when a worker claims the block. This ensures only a single worker
+claims a block, yet lets work be distributed dynamically across multiple workers (work stealing). This also reduces contention
+on a single block index atomic. For non-iterative stages the sync index is simply set to one. For iterative stages (solver
+iteration) the same block of work is executed once per iteration and the atomic sync index is shared across iterations, so it
+increases monotonically.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2SolverSet.html">B2SolverSet</a></dt>
-      <dd></dd>
+      <dd><p>This holds solver set data. The following sets are used:</p>
+<ul>
+<li>static set for all static bodies (no contacts or joints)</li>
+<li>active set for all active bodies with body states (no contacts or joints)</li>
+<li>disabled set for disabled bodies and their joints</li>
+<li>all further sets are sleeping island sets along with their contacts and joints
+The purpose of solver sets is to achieve high memory locality.
+<a href="https://www.youtube.com/watch?v=nZNd5FjSquk">https://www.youtube.com/watch?v=nZNd5FjSquk</a></li>
+</ul>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2SolverSets.html">B2SolverSets</a></dt>
@@ -344,7 +399,9 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2SolverStage.html">B2SolverStage</a></dt>
-      <dd></dd>
+      <dd><p>Each stage must be completed before going to the next stage.
+Non-iterative stages use a stage instance once while iterative stages re-use the same instance each iteration.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Solvers.html">B2Solvers</a></dt>
@@ -352,7 +409,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
-      <dd></dd>
+      <dd><p>Context for a time step. Recreated each time step.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Tables.html">B2Tables</a></dt>
@@ -360,7 +418,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2TaskContext.html">B2TaskContext</a></dt>
-      <dd></dd>
+      <dd><p>Per thread task storage</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Timers.html">B2Timers</a></dt>
@@ -384,7 +443,9 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
-      <dd></dd>
+      <dd><p>The world struct manages all physics entities, dynamic simulation,  and asynchronous queries.
+The world also contains efficient memory management facilities.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Worlds.html">B2Worlds</a></dt>
@@ -395,7 +456,8 @@ Structs
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2AABB.html">B2AABB</a></dt>
-      <dd></dd>
+      <dd><p>Axis-aligned bounding box</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ArenaEntry-1.html">B2ArenaEntry&lt;T&gt;</a></dt>
@@ -403,7 +465,8 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Array-1.html">B2Array&lt;T&gt;</a></dt>
-      <dd></dd>
+      <dd><p>Array declaration that doesn't need the type T to be defined</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2AtomicInt.html">B2AtomicInt</a></dt>
@@ -415,47 +478,92 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2BitSet.html">B2BitSet</a></dt>
-      <dd></dd>
+      <dd><p>Bit set provides fast operations on large arrays of bits.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2BodyDef.html">B2BodyDef</a></dt>
-      <dd></dd>
+      <dd><p>A body definition holds all the data needed to construct a rigid body.
+You can safely re-use body definitions. Shapes are added to a body after construction.
+Body definitions are temporary objects used to bundle creation parameters.
+Must be initialized using b2DefaultBodyDef().
+@ingroup body</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2BodyEvents.html">B2BodyEvents</a></dt>
-      <dd></dd>
+      <dd><p>Body events are buffered in the Box2D world and are available
+as event arrays after the time step is complete.
+Note: this data becomes invalid if bodies are destroyed</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2BodyId.html">B2BodyId</a></dt>
-      <dd></dd>
+      <dd><p>Body id references a body instance. This should be treated as an opaque handle.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2BodyMoveEvent.html">B2BodyMoveEvent</a></dt>
-      <dd></dd>
+      <dd><p>Body move events triggered when a body moves.
+Triggered when a body moves due to simulation. Not reported for bodies moved by the user.
+This also has a flag to indicate that the body went to sleep so the application can also
+sleep that actor/entity/object associated with the body.
+On the other hand if the flag does not indicate the body went to sleep then the application
+can treat the actor/entity/object associated with the body as awake.
+This is an efficient way for an application to update game object transforms rather than
+calling functions such as b2Body_GetTransform() because this data is delivered as a contiguous array
+and it is only populated with bodies that have moved.
+@note If sleeping is disabled all dynamic and kinematic bodies will trigger move events.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2BodyStateW.html">B2BodyStateW</a></dt>
-      <dd></dd>
+      <dd><p>wide version of b2BodyState</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Capsule.html">B2Capsule</a></dt>
-      <dd></dd>
+      <dd><p>A solid capsule can be viewed as two semicircles connected
+by a rectangle.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2CastOutput.html">B2CastOutput</a></dt>
-      <dd></dd>
+      <dd><p>Low level ray cast or shape-cast output data. Returns a zero fraction and normal in the case of initial overlap.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ChainDef.html">B2ChainDef</a></dt>
-      <dd></dd>
+      <dd><p>Used to create a chain of line segments. This is designed to eliminate ghost collisions with some limitations.</p>
+<ul>
+<li>chains are one-sided</li>
+<li>chains have no mass and should be used on static bodies</li>
+<li>chains have a counter-clockwise winding order (normal points right of segment direction)</li>
+<li>chains are either a loop or open</li>
+<li>a chain must have at least 4 points</li>
+<li>the distance between any two points must be greater than B2_LINEAR_SLOP</li>
+<li>a chain shape should not self intersect (this is not validated)</li>
+<li>an open chain shape has NO COLLISION on the first and final edge</li>
+<li>you may overlap two open chains on their first three and/or last three points to get smooth collision</li>
+<li>a chain shape creates multiple line segment shapes on the body
+<a href="https://en.wikipedia.org/wiki/Polygonal_chain">https://en.wikipedia.org/wiki/Polygonal_chain</a>
+Must be initialized using b2DefaultChainDef().
+@warning Do not use chain shapes unless you understand the limitations. This is an advanced feature.
+@ingroup shape</li>
+</ul>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ChainId.html">B2ChainId</a></dt>
-      <dd></dd>
+      <dd><p>Chain id references a chain instances. This should be treated as an opaque handle.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ChainSegment.html">B2ChainSegment</a></dt>
-      <dd></dd>
+      <dd><p>A line segment with one-sided collision. Only collides on the right side.
+Several of these are generated for a chain shape.
+ghost1 -&gt; point1 -&gt; point2 -&gt; ghost2</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ChainSegmentParams.html">B2ChainSegmentParams</a></dt>
@@ -463,11 +571,14 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Circle.html">B2Circle</a></dt>
-      <dd></dd>
+      <dd><p>A solid circle</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2CollisionPlane.html">B2CollisionPlane</a></dt>
-      <dd></dd>
+      <dd><p>These are collision planes that can be fed to b2SolvePlanes. Normally
+this is assembled by the user from plane results in b2PlaneResult</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ConstraintGraph.html">B2ConstraintGraph</a></dt>
@@ -475,7 +586,8 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ContactBeginTouchEvent.html">B2ContactBeginTouchEvent</a></dt>
-      <dd></dd>
+      <dd><p>A begin touch event is generated when two shapes begin touching.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ContactConstraint.html">B2ContactConstraint</a></dt>
@@ -491,7 +603,10 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ContactData.html">B2ContactData</a></dt>
-      <dd></dd>
+      <dd><p>The contact data for two shapes. By convention the manifold normal points
+from shape A to shape B.
+@see b2Shape_GetContactData() and b2Body_GetContactData()</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ContactEdge.html">B2ContactEdge</a></dt>
@@ -503,11 +618,16 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ContactEvents.html">B2ContactEvents</a></dt>
-      <dd></dd>
+      <dd><p>Contact events are buffered in the Box2D world and are available
+as event arrays after the time step is complete.
+Note: these may become invalid if bodies and/or shapes are destroyed</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ContactHitEvent.html">B2ContactHitEvent</a></dt>
-      <dd></dd>
+      <dd><p>A hit touch event is generated when two shapes collide with a speed faster than the hit speed threshold.
+This may be reported for speculative contacts that have a confirmed impulse.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ContactRegister.html">B2ContactRegister</a></dt>
@@ -519,15 +639,19 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2CosSin.html">B2CosSin</a></dt>
-      <dd></dd>
+      <dd><p>Cosine and sine pair
+This uses a custom implementation designed for cross-platform determinism</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Counters.html">B2Counters</a></dt>
-      <dd></dd>
+      <dd><p>Counters that give details of the simulation size.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2DistanceInput.html">B2DistanceInput</a></dt>
-      <dd></dd>
+      <dd><p>Input for b2ShapeDistance</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2DistanceJoint.html">B2DistanceJoint</a></dt>
@@ -535,11 +659,17 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2DistanceJointDef.html">B2DistanceJointDef</a></dt>
-      <dd></dd>
+      <dd><p>This requires defining an anchor point on both
+bodies and the non-zero distance of the distance joint. The definition uses
+local anchor points so that the initial configuration can violate the
+constraint slightly. This helps when saving and loading a game.
+@ingroup distance_joint</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2DistanceOutput.html">B2DistanceOutput</a></dt>
-      <dd></dd>
+      <dd><p>Output for b2ShapeDistance</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2DrawContext.html">B2DrawContext</a></dt>
@@ -551,11 +681,17 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ExplosionDef.html">B2ExplosionDef</a></dt>
-      <dd></dd>
+      <dd><p>The explosion definition is used to configure options for explosions. Explosions
+consider shape geometry when computing the impulse.
+@ingroup world</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Filter.html">B2Filter</a></dt>
-      <dd></dd>
+      <dd><p>This is used to filter collision on shapes. It affects shape-vs-shape collision
+and shape-versus-query collision (such as b2World_CastRay).
+@ingroup shape</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2FixedArray1024-1.html">B2FixedArray1024&lt;T&gt;</a></dt>
@@ -615,15 +751,23 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Hull.html">B2Hull</a></dt>
-      <dd></dd>
+      <dd><p>A convex hull. Used to create convex polygons.
+@warning Do not modify these values directly, instead use b2ComputeHull()</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2JointEdge.html">B2JointEdge</a></dt>
-      <dd></dd>
+      <dd><p>A joint edge is used to connect bodies and joints together
+in a joint graph where each body is a node and each joint
+is an edge. A joint edge belongs to a doubly linked list
+maintained in each attached body. Each joint has two joint
+nodes, one for each attached body.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
-      <dd></dd>
+      <dd><p>Joint id references a joint instance. This should be treated as an opaque handle.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2JointPair.html">B2JointPair</a></dt>
@@ -635,19 +779,28 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Manifold.html">B2Manifold</a></dt>
-      <dd></dd>
+      <dd><p>A contact manifold describes the contact points between colliding shapes.
+@note Box2D uses speculative collision so some contact points may be separated.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ManifoldPoint.html">B2ManifoldPoint</a></dt>
-      <dd></dd>
+      <dd><p>A manifold point is a contact point belonging to a contact manifold.
+It holds details related to the geometry and dynamics of the contact points.
+Box2D uses speculative collision so some contact points may be separated.
+You may use the totalNormalImpulse to determine if there was an interaction during
+the time step.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2MassData.html">B2MassData</a></dt>
-      <dd></dd>
+      <dd><p>This holds the mass data computed for a shape.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Mat22.html">B2Mat22</a></dt>
-      <dd></dd>
+      <dd><p>A 2-by-2 Matrix</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2MotorJoint.html">B2MotorJoint</a></dt>
@@ -655,7 +808,9 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2MotorJointDef.html">B2MotorJointDef</a></dt>
-      <dd></dd>
+      <dd><p>A typical usage is to control the movement of a dynamic body with respect to the ground.
+@ingroup motor_joint</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2MouseJoint.html">B2MouseJoint</a></dt>
@@ -663,7 +818,10 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2MouseJointDef.html">B2MouseJointDef</a></dt>
-      <dd></dd>
+      <dd><p>This a soft constraint and allows the constraint to stretch without
+applying huge forces. This also applies rotation constraint heuristic to improve control.
+@ingroup mouse_joint</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2MoverContext.html">B2MoverContext</a></dt>
@@ -671,19 +829,28 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Plane.html">B2Plane</a></dt>
-      <dd></dd>
+      <dd><p>separation = dot(normal, point) - offset</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2PlaneResult.html">B2PlaneResult</a></dt>
-      <dd></dd>
+      <dd><p>These are the collision planes returned from b2World_CollideMover</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2PlaneSolverResult.html">B2PlaneSolverResult</a></dt>
-      <dd></dd>
+      <dd><p>Result returned by b2SolvePlane</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Polygon.html">B2Polygon</a></dt>
-      <dd></dd>
+      <dd><p>A solid convex polygon. It is assumed that the interior of the polygon is to
+the left of each edge.
+Polygons have a maximum number of vertices equal to B2_MAX_POLYGON_VERTICES.
+In most cases you should not need many vertices for a convex polygon.
+@warning DO NOT fill this out manually, instead use a helper function like
+b2MakePolygon or b2MakeBox.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2PrismaticJoint.html">B2PrismaticJoint</a></dt>
@@ -691,15 +858,25 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2PrismaticJointDef.html">B2PrismaticJointDef</a></dt>
-      <dd></dd>
+      <dd><p>This requires defining a line of motion using an axis and an anchor point.
+The definition uses local anchor points and a local axis so that the initial
+configuration can violate the constraint slightly. The joint translation is zero
+when the local anchor points coincide in world space.
+@ingroup prismatic_joint</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Profile.html">B2Profile</a></dt>
-      <dd></dd>
+      <dd><p>Profiling data. Times are in milliseconds.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2QueryFilter.html">B2QueryFilter</a></dt>
-      <dd></dd>
+      <dd><p>The query filter is used to filter collisions between queries and shapes. For example,
+you may want a ray-cast representing a projectile to hit players and the static environment
+but not debris.
+@ingroup shape</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2QueryPairContext.html">B2QueryPairContext</a></dt>
@@ -707,11 +884,13 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2RayCastInput.html">B2RayCastInput</a></dt>
-      <dd></dd>
+      <dd><p>Low level ray cast input data</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2RebuildItem.html">B2RebuildItem</a></dt>
-      <dd></dd>
+      <dd><p>Temporary data used to track the rebuild of a tree node</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2RevoluteJoint.html">B2RevoluteJoint</a></dt>
@@ -719,7 +898,19 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2RevoluteJointDef.html">B2RevoluteJointDef</a></dt>
-      <dd></dd>
+      <dd><p>This requires defining an anchor point where the bodies are joined.
+The definition uses local anchor points so that the
+initial configuration can violate the constraint slightly. You also need to
+specify the initial relative angle for joint limits. This helps when saving
+and loading a game.
+The local anchor points are measured from the body's origin
+rather than the center of mass because:</p>
+<ol>
+<li>you might not know where the center of mass will be</li>
+<li>if you add/remove shapes from a body and recompute the mass, the joints will be broken
+@ingroup revolute_joint</li>
+</ol>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Rot.html">B2Rot</a></dt>
@@ -727,19 +918,23 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2RotW.html">B2RotW</a></dt>
-      <dd></dd>
+      <dd><p>Wide rotation</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Segment.html">B2Segment</a></dt>
-      <dd></dd>
+      <dd><p>A line segment with two-sided collision.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2SegmentDistanceResult.html">B2SegmentDistanceResult</a></dt>
-      <dd></dd>
+      <dd><p>Result of computing the distance between two line segments</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2SensorBeginTouchEvent.html">B2SensorBeginTouchEvent</a></dt>
-      <dd></dd>
+      <dd><p>A begin touch event is generated when a shape starts to overlap a sensor shape.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2SensorEndTouchEvent.html">B2SensorEndTouchEvent</a></dt>
@@ -747,11 +942,21 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2SensorEvents.html">B2SensorEvents</a></dt>
-      <dd></dd>
+      <dd><p>Sensor events are buffered in the Box2D world and are available
+as begin/end overlap event arrays after the time step is complete.
+Note: these may become invalid if bodies and/or shapes are destroyed</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2SensorOverlaps.html">B2SensorOverlaps</a></dt>
-      <dd></dd>
+      <dd><p>Sensors are shapes that live in the broad-phase but never have contacts.
+At the end of the time step all sensors are queried for overlap with any other shapes.
+Sensors ignore body type and sleeping.
+Sensors generate events when there is a new overlap or and overlap disappears.
+The sensor overlaps don't get cleared until the next time step regardless of the overlapped
+shapes being destroyed.
+When a sensor is destroyed.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2SensorQueryContext.html">B2SensorQueryContext</a></dt>
@@ -767,15 +972,24 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ShapeCastInput.html">B2ShapeCastInput</a></dt>
-      <dd></dd>
+      <dd><p>Low level shape cast input in generic form. This allows casting an arbitrary point
+cloud wrap with a radius. For example, a circle is a single point with a non-zero radius.
+A capsule is two points with a non-zero radius. A box is four points with a zero radius.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ShapeCastPairInput.html">B2ShapeCastPairInput</a></dt>
-      <dd></dd>
+      <dd><p>Input parameters for b2ShapeCast</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ShapeDef.html">B2ShapeDef</a></dt>
-      <dd></dd>
+      <dd><p>Used to create a shape.
+This is a temporary object used to bundle shape creation parameters. You may use
+the same shape definition to create multiple shapes.
+Must be initialized using b2DefaultShapeDef().
+@ingroup shape</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ShapeExtent.html">B2ShapeExtent</a></dt>
@@ -783,11 +997,14 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ShapeId.html">B2ShapeId</a></dt>
-      <dd></dd>
+      <dd><p>Shape id references a shape instance. This should be treated as an opaque handle.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ShapeProxy.html">B2ShapeProxy</a></dt>
-      <dd></dd>
+      <dd><p>A distance proxy is used by the GJK algorithm. It encapsulates any shape.
+You can provide between 1 and B2_MAX_POLYGON_VERTICES and a radius.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ShapeRef.html">B2ShapeRef</a></dt>
@@ -803,11 +1020,16 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2SimplexCache.html">B2SimplexCache</a></dt>
-      <dd></dd>
+      <dd><p>Used to warm start the GJK simplex. If you call this function multiple times with nearby
+transforms this might improve performance. Otherwise you can zero initialize this.
+The distance cache must be initialized to zero on the first call.
+Users should generally just zero initialize this structure for each call.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2SimplexVertex.html">B2SimplexVertex</a></dt>
-      <dd></dd>
+      <dd><p>Simplex vertex for debugging the GJK algorithm</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Softness.html">B2Softness</a></dt>
@@ -815,23 +1037,31 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2SurfaceMaterial.html">B2SurfaceMaterial</a></dt>
-      <dd></dd>
+      <dd><p>Surface materials allow chain shapes to have per segment surface properties.
+@ingroup shape</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Sweep.html">B2Sweep</a></dt>
-      <dd></dd>
+      <dd><p>This describes the motion of a body/shape for TOI computation. Shapes are defined with respect to the body origin,
+which may not coincide with the center of mass. However, to support dynamics we must interpolate the center of mass
+position.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2TOIInput.html">B2TOIInput</a></dt>
-      <dd></dd>
+      <dd><p>Input parameters for b2TimeOfImpact</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2TOIOutput.html">B2TOIOutput</a></dt>
-      <dd></dd>
+      <dd><p>Output parameters for b2TimeOfImpact.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
-      <dd></dd>
+      <dd><p>A 2D rigid transform</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2TreeBin.html">B2TreeBin</a></dt>
@@ -839,7 +1069,9 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2TreeNode.html">B2TreeNode</a></dt>
-      <dd></dd>
+      <dd><p>todo externalize this to visualize internal nodes and speed up FindPairs
+A node in the dynamic tree.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2TreeNodeConnectionUnion.html">B2TreeNodeConnectionUnion</a></dt>
@@ -855,7 +1087,8 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2TreeStats.html">B2TreeStats</a></dt>
-      <dd></dd>
+      <dd><p>These are performance results returned by dynamic tree queries.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
@@ -863,11 +1096,14 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Vec2W.html">B2Vec2W</a></dt>
-      <dd></dd>
+      <dd><p>Wide vec2</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2Version.html">B2Version</a></dt>
-      <dd></dd>
+      <dd><p>Version numbering scheme.
+See <a href="https://semver.org/">https://semver.org/</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2WeldJoint.html">B2WeldJoint</a></dt>
@@ -875,7 +1111,11 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2WeldJointDef.html">B2WeldJointDef</a></dt>
-      <dd></dd>
+      <dd><p>A weld joint connect to bodies together rigidly. This constraint provides springs to mimic
+soft-body simulation.
+@note The approximate solver in Box2D cannot hold many bodies together rigidly
+@ingroup weld_joint</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2WheelJoint.html">B2WheelJoint</a></dt>
@@ -883,15 +1123,24 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2WheelJointDef.html">B2WheelJointDef</a></dt>
-      <dd></dd>
+      <dd><p>This requires defining a line of motion using an axis and an anchor point.
+The definition uses local  anchor points and a local axis so that the initial
+configuration can violate the constraint slightly. The joint translation is zero
+when the local anchor points coincide in world space.
+@ingroup wheel_joint</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2WorldDef.html">B2WorldDef</a></dt>
-      <dd></dd>
+      <dd><p>World definition used to create a simulation world.
+Must be initialized using b2DefaultWorldDef().
+@ingroup world</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
-      <dd></dd>
+      <dd><p>World id references a world instance. This should be treated as an opaque handle.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2WorldMoverCastContext.html">B2WorldMoverCastContext</a></dt>
@@ -915,7 +1164,8 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2FilterJointDef.html">b2FilterJointDef</a></dt>
-      <dd></dd>
+      <dd><p>@ingroup filter_joint</p>
+</dd>
     </dl>
     <h3 id="interfaces">
 Interfaces
@@ -929,23 +1179,39 @@ Enums
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2BodyType.html">B2BodyType</a></dt>
-      <dd></dd>
+      <dd><p>The body simulation type.
+Each body is one of these three types. The type determines how the body behaves in the simulation.
+@ingroup body</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ContactFlags.html">B2ContactFlags</a></dt>
-      <dd></dd>
+      <dd><p>A contact edge is used to connect bodies and contacts together
+in a contact graph where each body is a node and each contact
+is an edge. A contact edge belongs to a doubly linked list
+maintained in each attached body. Each contact has two contact
+edges, one for each attached body.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ContactSimFlags.html">B2ContactSimFlags</a></dt>
-      <dd></dd>
+      <dd><p>Shifted to be distinct from b2ContactFlags</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2HexColor.html">B2HexColor</a></dt>
-      <dd></dd>
+      <dd><p>These colors are used for debug draw and mostly match the named SVG colors.
+See <a href="https://www.rapidtables.com/web/color/index.html">https://www.rapidtables.com/web/color/index.html</a>
+<a href="https://johndecember.com/html/spec/colorsvg.html">https://johndecember.com/html/spec/colorsvg.html</a>
+<a href="https://upload.wikimedia.org/wikipedia/commons/2/2b/SVG_Recognized_color_keyword_names.svg">https://upload.wikimedia.org/wikipedia/commons/2/2b/SVG_Recognized_color_keyword_names.svg</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2JointType.html">B2JointType</a></dt>
-      <dd></dd>
+      <dd><p>This is useful because all joint types use b2JointId and sometimes you
+want to get the type of a joint.
+@ingroup joint</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2NormalType.html">B2NormalType</a></dt>
@@ -965,7 +1231,9 @@ Enums
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ShapeType.html">B2ShapeType</a></dt>
-      <dd></dd>
+      <dd><p>Shape type
+@ingroup shape</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2SolverBlockType.html">B2SolverBlockType</a></dt>
@@ -977,7 +1245,8 @@ Enums
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2TOIState.html">B2TOIState</a></dt>
-      <dd></dd>
+      <dd><p>Describes the TOI output</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2TracyCZone.html">B2TracyCZone</a></dt>
@@ -992,11 +1261,13 @@ Delegates
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.DrawCircleFcn.html">DrawCircleFcn</a></dt>
-      <dd></dd>
+      <dd><p>Draw a circle.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.DrawPointFcn.html">DrawPointFcn</a></dt>
-      <dd></dd>
+      <dd><p>Draw a point.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.DrawPolygonFcn.html">DrawPolygonFcn</a></dt>
@@ -1004,43 +1275,83 @@ Delegates
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.DrawSegmentFcn.html">DrawSegmentFcn</a></dt>
-      <dd></dd>
+      <dd><p>Draw a line segment.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.DrawSolidCapsuleFcn.html">DrawSolidCapsuleFcn</a></dt>
-      <dd></dd>
+      <dd><p>Draw a solid capsule.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.DrawSolidCircleFcn.html">DrawSolidCircleFcn</a></dt>
-      <dd></dd>
+      <dd><p>Draw a solid circle.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.DrawSolidPolygonFcn.html">DrawSolidPolygonFcn</a></dt>
-      <dd></dd>
+      <dd><p>Draw a solid closed polygon provided in CCW order.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.DrawStringFcn.html">DrawStringFcn</a></dt>
-      <dd></dd>
+      <dd><p>Draw a string in world space</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.DrawTransformFcn.html">DrawTransformFcn</a></dt>
-      <dd></dd>
+      <dd><p>Draw a transform. Choose your own length scale.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2AllocFcn.html">b2AllocFcn</a></dt>
-      <dd></dd>
+      <dd><p>Prototype for user allocation function
+@param size the allocation size in bytes
+@param alignment the required alignment, guaranteed to be a power of 2</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2AssertFcn.html">b2AssertFcn</a></dt>
-      <dd></dd>
+      <dd><p>Prototype for the user assert callback. Return 0 to skip the debugger break.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2CastResultFcn.html">b2CastResultFcn</a></dt>
-      <dd></dd>
+      <dd><p>Prototype callback for ray and shape casts.
+Called for each shape found in the query. You control how the ray cast
+proceeds by returning a float:
+return -1: ignore this shape and continue
+return 0: terminate the ray cast
+return fraction: clip the ray to this point
+return 1: don't clip the ray and continue
+A cast with initial overlap will return a zero fraction and a zero normal.
+@param shapeId the shape hit by the ray
+@param point the point of initial intersection
+@param normal the normal vector at the point of intersection, zero for a shape cast with initial overlap
+@param fraction the fraction along the ray at the point of intersection, zero for a shape cast with initial overlap
+@param context the user context
+@return -1 to filter, 0 to terminate, fraction to clip the ray for closest hit, 1 to continue
+@see b2World_CastRay
+@ingroup world</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2CustomFilterFcn.html">b2CustomFilterFcn</a></dt>
-      <dd></dd>
+      <dd><p>Prototype for a contact filter callback.
+This is called when a contact pair is considered for collision. This allows you to
+perform custom logic to prevent collision between shapes. This is only called if
+one of the two shapes has custom filtering enabled.
+Notes:</p>
+<ul>
+<li>this function must be thread-safe</li>
+<li>this is only called if one of the two shapes has enabled custom filtering</li>
+<li>this is called only for awake dynamic bodies
+Return false if you want to disable the collision
+@see b2ShapeDef
+@warning Do not attempt to modify the world inside this callback
+@ingroup world</li>
+</ul>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2EnqueueTaskCallback.html">b2EnqueueTaskCallback</a></dt>
@@ -1048,35 +1359,72 @@ Delegates
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2FinishTaskCallback.html">b2FinishTaskCallback</a></dt>
-      <dd></dd>
+      <dd><p>Finishes a user task object that wraps a Box2D task.
+@ingroup world</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2FreeFcn.html">b2FreeFcn</a></dt>
-      <dd></dd>
+      <dd><p>Prototype for user free function
+@param mem the memory previously allocated through <code>b2AllocFcn</code></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2FrictionCallback.html">b2FrictionCallback</a></dt>
-      <dd></dd>
+      <dd><p>Optional friction mixing callback. This intentionally provides no context objects because this is called
+from a worker thread.
+@warning This function should not attempt to modify Box2D state or user application state.
+@ingroup world</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2ManifoldFcn.html">b2ManifoldFcn</a></dt>
-      <dd></dd>
+      <dd><p>Third:
+The user may call the manifold functions directly and they should be easy to use and have easy to use
+results.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2OverlapResultFcn.html">b2OverlapResultFcn</a></dt>
-      <dd></dd>
+      <dd><p>Prototype callback for overlap queries.
+Called for each shape found in the query.
+@see b2World_OverlapABB
+@return false to terminate the query.
+@ingroup world</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2PlaneResultFcn.html">b2PlaneResultFcn</a></dt>
-      <dd></dd>
+      <dd><p>Used to collect collision planes for character movers.
+Return true to continue gathering planes.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2PreSolveFcn.html">b2PreSolveFcn</a></dt>
-      <dd></dd>
+      <dd><p>Prototype for a pre-solve callback.
+This is called after a contact is updated. This allows you to inspect a
+contact before it goes to the solver. If you are careful, you can modify the
+contact manifold (e.g. modify the normal).
+Notes:</p>
+<ul>
+<li>this function must be thread-safe</li>
+<li>this is only called if the shape has enabled pre-solve events</li>
+<li>this is called only for awake dynamic bodies</li>
+<li>this is not called for sensors</li>
+<li>the supplied manifold has impulse values from the previous step
+Return false if you want to disable the contact this step
+@warning Do not attempt to modify the world inside this callback
+@ingroup world</li>
+</ul>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2RestitutionCallback.html">b2RestitutionCallback</a></dt>
-      <dd></dd>
+      <dd><p>Optional restitution mixing callback. This intentionally provides no context objects because this is called
+from a worker thread.
+@warning This function should not attempt to modify Box2D state or user application state.
+@ingroup world</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2TaskCallback.html">b2TaskCallback</a></dt>
@@ -1084,15 +1432,31 @@ Delegates
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2TreeQueryCallbackFcn-1.html">b2TreeQueryCallbackFcn&lt;T&gt;</a></dt>
-      <dd></dd>
+      <dd><p>This function receives proxies found in the AABB query.
+@return true if the query should continue</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2TreeRayCastCallbackFcn-1.html">b2TreeRayCastCallbackFcn&lt;T&gt;</a></dt>
-      <dd></dd>
+      <dd><p>This function receives clipped ray cast input for a proxy. The function
+returns the new ray fraction.</p>
+<ul>
+<li>return a value of 0 to terminate the ray cast</li>
+<li>return a value less than input-&gt;maxFraction to clip the ray</li>
+<li>return a value of input-&gt;maxFraction to continue the ray cast without clipping</li>
+</ul>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2TreeShapeCastCallbackFcn-1.html">b2TreeShapeCastCallbackFcn&lt;T&gt;</a></dt>
-      <dd></dd>
+      <dd><p>This function receives clipped ray cast input for a proxy. The function
+returns the new ray fraction.</p>
+<ul>
+<li>return a value of 0 to terminate the ray cast</li>
+<li>return a value less than input-&gt;maxFraction to clip the ray</li>
+<li>return a value of input-&gt;maxFraction to continue the ray cast without clipping</li>
+</ul>
+</dd>
     </dl>
 
 

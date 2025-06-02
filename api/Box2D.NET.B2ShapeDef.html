@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct B2ShapeDef | Box2D API ">
       
-      
+      <meta name="description" content="Used to create a shape. This is a temporary object used to bundle shape creation parameters. You may use the same shape definition to create multiple shapes. Must be initialized using b2DefaultShapeDef().  shape">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2ShapeDef" data-uid="Box2D.NET.B2ShapeDef" class="text-break">
-Struct B2ShapeDef  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L12"><i class="bi bi-code-slash"></i></a>
+Struct B2ShapeDef  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,12 @@ Struct B2ShapeDef  <a class="header-action link-secondary" title="View source" h
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Used to create a shape.
+This is a temporary object used to bundle shape creation parameters. You may use
+the same shape definition to create multiple shapes.
+Must be initialized using b2DefaultShapeDef().
+@ingroup shape</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -145,10 +150,13 @@ Struct B2ShapeDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ShapeDef_density" data-uid="Box2D.NET.B2ShapeDef.density">
   density
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The density, usually in kg/m^2.
+This is not part of the surface material because this is for the interior, which may have
+other considerations, such as being hollow. For example a wood barrel may be hollow or full of water.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,10 +183,11 @@ Struct B2ShapeDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ShapeDef_enableContactEvents" data-uid="Box2D.NET.B2ShapeDef.enableContactEvents">
   enableContactEvents
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enable contact events for this shape. Only applies to kinematic and dynamic bodies. Ignored for sensors. False by default.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -205,10 +214,11 @@ Struct B2ShapeDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ShapeDef_enableHitEvents" data-uid="Box2D.NET.B2ShapeDef.enableHitEvents">
   enableHitEvents
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enable hit events for this shape. Only applies to kinematic and dynamic bodies. Ignored for sensors. False by default.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -235,10 +245,12 @@ Struct B2ShapeDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ShapeDef_enablePreSolveEvents" data-uid="Box2D.NET.B2ShapeDef.enablePreSolveEvents">
   enablePreSolveEvents
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enable pre-solve contact events for this shape. Only applies to dynamic bodies. These are expensive
+and must be carefully handled due to threading. Ignored for sensors.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -265,10 +277,11 @@ Struct B2ShapeDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ShapeDef_enableSensorEvents" data-uid="Box2D.NET.B2ShapeDef.enableSensorEvents">
   enableSensorEvents
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enable sensor events for this shape. This applies to sensors and non-sensors. False by default, even for sensors.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -295,10 +308,11 @@ Struct B2ShapeDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ShapeDef_filter" data-uid="Box2D.NET.B2ShapeDef.filter">
   filter
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Collision filtering data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -325,10 +339,11 @@ Struct B2ShapeDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ShapeDef_internalValue" data-uid="Box2D.NET.B2ShapeDef.internalValue">
   internalValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Used internally to detect a valid definition. DO NOT SET.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -355,10 +370,13 @@ Struct B2ShapeDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ShapeDef_invokeContactCreation" data-uid="Box2D.NET.B2ShapeDef.invokeContactCreation">
   invokeContactCreation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>When shapes are created they will scan the environment for collision the next time step. This can significantly slow down
+static body creation when there are many static shapes.
+This is flag is ignored for dynamic and kinematic shapes which always invoke contact creation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -385,10 +403,15 @@ Struct B2ShapeDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ShapeDef_isSensor" data-uid="Box2D.NET.B2ShapeDef.isSensor">
   isSensor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A sensor shape generates overlap events but never generates a collision response.
+Sensors do not have continuous collision. Instead, use a ray or shape cast for those scenarios.
+Sensors still contribute to the body mass if they have non-zero density.
+@note Sensor events are disabled by default.
+@see enableSensorEvents</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -415,10 +438,11 @@ Struct B2ShapeDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ShapeDef_material" data-uid="Box2D.NET.B2ShapeDef.material">
   material
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The surface material for this shape.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -445,10 +469,11 @@ Struct B2ShapeDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ShapeDef_updateBodyMass" data-uid="Box2D.NET.B2ShapeDef.updateBodyMass">
   updateBodyMass
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Should the body update the mass properties when this shape is created. Default is true.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -475,10 +500,11 @@ Struct B2ShapeDef  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Box2D_NET_B2ShapeDef_userData" data-uid="Box2D.NET.B2ShapeDef.userData">
   userData
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Use this to store application specific shape data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -506,7 +532,7 @@ Struct B2ShapeDef  <a class="header-action link-secondary" title="View source" h
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L12" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ShapeDef.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

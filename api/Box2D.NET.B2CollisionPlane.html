@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct B2CollisionPlane | Box2D API ">
       
-      
+      <meta name="description" content="These are collision planes that can be fed to b2SolvePlanes. Normally this is assembled by the user from plane results in b2PlaneResult">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2CollisionPlane" data-uid="Box2D.NET.B2CollisionPlane" class="text-break">
-Struct B2CollisionPlane  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2CollisionPlane.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Struct B2CollisionPlane  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2CollisionPlane.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Struct B2CollisionPlane  <a class="header-action link-secondary" title="View sou
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>These are collision planes that can be fed to b2SolvePlanes. Normally
+this is assembled by the user from plane results in b2PlaneResult</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -146,7 +148,7 @@ Struct B2CollisionPlane  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Box2D_NET_B2CollisionPlane__ctor_Box2D_NET_B2Plane_System_Single_System_Single_System_Boolean_" data-uid="Box2D.NET.B2CollisionPlane.#ctor(Box2D.NET.B2Plane,System.Single,System.Single,System.Boolean)">
   B2CollisionPlane(B2Plane, float, float, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2CollisionPlane.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2CollisionPlane.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -186,10 +188,11 @@ Struct B2CollisionPlane  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Box2D_NET_B2CollisionPlane_clipVelocity" data-uid="Box2D.NET.B2CollisionPlane.clipVelocity">
   clipVelocity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2CollisionPlane.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2CollisionPlane.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates if b2ClipVector should clip against this plane. Should be false for soft collision.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -216,10 +219,11 @@ Struct B2CollisionPlane  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Box2D_NET_B2CollisionPlane_plane" data-uid="Box2D.NET.B2CollisionPlane.plane">
   plane
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2CollisionPlane.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2CollisionPlane.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The collision plane between the mover and some shape</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -246,10 +250,11 @@ Struct B2CollisionPlane  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Box2D_NET_B2CollisionPlane_push" data-uid="Box2D.NET.B2CollisionPlane.push">
   push
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2CollisionPlane.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2CollisionPlane.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The push on the mover determined by b2SolvePlanes. Usually in meters.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -276,10 +281,12 @@ Struct B2CollisionPlane  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Box2D_NET_B2CollisionPlane_pushLimit" data-uid="Box2D.NET.B2CollisionPlane.pushLimit">
   pushLimit
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2CollisionPlane.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2CollisionPlane.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Setting this to FLT_MAX makes the plane as rigid as possible. Lower values can
+make the plane collision soft. Usually in meters.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -307,7 +314,7 @@ Struct B2CollisionPlane  <a class="header-action link-secondary" title="View sou
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2CollisionPlane.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2CollisionPlane.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

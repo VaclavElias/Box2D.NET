@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class B2BroadPhase | Box2D API ">
       
-      
+      <meta name="description" content="The broad-phase is used for computing pairs and performing volume queries and ray casts. This broad-phase does not persist pairs. Instead, this reports potentially new pairs. It is up to the client to consume the new pairs and to track subsequent overlap.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2BroadPhase" data-uid="Box2D.NET.B2BroadPhase" class="text-break">
-Class B2BroadPhase  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Class B2BroadPhase  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,10 @@ Class B2BroadPhase  <a class="header-action link-secondary" title="View source" 
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The broad-phase is used for computing pairs and performing volume queries and ray casts.
+This broad-phase does not persist pairs. Instead, this reports potentially new pairs.
+It is up to the client to consume the new pairs and to track subsequent overlap.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -155,7 +158,7 @@ Class B2BroadPhase  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Box2D_NET_B2BroadPhase_moveArray" data-uid="Box2D.NET.B2BroadPhase.moveArray">
   moveArray
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -185,7 +188,7 @@ Class B2BroadPhase  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Box2D_NET_B2BroadPhase_movePairCapacity" data-uid="Box2D.NET.B2BroadPhase.movePairCapacity">
   movePairCapacity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -215,7 +218,7 @@ Class B2BroadPhase  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Box2D_NET_B2BroadPhase_movePairIndex" data-uid="Box2D.NET.B2BroadPhase.movePairIndex">
   movePairIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -245,7 +248,7 @@ Class B2BroadPhase  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Box2D_NET_B2BroadPhase_movePairs" data-uid="Box2D.NET.B2BroadPhase.movePairs">
   movePairs
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -275,10 +278,13 @@ Class B2BroadPhase  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Box2D_NET_B2BroadPhase_moveResults" data-uid="Box2D.NET.B2BroadPhase.moveResults">
   moveResults
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>These are the results from the pair query and are used to create new contacts
+in deterministic order.
+todo these could be in the step context</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -305,10 +311,15 @@ Class B2BroadPhase  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Box2D_NET_B2BroadPhase_moveSet" data-uid="Box2D.NET.B2BroadPhase.moveSet">
   moveSet
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The move set and array are used to track shapes that have moved significantly
+and need a pair query for new contacts. The array has a deterministic order.
+todo perhaps just a move set?
+todo implement a 32bit hash set for faster lookup
+todo moveSet can grow quite large on the first time step and remain large</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -335,10 +346,12 @@ Class B2BroadPhase  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Box2D_NET_B2BroadPhase_pairSet" data-uid="Box2D.NET.B2BroadPhase.pairSet">
   pairSet
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Tracks shape pairs that have a b2Contact
+todo pairSet can grow quite large on the first time step and remain large</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -365,7 +378,7 @@ Class B2BroadPhase  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Box2D_NET_B2BroadPhase_trees" data-uid="Box2D.NET.B2BroadPhase.trees">
   trees
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -400,7 +413,7 @@ Class B2BroadPhase  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Box2D_NET_B2BroadPhase_Clear" data-uid="Box2D.NET.B2BroadPhase.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -426,7 +439,7 @@ Class B2BroadPhase  <a class="header-action link-secondary" title="View source" 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2BroadPhase.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 

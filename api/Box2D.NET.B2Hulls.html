@@ -156,10 +156,24 @@ Class B2Hulls  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2Hulls_b2ComputeHull_System_ReadOnlySpan_Box2D_NET_B2Vec2__System_Int32_" data-uid="Box2D.NET.B2Hulls.b2ComputeHull(System.ReadOnlySpan{Box2D.NET.B2Vec2},System.Int32)">
   b2ComputeHull(ReadOnlySpan&lt;B2Vec2&gt;, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Hulls.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Hulls.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Compute the convex hull of a set of points. Returns an empty hull if it fails.
+Some failure cases:</p>
+<ul>
+<li>all points very close together</li>
+<li>all points on a line</li>
+<li>less than 3 points</li>
+<li>more than B2_MAX_POLYGON_VERTICES points
+This welds close points and removes collinear points.
+@warning Do not modify a hull once it has been computed
+quickhull algorithm</li>
+<li>merges vertices based on B2_LINEAR_SLOP</li>
+<li>removes collinear points using B2_LINEAR_SLOP</li>
+<li>returns an empty hull if it fails</li>
+</ul>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -194,10 +208,11 @@ Class B2Hulls  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2Hulls_b2RecurseHull_Box2D_NET_B2Vec2_Box2D_NET_B2Vec2_System_Span_Box2D_NET_B2Vec2__System_Int32_" data-uid="Box2D.NET.B2Hulls.b2RecurseHull(Box2D.NET.B2Vec2,Box2D.NET.B2Vec2,System.Span{Box2D.NET.B2Vec2},System.Int32)">
   b2RecurseHull(B2Vec2, B2Vec2, Span&lt;B2Vec2&gt;, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Hulls.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Hulls.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>quickhull recursion</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -236,10 +251,16 @@ Class B2Hulls  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2Hulls_b2ValidateHull_Box2D_NET_B2Hull__" data-uid="Box2D.NET.B2Hulls.b2ValidateHull(Box2D.NET.B2Hull@)">
   b2ValidateHull(ref B2Hull)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Hulls.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Hulls.cs/#L294"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This determines if a hull is valid. Checks for:</p>
+<ul>
+<li>convexity</li>
+<li>collinear points
+This is expensive and should not be called at runtime.</li>
+</ul>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class B2TaskContext | Box2D API ">
       
-      
+      <meta name="description" content="Per thread task storage">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2TaskContext" data-uid="Box2D.NET.B2TaskContext" class="text-break">
-Class B2TaskContext  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2TaskContext.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class B2TaskContext  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2TaskContext.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class B2TaskContext  <a class="header-action link-secondary" title="View source"
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Per thread task storage</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -155,10 +156,11 @@ Class B2TaskContext  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Box2D_NET_B2TaskContext_awakeIslandBitSet" data-uid="Box2D.NET.B2TaskContext.awakeIslandBitSet">
   awakeIslandBitSet
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2TaskContext.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2TaskContext.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Used to put islands to sleep</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -185,10 +187,11 @@ Class B2TaskContext  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Box2D_NET_B2TaskContext_contactStateBitSet" data-uid="Box2D.NET.B2TaskContext.contactStateBitSet">
   contactStateBitSet
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2TaskContext.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2TaskContext.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>These bits align with the b2ConstraintGraph::contactBlocks and signal a change in contact status</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -215,10 +218,12 @@ Class B2TaskContext  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Box2D_NET_B2TaskContext_enlargedSimBitSet" data-uid="Box2D.NET.B2TaskContext.enlargedSimBitSet">
   enlargedSimBitSet
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2TaskContext.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2TaskContext.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Used to track bodies with shapes that have enlarged AABBs. This avoids having a bit array
+that is very large when there are many static shapes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -245,7 +250,7 @@ Class B2TaskContext  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Box2D_NET_B2TaskContext_splitIslandId" data-uid="Box2D.NET.B2TaskContext.splitIslandId">
   splitIslandId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2TaskContext.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2TaskContext.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -275,10 +280,11 @@ Class B2TaskContext  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Box2D_NET_B2TaskContext_splitSleepTime" data-uid="Box2D.NET.B2TaskContext.splitSleepTime">
   splitSleepTime
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2TaskContext.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2TaskContext.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Per worker split island candidate</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -306,7 +312,7 @@ Class B2TaskContext  <a class="header-action link-secondary" title="View source"
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2TaskContext.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2TaskContext.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

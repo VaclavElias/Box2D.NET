@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class B2World | Box2D API ">
       
-      
+      <meta name="description" content="The world struct manages all physics entities, dynamic simulation,  and asynchronous queries. The world also contains efficient memory management facilities.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2World" data-uid="Box2D.NET.B2World" class="text-break">
-Class B2World  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L12"><i class="bi bi-code-slash"></i></a>
+Class B2World  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The world struct manages all physics entities, dynamic simulation,  and asynchronous queries.
+The world also contains efficient memory management facilities.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -155,7 +157,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_activeTaskCount" data-uid="Box2D.NET.B2World.activeTaskCount">
   activeTaskCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L171"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -185,7 +187,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_arena" data-uid="Box2D.NET.B2World.arena">
   arena
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -215,10 +217,13 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_bodies" data-uid="Box2D.NET.B2World.bodies">
   bodies
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This is a sparse array that maps body ids to the body data
+stored in solver sets. As sims move within a set or across set.
+Indices come from id pool.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -245,10 +250,13 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_bodyIdPool" data-uid="Box2D.NET.B2World.bodyIdPool">
   bodyIdPool
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The body id pool is used to allocate and recycle body ids. Body ids
+provide a stable identifier for users, but incur caches misses when used
+to access body data. Aligns with b2Body.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -275,7 +283,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_bodyMoveEvents" data-uid="Box2D.NET.B2World.bodyMoveEvents">
   bodyMoveEvents
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -305,7 +313,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_broadPhase" data-uid="Box2D.NET.B2World.broadPhase">
   broadPhase
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -335,7 +343,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_chainIdPool" data-uid="Box2D.NET.B2World.chainIdPool">
   chainIdPool
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -365,7 +373,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_chainShapes" data-uid="Box2D.NET.B2World.chainShapes">
   chainShapes
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -395,7 +403,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_constraintGraph" data-uid="Box2D.NET.B2World.constraintGraph">
   constraintGraph
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -425,7 +433,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_contactBeginEvents" data-uid="Box2D.NET.B2World.contactBeginEvents">
   contactBeginEvents
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -455,7 +463,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_contactDampingRatio" data-uid="Box2D.NET.B2World.contactDampingRatio">
   contactDampingRatio
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L141"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -485,7 +493,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_contactEndEvents" data-uid="Box2D.NET.B2World.contactEndEvents">
   contactEndEvents
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -515,7 +523,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_contactHertz" data-uid="Box2D.NET.B2World.contactHertz">
   contactHertz
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L140"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -545,7 +553,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_contactHitEvents" data-uid="Box2D.NET.B2World.contactHitEvents">
   contactHitEvents
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -575,10 +583,11 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_contactIdPool" data-uid="Box2D.NET.B2World.contactIdPool">
   contactIdPool
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Used to create stable ids for contacts</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -605,10 +614,12 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_contacts" data-uid="Box2D.NET.B2World.contacts">
   contacts
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This is a sparse array that maps contact ids to the contact data stored in the constraint graph
+or in the solver sets.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -635,7 +646,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_customFilterContext" data-uid="Box2D.NET.B2World.customFilterContext">
   customFilterContext
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L156"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -665,7 +676,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_customFilterFcn" data-uid="Box2D.NET.B2World.customFilterFcn">
   customFilterFcn
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -695,10 +706,11 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_debugBodySet" data-uid="Box2D.NET.B2World.debugBodySet">
   debugBodySet
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Used to track debug draw</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -725,7 +737,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_debugContactSet" data-uid="Box2D.NET.B2World.debugContactSet">
   debugContactSet
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L116"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -755,7 +767,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_debugIslandSet" data-uid="Box2D.NET.B2World.debugIslandSet">
   debugIslandSet
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -785,7 +797,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_debugJointSet" data-uid="Box2D.NET.B2World.debugJointSet">
   debugJointSet
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -815,7 +827,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_enableContinuous" data-uid="Box2D.NET.B2World.enableContinuous">
   enableContinuous
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L179"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -845,7 +857,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_enableSleep" data-uid="Box2D.NET.B2World.enableSleep">
   enableSleep
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L176"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -875,7 +887,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_enableSpeculative" data-uid="Box2D.NET.B2World.enableSpeculative">
   enableSpeculative
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L180"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -905,7 +917,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_enableWarmStarting" data-uid="Box2D.NET.B2World.enableWarmStarting">
   enableWarmStarting
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L178"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -935,7 +947,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_endEventArrayIndex" data-uid="Box2D.NET.B2World.endEventArrayIndex">
   endEventArrayIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -965,7 +977,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_enqueueTaskFcn" data-uid="Box2D.NET.B2World.enqueueTaskFcn">
   enqueueTaskFcn
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L159"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -995,7 +1007,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_finishTaskFcn" data-uid="Box2D.NET.B2World.finishTaskFcn">
   finishTaskFcn
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1025,7 +1037,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_frictionCallback" data-uid="Box2D.NET.B2World.frictionCallback">
   frictionCallback
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1055,7 +1067,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_generation" data-uid="Box2D.NET.B2World.generation">
   generation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L148"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1085,7 +1097,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_gravity" data-uid="Box2D.NET.B2World.gravity">
   gravity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1115,7 +1127,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_hitEventThreshold" data-uid="Box2D.NET.B2World.hitEventThreshold">
   hitEventThreshold
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L136"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1145,7 +1157,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_inUse" data-uid="Box2D.NET.B2World.inUse">
   inUse
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1175,10 +1187,11 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_inv_h" data-uid="Box2D.NET.B2World.inv_h">
   inv_h
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L169"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Remember type step used for reporting forces and torques</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1205,10 +1218,11 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_islandIdPool" data-uid="Box2D.NET.B2World.islandIdPool">
   islandIdPool
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Used to create stable ids for islands</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1235,10 +1249,11 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_islands" data-uid="Box2D.NET.B2World.islands">
   islands
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This is a sparse array that maps island ids to the island data stored in the solver sets.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1265,7 +1280,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_jointDampingRatio" data-uid="Box2D.NET.B2World.jointDampingRatio">
   jointDampingRatio
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1295,7 +1310,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_jointHertz" data-uid="Box2D.NET.B2World.jointHertz">
   jointHertz
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1325,10 +1340,11 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_jointIdPool" data-uid="Box2D.NET.B2World.jointIdPool">
   jointIdPool
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Used to create stable ids for joints</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1355,10 +1371,12 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_joints" data-uid="Box2D.NET.B2World.joints">
   joints
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This is a sparse array that maps joint ids to the joint data stored in the constraint graph
+or in the solver sets.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1385,7 +1403,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_locked" data-uid="Box2D.NET.B2World.locked">
   locked
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L177"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1415,7 +1433,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_maxContactPushSpeed" data-uid="Box2D.NET.B2World.maxContactPushSpeed">
   maxContactPushSpeed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1445,7 +1463,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_maxLinearSpeed" data-uid="Box2D.NET.B2World.maxLinearSpeed">
   maxLinearSpeed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L138"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1475,7 +1493,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_preSolveContext" data-uid="Box2D.NET.B2World.preSolveContext">
   preSolveContext
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1505,7 +1523,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_preSolveFcn" data-uid="Box2D.NET.B2World.preSolveFcn">
   preSolveFcn
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L152"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1535,7 +1553,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_profile" data-uid="Box2D.NET.B2World.profile">
   profile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L150"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1565,7 +1583,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_restitutionCallback" data-uid="Box2D.NET.B2World.restitutionCallback">
   restitutionCallback
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1595,7 +1613,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_restitutionThreshold" data-uid="Box2D.NET.B2World.restitutionThreshold">
   restitutionThreshold
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1625,7 +1643,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_sensorBeginEvents" data-uid="Box2D.NET.B2World.sensorBeginEvents">
   sensorBeginEvents
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1655,10 +1673,11 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_sensorEndEvents" data-uid="Box2D.NET.B2World.sensorEndEvents">
   sensorEndEvents
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L105"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>End events are double buffered so that the user doesn't need to flush events</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1685,7 +1704,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_sensorTaskContexts" data-uid="Box2D.NET.B2World.sensorTaskContexts">
   sensorTaskContexts
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1715,10 +1734,11 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_sensors" data-uid="Box2D.NET.B2World.sensors">
   sensors
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This is a dense array of sensor data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1745,7 +1765,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_shapeIdPool" data-uid="Box2D.NET.B2World.shapeIdPool">
   shapeIdPool
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1775,10 +1795,11 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_shapes" data-uid="Box2D.NET.B2World.shapes">
   shapes
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>These are sparse arrays that point into the pools above</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1805,10 +1826,11 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_solverSetIdPool" data-uid="Box2D.NET.B2World.solverSetIdPool">
   solverSetIdPool
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Provides free list for solver sets.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1835,10 +1857,13 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_solverSets" data-uid="Box2D.NET.B2World.solverSets">
   solverSets
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Solvers sets allow sims to be stored in contiguous arrays. The first
+set is all static sims. The second set is active sims. The third set is disabled
+sims. The remaining sets are sleeping islands.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1865,10 +1890,19 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_splitIslandId" data-uid="Box2D.NET.B2World.splitIslandId">
   splitIslandId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Identify islands for splitting as follows:</p>
+<ul>
+<li>I want to split islands so smaller islands can sleep</li>
+<li>when a body comes to rest and its sleep timer trips, I can look at the island and flag it for splitting
+if it has removed constraints</li>
+<li>islands that have removed constraints must be put split first because I don't want to wake bodies incorrectly</li>
+<li>otherwise I can use the awake islands that have bodies wanting to sleep as the splitting candidates</li>
+<li>if no bodies want to sleep then there is no reason to perform island splitting</li>
+</ul>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1895,10 +1929,11 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_stepIndex" data-uid="Box2D.NET.B2World.stepIndex">
   stepIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Id that is incremented every time step</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1925,10 +1960,11 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_taskContexts" data-uid="Box2D.NET.B2World.taskContexts">
   taskContexts
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Per thread storage</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1955,7 +1991,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_taskCount" data-uid="Box2D.NET.B2World.taskCount">
   taskCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L172"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1985,10 +2021,11 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_tempWorkerContext" data-uid="Box2D.NET.B2World.tempWorkerContext">
   tempWorkerContext
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>TODO: @ikpil for b2Solve</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -2015,7 +2052,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_userData" data-uid="Box2D.NET.B2World.userData">
   userData
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -2045,7 +2082,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_userTaskContext" data-uid="Box2D.NET.B2World.userTaskContext">
   userTaskContext
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -2075,7 +2112,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_userTreeTask" data-uid="Box2D.NET.B2World.userTreeTask">
   userTreeTask
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L162"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -2105,7 +2142,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_workerCount" data-uid="Box2D.NET.B2World.workerCount">
   workerCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L158"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -2135,7 +2172,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_worldId" data-uid="Box2D.NET.B2World.worldId">
   worldId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -2170,7 +2207,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Box2D_NET_B2World_Clear" data-uid="Box2D.NET.B2World.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L188"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -2196,7 +2233,7 @@ Class B2World  <a class="header-action link-secondary" title="View source" href=
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L12" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2World.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 
