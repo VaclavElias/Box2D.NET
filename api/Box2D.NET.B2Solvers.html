@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class B2Solvers | Box2D API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class B2Solvers | Box2D API ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ikpil/Box2D.NET/new/master/apiSpec/new?filename=Box2D_NET_B2Solvers.md&amp;value=---%0Auid%3A%20Box2D.NET.B2Solvers%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/box2d_logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Box2D.NET.B2Solvers">
+
+
+
+  <h1 id="Box2D_NET_B2Solvers" data-uid="Box2D.NET.B2Solvers" class="text-break">
+Class B2Solvers  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Box2D.html">Box2D</a>.<a class="xref" href="Box2D.NET.html">NET</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class B2Solvers</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">B2Solvers</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Box2D_NET_B2Solvers_B2_SIMD_SHIFT" data-uid="Box2D.NET.B2Solvers.B2_SIMD_SHIFT">
+  B2_SIMD_SHIFT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int B2_SIMD_SHIFT</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Box2D_NET_B2Solvers_GetWorkerStartIndex_" data-uid="Box2D.NET.B2Solvers.GetWorkerStartIndex*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_GetWorkerStartIndex_System_Int32_System_Int32_System_Int32_" data-uid="Box2D.NET.B2Solvers.GetWorkerStartIndex(System.Int32,System.Int32,System.Int32)">
+  GetWorkerStartIndex(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L838"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetWorkerStartIndex(int workerIndex, int blockCount, int workerCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>workerIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>blockCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>workerCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Solvers_b2BulletBodyTask_" data-uid="Box2D.NET.B2Solvers.b2BulletBodyTask*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_b2BulletBodyTask_System_Int32_System_Int32_System_UInt32_System_Object_" data-uid="Box2D.NET.B2Solvers.b2BulletBodyTask(System.Int32,System.Int32,System.UInt32,System.Object)">
+  b2BulletBodyTask(int, int, uint, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L1174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2BulletBodyTask(int startIndex, int endIndex, uint threadIndex, object taskContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>threadIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>taskContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Solvers_b2ContinuousQueryCallback_" data-uid="Box2D.NET.B2Solvers.b2ContinuousQueryCallback*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_b2ContinuousQueryCallback_System_Int32_System_UInt64_Box2D_NET_B2ContinuousContext__" data-uid="Box2D.NET.B2Solvers.b2ContinuousQueryCallback(System.Int32,System.UInt64,Box2D.NET.B2ContinuousContext@)">
+  b2ContinuousQueryCallback(int, ulong, ref B2ContinuousContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2ContinuousQueryCallback(int proxyId, ulong userData, ref B2ContinuousContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>proxyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2ContinuousContext.html">B2ContinuousContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Solvers_b2ExecuteBlock_" data-uid="Box2D.NET.B2Solvers.b2ExecuteBlock*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_b2ExecuteBlock_Box2D_NET_B2SolverStage_Box2D_NET_B2StepContext_Box2D_NET_B2SolverBlock_" data-uid="Box2D.NET.B2Solvers.b2ExecuteBlock(Box2D.NET.B2SolverStage,Box2D.NET.B2StepContext,Box2D.NET.B2SolverBlock)">
+  b2ExecuteBlock(B2SolverStage, B2StepContext, B2SolverBlock)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L760"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2ExecuteBlock(B2SolverStage stage, B2StepContext context, B2SolverBlock block)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stage</code> <a class="xref" href="Box2D.NET.B2SolverStage.html">B2SolverStage</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+    <dt><code>block</code> <a class="xref" href="Box2D.NET.B2SolverBlock.html">B2SolverBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Solvers_b2ExecuteMainStage_" data-uid="Box2D.NET.B2Solvers.b2ExecuteMainStage*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_b2ExecuteMainStage_Box2D_NET_B2SolverStage_Box2D_NET_B2StepContext_System_UInt32_" data-uid="Box2D.NET.B2Solvers.b2ExecuteMainStage(Box2D.NET.B2SolverStage,Box2D.NET.B2StepContext,System.UInt32)">
+  b2ExecuteMainStage(B2SolverStage, B2StepContext, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L911"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2ExecuteMainStage(B2SolverStage stage, B2StepContext context, uint syncBits)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stage</code> <a class="xref" href="Box2D.NET.B2SolverStage.html">B2SolverStage</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+    <dt><code>syncBits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Solvers_b2ExecuteStage_" data-uid="Box2D.NET.B2Solvers.b2ExecuteStage*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_b2ExecuteStage_Box2D_NET_B2SolverStage_Box2D_NET_B2StepContext_System_Int32_System_Int32_System_Int32_" data-uid="Box2D.NET.B2Solvers.b2ExecuteStage(Box2D.NET.B2SolverStage,Box2D.NET.B2StepContext,System.Int32,System.Int32,System.Int32)">
+  b2ExecuteStage(B2SolverStage, B2StepContext, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L850"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2ExecuteStage(B2SolverStage stage, B2StepContext context, int previousSyncIndex, int syncIndex, int workerIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stage</code> <a class="xref" href="Box2D.NET.B2SolverStage.html">B2SolverStage</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+    <dt><code>previousSyncIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>syncIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>workerIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Solvers_b2FinalizeBodiesTask_" data-uid="Box2D.NET.B2Solvers.b2FinalizeBodiesTask*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_b2FinalizeBodiesTask_System_Int32_System_Int32_System_UInt32_System_Object_" data-uid="Box2D.NET.B2Solvers.b2FinalizeBodiesTask(System.Int32,System.Int32,System.UInt32,System.Object)">
+  b2FinalizeBodiesTask(int, int, uint, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L551"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2FinalizeBodiesTask(int startIndex, int endIndex, uint threadIndex, object context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>threadIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Solvers_b2IntegratePositionsTask_" data-uid="Box2D.NET.B2Solvers.b2IntegratePositionsTask*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_b2IntegratePositionsTask_System_Int32_System_Int32_Box2D_NET_B2StepContext_" data-uid="Box2D.NET.B2Solvers.b2IntegratePositionsTask(System.Int32,System.Int32,Box2D.NET.B2StepContext)">
+  b2IntegratePositionsTask(int, int, B2StepContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2IntegratePositionsTask(int startIndex, int endIndex, B2StepContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Solvers_b2IntegrateVelocitiesTask_" data-uid="Box2D.NET.B2Solvers.b2IntegrateVelocitiesTask*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_b2IntegrateVelocitiesTask_System_Int32_System_Int32_Box2D_NET_B2StepContext_" data-uid="Box2D.NET.B2Solvers.b2IntegrateVelocitiesTask(System.Int32,System.Int32,Box2D.NET.B2StepContext)">
+  b2IntegrateVelocitiesTask(int, int, B2StepContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2IntegrateVelocitiesTask(int startIndex, int endIndex, B2StepContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Solvers_b2MakeSoft_" data-uid="Box2D.NET.B2Solvers.b2MakeSoft*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_b2MakeSoft_System_Single_System_Single_System_Single_" data-uid="Box2D.NET.B2Solvers.b2MakeSoft(System.Single,System.Single,System.Single)">
+  b2MakeSoft(float, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Softness b2MakeSoft(float hertz, float zeta, float h)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hertz</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zeta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>h</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Softness.html">B2Softness</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Solvers_b2Pause_" data-uid="Box2D.NET.B2Solvers.b2Pause*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_b2Pause" data-uid="Box2D.NET.B2Solvers.b2Pause">
+  b2Pause()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2Pause()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Solvers_b2PrepareJointsTask_" data-uid="Box2D.NET.B2Solvers.b2PrepareJointsTask*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_b2PrepareJointsTask_System_Int32_System_Int32_Box2D_NET_B2StepContext_" data-uid="Box2D.NET.B2Solvers.b2PrepareJointsTask(System.Int32,System.Int32,Box2D.NET.B2StepContext)">
+  b2PrepareJointsTask(int, int, B2StepContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2PrepareJointsTask(int startIndex, int endIndex, B2StepContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Solvers_b2SIMDShift_" data-uid="Box2D.NET.B2Solvers.b2SIMDShift*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_b2SIMDShift" data-uid="Box2D.NET.B2Solvers.b2SIMDShift">
+  b2SIMDShift()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int b2SIMDShift()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Solvers_b2Solve_" data-uid="Box2D.NET.B2Solvers.b2Solve*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_b2Solve_Box2D_NET_B2World_Box2D_NET_B2StepContext_" data-uid="Box2D.NET.B2Solvers.b2Solve(Box2D.NET.B2World,Box2D.NET.B2StepContext)">
+  b2Solve(B2World, B2StepContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L1195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2Solve(B2World world, B2StepContext stepContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+    <dt><code>stepContext</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Solvers_b2SolveContinuous_" data-uid="Box2D.NET.B2Solvers.b2SolveContinuous*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_b2SolveContinuous_Box2D_NET_B2World_System_Int32_" data-uid="Box2D.NET.B2Solvers.b2SolveContinuous(Box2D.NET.B2World,System.Int32)">
+  b2SolveContinuous(B2World, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2SolveContinuous(B2World world, int bodySimIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+    <dt><code>bodySimIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Solvers_b2SolveJointsTask_" data-uid="Box2D.NET.B2Solvers.b2SolveJointsTask*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_b2SolveJointsTask_System_Int32_System_Int32_Box2D_NET_B2StepContext_System_Int32_System_Boolean_" data-uid="Box2D.NET.B2Solvers.b2SolveJointsTask(System.Int32,System.Int32,Box2D.NET.B2StepContext,System.Int32,System.Boolean)">
+  b2SolveJointsTask(int, int, B2StepContext, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2SolveJointsTask(int startIndex, int endIndex, B2StepContext context, int colorIndex, bool useBias)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+    <dt><code>colorIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>useBias</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Solvers_b2SolverTask_" data-uid="Box2D.NET.B2Solvers.b2SolverTask*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_b2SolverTask_System_Int32_System_Int32_System_UInt32_System_Object_" data-uid="Box2D.NET.B2Solvers.b2SolverTask(System.Int32,System.Int32,System.UInt32,System.Object)">
+  b2SolverTask(int, int, uint, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L944"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2SolverTask(int startIndex, int endIndex, uint threadIndexIgnore, object taskContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>threadIndexIgnore</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>taskContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Solvers_b2WarmStartJointsTask_" data-uid="Box2D.NET.B2Solvers.b2WarmStartJointsTask*"></a>
+
+  <h3 id="Box2D_NET_B2Solvers_b2WarmStartJointsTask_System_Int32_System_Int32_Box2D_NET_B2StepContext_System_Int32_" data-uid="Box2D.NET.B2Solvers.b2WarmStartJointsTask(System.Int32,System.Int32,Box2D.NET.B2StepContext,System.Int32)">
+  b2WarmStartJointsTask(int, int, B2StepContext, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2WarmStartJointsTask(int startIndex, int endIndex, B2StepContext context, int colorIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+    <dt><code>colorIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Solvers.cs/#L36" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

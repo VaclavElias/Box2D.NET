@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Box2D.NET | Box2D Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Box2D.NET | Box2D Docs ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ikpil/Box2D.NET/blob/master/docs/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="images/box2d_logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<p><img src="https://raw.githubusercontent.com/ikpil/ikpil/refs/heads/main/img/box2d_logo.svg" alt="Box2D Logo"></p>
+<h1 id="box2dnet">Box2D.NET</h1>
+<p><em>Box2D.NET is a C# port of the <a href="https://github.com/erincatto/box2d">Box2D</a> physics engine.</em><br>
+<em>If you'd like to support the project, we'd appreciate starring(⭐) our repos on Github for more visibility.</em></p>
+<hr>
+<p><a href="https://github.com/ikpil/Box2D.NET/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ikpil/Box2D.NET?style=for-the-badge" alt="GitHub License"></a>
+<img src="https://img.shields.io/github/languages/top/ikpil/Box2D.NET?style=for-the-badge" alt="Languages">
+<img src="https://img.shields.io/github/repo-size/ikpil/Box2D.NET?style=for-the-badge" alt="GitHub repo size">
+<a href="https://github.com/ikpil/Box2D.NET"><img src="https://img.shields.io/github/stars/ikpil/Box2D.NET?style=for-the-badge&amp;logo=github" alt="GitHub Repo stars"></a>
+<a href="https://github.com/ikpil/Box2D.NET/actions/workflows/dotnet.yml"><img src="https://img.shields.io/github/actions/workflow/status/ikpil/Box2D.NET/dotnet.yml?style=for-the-badge&amp;logo=github" alt="GitHub Actions Workflow Status"></a>
+<a href="https://github.com/ikpil/Box2D.NET/actions/workflows/codeql.yml"><img src="https://img.shields.io/github/actions/workflow/status/ikpil/Box2D.NET/codeql.yml?style=for-the-badge&amp;logo=github&amp;label=CODEQL" alt="CodeQL Advanced"></a>
+<a href="https://github.com/ikpil/Box2D.NET/commits"><img src="https://img.shields.io/github/commit-activity/m/ikpil/Box2D.NET?style=for-the-badge&amp;logo=github" alt="GitHub commit activity"></a>
+<a href="https://github.com/ikpil/Box2D.NET/issues"><img src="https://img.shields.io/github/issues-raw/ikpil/Box2D.NET?style=for-the-badge&amp;logo=github&amp;color=44cc11" alt="GitHub issues"></a>
+<a href="https://github.com/ikpil/Box2D.NET/issues"><img src="https://img.shields.io/github/issues-closed-raw/ikpil/Box2D.NET?style=for-the-badge&amp;logo=github&amp;color=a371f7" alt="GitHub closed issues"></a>
+<a href="https://www.nuget.org/packages/Box2D.NET"><img src="https://img.shields.io/nuget/vpre/Box2D.NET?style=for-the-badge&amp;logo=nuget" alt="NuGet Version"></a>
+<a href="https://www.nuget.org/packages/Box2D.NET"><img src="https://img.shields.io/nuget/dt/Box2D.NET?style=for-the-badge&amp;logo=nuget" alt="NuGet Downloads"></a>
+<a href="https://github.com/sponsors/ikpil"><img src="https://img.shields.io/github/sponsors/ikpil?style=for-the-badge&amp;logo=GitHub-Sponsors&amp;link=https%3A%2F%2Fgithub.com%2Fsponsors%2Fikpil" alt="GitHub Sponsors"></a></p>
+<hr>
+<p><a href="https://www.youtube.com/watch?v=_a1QxD4Al_w"><img src="https://raw.githubusercontent.com/ikpil/ikpil/refs/heads/main/img/423227516-755634a3-bdb4-4118-8222-95ceb3856257.gif" alt="demo"></a></p>
+<hr>
+<h2 id="-features">✨ Features</h2>
+<ul>
+<li>🌿 Purity - Fully implemented in pure C#.</li>
+<li>💻 Compatibility - Ensuring seamless integration with the .NET platform and Unity3D.</li>
+<li>🌍 Cross-Platform Support - Easily integrates with all major platforms, including Linux, Windows, macOS</li>
+</ul>
+<p>Box2D.NET is divided into multiple modules, each contained in its own folder:</p>
+<ul>
+<li><a href="https://github.com/ikpil/Box2D.NET/tree/main/src/Box2D.NET">Box2D.NET</a> : A C# port of the Box2D physics engine for 2D physics simulations.</li>
+<li><a href="https://github.com/ikpil/Box2D.NET/tree/main/src/Box2D.NET.Shared">Box2D.NET.Shared</a> : Shared code and utilities for Box2D.NET, for use in sample projects and by library users.</li>
+<li><a href="https://github.com/ikpil/Box2D.NET/tree/main/src/Box2D.NET.Samples">Box2D.NET.Samples</a> : Sample projects to showcase the features of Box2D.NET</li>
+<li><a href="https://github.com/ikpil/Box2D.NET/tree/main/test/Box2D.NET.Test">Box2D.NET.Test</a> : Unit tests for Box2D.NET.</li>
+</ul>
+<h2 id="-getting-started">🚀 Getting Started</h2>
+<ul>
+<li>To verify the run for all modules, run <a href="https://github.com/ikpil/Box2D.NET/tree/main/src/Box2D.NET.Samples/Box2D.NET.Samples.csproj">Box2D.NET.Samples</a>
+<ul>
+<li>on the Windows platform, you need to install the redistributable package</li>
+<li><a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist">Microsoft Visual C++ Redistributable Package</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="-running-with-command-prompt">▶️ Running With Command Prompt</h4>
+<pre><code class="lang-shell">dotnet run --project src/Box2D.NET.Samples --framework net9.0 -c Release
+</code></pre>
+<h2 id="-integration">🛠️ Integration</h2>
+<ul>
+<li>There are a few ways to integrate <a href="https://github.com/ikpil/Box2D.NET/tree/main/src/Box2D.NET">Box2D.NET</a> into your project.</li>
+<li>Source integration is the most popular and most flexible. Additionally, NuGet installation will also be supported in the future.</li>
+</ul>
+<h2 id="-documentation--links">📚 Documentation &amp; Links</h2>
+<h3 id="box2dnet-links">Box2D.NET Links</h3>
+<ul>
+<li><a href="https://github.com/ikpil/Box2D.NET/issues">Box2D.NET/issues</a></li>
+</ul>
+<h3 id="original-box2d-links">Original Box2D Links</h3>
+<ul>
+<li><a href="https://box2d.org">box2d.org</a></li>
+<li><a href="https://github.com/erincatto/box2d/issues">box2d/issues</a></li>
+<li><a href="https://box2d.org/documentation/">box2d.org/documentation</a></li>
+</ul>
+<p>You can use the original Box2D documentation as a reference, since the Box2D.NET API closely mirrors the original implementation. If you are new to Box2D, we recommend starting with the original documentation to learn the basics and core concepts.</p>
+<p><strong>Key Naming Conventions:</strong></p>
+<ul>
+<li>Properties and methods: Start with lowercase (matches original Box2D)</li>
+<li>Classes and structs: Start with Uppercase (differs from original Box2D)</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ikpil/Box2D.NET/blob/master/docs/index.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class B2Joints | Box2D API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class B2Joints | Box2D API ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ikpil/Box2D.NET/new/master/apiSpec/new?filename=Box2D_NET_B2Joints.md&amp;value=---%0Auid%3A%20Box2D.NET.B2Joints%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/box2d_logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Box2D.NET.B2Joints">
+
+
+
+  <h1 id="Box2D_NET_B2Joints" data-uid="Box2D.NET.B2Joints" class="text-break">
+Class B2Joints  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Box2D.html">Box2D</a>.<a class="xref" href="Box2D.NET.html">NET</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class B2Joints</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">B2Joints</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Box2D_NET_B2Joints_b2CreateDistanceJoint_" data-uid="Box2D.NET.B2Joints.b2CreateDistanceJoint*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2CreateDistanceJoint_Box2D_NET_B2WorldId_Box2D_NET_B2DistanceJointDef__" data-uid="Box2D.NET.B2Joints.b2CreateDistanceJoint(Box2D.NET.B2WorldId,Box2D.NET.B2DistanceJointDef@)">
+  b2CreateDistanceJoint(B2WorldId, ref B2DistanceJointDef)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2JointId b2CreateDistanceJoint(B2WorldId worldId, ref B2DistanceJointDef def)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>def</code> <a class="xref" href="Box2D.NET.B2DistanceJointDef.html">B2DistanceJointDef</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2CreateFilterJoint_" data-uid="Box2D.NET.B2Joints.b2CreateFilterJoint*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2CreateFilterJoint_Box2D_NET_B2WorldId_Box2D_NET_b2FilterJointDef__" data-uid="Box2D.NET.B2Joints.b2CreateFilterJoint(Box2D.NET.B2WorldId,Box2D.NET.b2FilterJointDef@)">
+  b2CreateFilterJoint(B2WorldId, ref b2FilterJointDef)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L496"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2JointId b2CreateFilterJoint(B2WorldId worldId, ref b2FilterJointDef def)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>def</code> <a class="xref" href="Box2D.NET.b2FilterJointDef.html">b2FilterJointDef</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2CreateJoint_" data-uid="Box2D.NET.B2Joints.b2CreateJoint*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2CreateJoint_Box2D_NET_B2World_Box2D_NET_B2Body_Box2D_NET_B2Body_System_Object_System_Single_Box2D_NET_B2JointType_System_Boolean_" data-uid="Box2D.NET.B2Joints.b2CreateJoint(Box2D.NET.B2World,Box2D.NET.B2Body,Box2D.NET.B2Body,System.Object,System.Single,Box2D.NET.B2JointType,System.Boolean)">
+  b2CreateJoint(B2World, B2Body, B2Body, object, float, B2JointType, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2JointPair b2CreateJoint(B2World world, B2Body bodyA, B2Body bodyB, object userData, float drawSize, B2JointType type, bool collideConnected)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+    <dt><code>bodyA</code> <a class="xref" href="Box2D.NET.B2Body.html">B2Body</a></dt>
+    <dd></dd>
+    <dt><code>bodyB</code> <a class="xref" href="Box2D.NET.B2Body.html">B2Body</a></dt>
+    <dd></dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>drawSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="Box2D.NET.B2JointType.html">B2JointType</a></dt>
+    <dd></dd>
+    <dt><code>collideConnected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2JointPair.html">B2JointPair</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2CreateMotorJoint_" data-uid="Box2D.NET.B2Joints.b2CreateMotorJoint*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2CreateMotorJoint_Box2D_NET_B2WorldId_Box2D_NET_B2MotorJointDef__" data-uid="Box2D.NET.B2Joints.b2CreateMotorJoint(Box2D.NET.B2WorldId,Box2D.NET.B2MotorJointDef@)">
+  b2CreateMotorJoint(B2WorldId, ref B2MotorJointDef)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L412"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2JointId b2CreateMotorJoint(B2WorldId worldId, ref B2MotorJointDef def)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>def</code> <a class="xref" href="Box2D.NET.B2MotorJointDef.html">B2MotorJointDef</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2CreateMouseJoint_" data-uid="Box2D.NET.B2Joints.b2CreateMouseJoint*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2CreateMouseJoint_Box2D_NET_B2WorldId_Box2D_NET_B2MouseJointDef__" data-uid="Box2D.NET.B2Joints.b2CreateMouseJoint(Box2D.NET.B2WorldId,Box2D.NET.B2MouseJointDef@)">
+  b2CreateMouseJoint(B2WorldId, ref B2MouseJointDef)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L450"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2JointId b2CreateMouseJoint(B2WorldId worldId, ref B2MouseJointDef def)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>def</code> <a class="xref" href="Box2D.NET.B2MouseJointDef.html">B2MouseJointDef</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2CreatePrismaticJoint_" data-uid="Box2D.NET.B2Joints.b2CreatePrismaticJoint*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2CreatePrismaticJoint_Box2D_NET_B2WorldId_Box2D_NET_B2PrismaticJointDef_" data-uid="Box2D.NET.B2Joints.b2CreatePrismaticJoint(Box2D.NET.B2WorldId,Box2D.NET.B2PrismaticJointDef)">
+  b2CreatePrismaticJoint(B2WorldId, B2PrismaticJointDef)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L575"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2JointId b2CreatePrismaticJoint(B2WorldId worldId, B2PrismaticJointDef def)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>def</code> <a class="xref" href="Box2D.NET.B2PrismaticJointDef.html">B2PrismaticJointDef</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2CreateRevoluteJoint_" data-uid="Box2D.NET.B2Joints.b2CreateRevoluteJoint*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2CreateRevoluteJoint_Box2D_NET_B2WorldId_Box2D_NET_B2RevoluteJointDef__" data-uid="Box2D.NET.B2Joints.b2CreateRevoluteJoint(Box2D.NET.B2WorldId,Box2D.NET.B2RevoluteJointDef@)">
+  b2CreateRevoluteJoint(B2WorldId, ref B2RevoluteJointDef)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2JointId b2CreateRevoluteJoint(B2WorldId worldId, ref B2RevoluteJointDef def)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>def</code> <a class="xref" href="Box2D.NET.B2RevoluteJointDef.html">B2RevoluteJointDef</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2CreateWeldJoint_" data-uid="Box2D.NET.B2Joints.b2CreateWeldJoint*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2CreateWeldJoint_Box2D_NET_B2WorldId_Box2D_NET_B2WeldJointDef__" data-uid="Box2D.NET.B2Joints.b2CreateWeldJoint(Box2D.NET.B2WorldId,Box2D.NET.B2WeldJointDef@)">
+  b2CreateWeldJoint(B2WorldId, ref B2WeldJointDef)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L625"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2JointId b2CreateWeldJoint(B2WorldId worldId, ref B2WeldJointDef def)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>def</code> <a class="xref" href="Box2D.NET.B2WeldJointDef.html">B2WeldJointDef</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2CreateWheelJoint_" data-uid="Box2D.NET.B2Joints.b2CreateWheelJoint*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2CreateWheelJoint_Box2D_NET_B2WorldId_Box2D_NET_B2WheelJointDef__" data-uid="Box2D.NET.B2Joints.b2CreateWheelJoint(Box2D.NET.B2WorldId,Box2D.NET.B2WheelJointDef@)">
+  b2CreateWheelJoint(B2WorldId, ref B2WheelJointDef)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L667"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2JointId b2CreateWheelJoint(B2WorldId worldId, ref B2WheelJointDef def)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>def</code> <a class="xref" href="Box2D.NET.B2WheelJointDef.html">B2WheelJointDef</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2DefaultDistanceJointDef_" data-uid="Box2D.NET.B2Joints.b2DefaultDistanceJointDef*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2DefaultDistanceJointDef" data-uid="Box2D.NET.B2Joints.b2DefaultDistanceJointDef">
+  b2DefaultDistanceJointDef()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2DistanceJointDef b2DefaultDistanceJointDef()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2DistanceJointDef.html">B2DistanceJointDef</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2DefaultExplosionDef_" data-uid="Box2D.NET.B2Joints.b2DefaultExplosionDef*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2DefaultExplosionDef" data-uid="Box2D.NET.B2Joints.b2DefaultExplosionDef">
+  b2DefaultExplosionDef()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2ExplosionDef b2DefaultExplosionDef()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2ExplosionDef.html">B2ExplosionDef</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2DefaultFilterJointDef_" data-uid="Box2D.NET.B2Joints.b2DefaultFilterJointDef*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2DefaultFilterJointDef" data-uid="Box2D.NET.B2Joints.b2DefaultFilterJointDef">
+  b2DefaultFilterJointDef()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static b2FilterJointDef b2DefaultFilterJointDef()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.b2FilterJointDef.html">b2FilterJointDef</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2DefaultMotorJointDef_" data-uid="Box2D.NET.B2Joints.b2DefaultMotorJointDef*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2DefaultMotorJointDef" data-uid="Box2D.NET.B2Joints.b2DefaultMotorJointDef">
+  b2DefaultMotorJointDef()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2MotorJointDef b2DefaultMotorJointDef()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2MotorJointDef.html">B2MotorJointDef</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2DefaultMouseJointDef_" data-uid="Box2D.NET.B2Joints.b2DefaultMouseJointDef*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2DefaultMouseJointDef" data-uid="Box2D.NET.B2Joints.b2DefaultMouseJointDef">
+  b2DefaultMouseJointDef()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2MouseJointDef b2DefaultMouseJointDef()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2MouseJointDef.html">B2MouseJointDef</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2DefaultPrismaticJointDef_" data-uid="Box2D.NET.B2Joints.b2DefaultPrismaticJointDef*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2DefaultPrismaticJointDef" data-uid="Box2D.NET.B2Joints.b2DefaultPrismaticJointDef">
+  b2DefaultPrismaticJointDef()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2PrismaticJointDef b2DefaultPrismaticJointDef()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2PrismaticJointDef.html">B2PrismaticJointDef</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2DefaultRevoluteJointDef_" data-uid="Box2D.NET.B2Joints.b2DefaultRevoluteJointDef*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2DefaultRevoluteJointDef" data-uid="Box2D.NET.B2Joints.b2DefaultRevoluteJointDef">
+  b2DefaultRevoluteJointDef()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2RevoluteJointDef b2DefaultRevoluteJointDef()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2RevoluteJointDef.html">B2RevoluteJointDef</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2DefaultWeldJointDef_" data-uid="Box2D.NET.B2Joints.b2DefaultWeldJointDef*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2DefaultWeldJointDef" data-uid="Box2D.NET.B2Joints.b2DefaultWeldJointDef">
+  b2DefaultWeldJointDef()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2WeldJointDef b2DefaultWeldJointDef()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2WeldJointDef.html">B2WeldJointDef</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2DefaultWheelJointDef_" data-uid="Box2D.NET.B2Joints.b2DefaultWheelJointDef*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2DefaultWheelJointDef" data-uid="Box2D.NET.B2Joints.b2DefaultWheelJointDef">
+  b2DefaultWheelJointDef()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2WheelJointDef b2DefaultWheelJointDef()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2WheelJointDef.html">B2WheelJointDef</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2DestroyContactsBetweenBodies_" data-uid="Box2D.NET.B2Joints.b2DestroyContactsBetweenBodies*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2DestroyContactsBetweenBodies_Box2D_NET_B2World_Box2D_NET_B2Body_Box2D_NET_B2Body_" data-uid="Box2D.NET.B2Joints.b2DestroyContactsBetweenBodies(Box2D.NET.B2World,Box2D.NET.B2Body,Box2D.NET.B2Body)">
+  b2DestroyContactsBetweenBodies(B2World, B2Body, B2Body)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2DestroyContactsBetweenBodies(B2World world, B2Body bodyA, B2Body bodyB)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+    <dt><code>bodyA</code> <a class="xref" href="Box2D.NET.B2Body.html">B2Body</a></dt>
+    <dd></dd>
+    <dt><code>bodyB</code> <a class="xref" href="Box2D.NET.B2Body.html">B2Body</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2DestroyJoint_" data-uid="Box2D.NET.B2Joints.b2DestroyJoint*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2DestroyJoint_Box2D_NET_B2JointId_" data-uid="Box2D.NET.B2Joints.b2DestroyJoint(Box2D.NET.B2JointId)">
+  b2DestroyJoint(B2JointId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L825"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2DestroyJoint(B2JointId jointId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2DestroyJointInternal_" data-uid="Box2D.NET.B2Joints.b2DestroyJointInternal*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2DestroyJointInternal_Box2D_NET_B2World_Box2D_NET_B2Joint_System_Boolean_" data-uid="Box2D.NET.B2Joints.b2DestroyJointInternal(Box2D.NET.B2World,Box2D.NET.B2Joint,System.Boolean)">
+  b2DestroyJointInternal(B2World, B2Joint, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L718"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2DestroyJointInternal(B2World world, B2Joint joint, bool wakeBodies)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+    <dt><code>joint</code> <a class="xref" href="Box2D.NET.B2Joint.html">B2Joint</a></dt>
+    <dd></dd>
+    <dt><code>wakeBodies</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2DrawJoint_" data-uid="Box2D.NET.B2Joints.b2DrawJoint*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2DrawJoint_Box2D_NET_B2DebugDraw_Box2D_NET_B2World_Box2D_NET_B2Joint_" data-uid="Box2D.NET.B2Joints.b2DrawJoint(Box2D.NET.B2DebugDraw,Box2D.NET.B2World,Box2D.NET.B2Joint)">
+  b2DrawJoint(B2DebugDraw, B2World, B2Joint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L1431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2DrawJoint(B2DebugDraw draw, B2World world, B2Joint joint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>draw</code> <a class="xref" href="Box2D.NET.B2DebugDraw.html">B2DebugDraw</a></dt>
+    <dd></dd>
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+    <dt><code>joint</code> <a class="xref" href="Box2D.NET.B2Joint.html">B2Joint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2GetJointFullId_" data-uid="Box2D.NET.B2Joints.b2GetJointFullId*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2GetJointFullId_Box2D_NET_B2World_Box2D_NET_B2JointId_" data-uid="Box2D.NET.B2Joints.b2GetJointFullId(Box2D.NET.B2World,Box2D.NET.B2JointId)">
+  b2GetJointFullId(B2World, B2JointId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Joint b2GetJointFullId(B2World world, B2JointId jointId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Joint.html">B2Joint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2GetJointSim_" data-uid="Box2D.NET.B2Joints.b2GetJointSim*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2GetJointSim_Box2D_NET_B2World_Box2D_NET_B2Joint_" data-uid="Box2D.NET.B2Joints.b2GetJointSim(Box2D.NET.B2World,Box2D.NET.B2Joint)">
+  b2GetJointSim(B2World, B2Joint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2JointSim b2GetJointSim(B2World world, B2Joint joint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+    <dt><code>joint</code> <a class="xref" href="Box2D.NET.B2Joint.html">B2Joint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2JointSim.html">B2JointSim</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2GetJointSimCheckType_" data-uid="Box2D.NET.B2Joints.b2GetJointSimCheckType*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2GetJointSimCheckType_Box2D_NET_B2JointId_Box2D_NET_B2JointType_" data-uid="Box2D.NET.B2Joints.b2GetJointSimCheckType(Box2D.NET.B2JointId,Box2D.NET.B2JointType)">
+  b2GetJointSimCheckType(B2JointId, B2JointType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2JointSim b2GetJointSimCheckType(B2JointId jointId, B2JointType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="Box2D.NET.B2JointType.html">B2JointType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2JointSim.html">B2JointSim</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2Joint_GetAngularSeparation_" data-uid="Box2D.NET.B2Joints.b2Joint_GetAngularSeparation*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2Joint_GetAngularSeparation_Box2D_NET_B2JointId_" data-uid="Box2D.NET.B2Joints.b2Joint_GetAngularSeparation(Box2D.NET.B2JointId)">
+  b2Joint_GetAngularSeparation(B2JointId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L1187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float b2Joint_GetAngularSeparation(B2JointId jointId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2Joint_GetBodyA_" data-uid="Box2D.NET.B2Joints.b2Joint_GetBodyA*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2Joint_GetBodyA_Box2D_NET_B2JointId_" data-uid="Box2D.NET.B2Joints.b2Joint_GetBodyA(Box2D.NET.B2JointId)">
+  b2Joint_GetBodyA(B2JointId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L847"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2BodyId b2Joint_GetBodyA(B2JointId jointId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2BodyId.html">B2BodyId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2Joint_GetBodyB_" data-uid="Box2D.NET.B2Joints.b2Joint_GetBodyB*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2Joint_GetBodyB_Box2D_NET_B2JointId_" data-uid="Box2D.NET.B2Joints.b2Joint_GetBodyB(Box2D.NET.B2JointId)">
+  b2Joint_GetBodyB(B2JointId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L854"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2BodyId b2Joint_GetBodyB(B2JointId jointId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2BodyId.html">B2BodyId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2Joint_GetCollideConnected_" data-uid="Box2D.NET.B2Joints.b2Joint_GetCollideConnected*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2Joint_GetCollideConnected_Box2D_NET_B2JointId_" data-uid="Box2D.NET.B2Joints.b2Joint_GetCollideConnected(Box2D.NET.B2JointId)">
+  b2Joint_GetCollideConnected(B2JointId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L951"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2Joint_GetCollideConnected(B2JointId jointId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2Joint_GetConstraintForce_" data-uid="Box2D.NET.B2Joints.b2Joint_GetConstraintForce*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2Joint_GetConstraintForce_Box2D_NET_B2JointId_" data-uid="Box2D.NET.B2Joints.b2Joint_GetConstraintForce(Box2D.NET.B2JointId)">
+  b2Joint_GetConstraintForce(B2JointId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L988"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Vec2 b2Joint_GetConstraintForce(B2JointId jointId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2Joint_GetConstraintTorque_" data-uid="Box2D.NET.B2Joints.b2Joint_GetConstraintTorque*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2Joint_GetConstraintTorque_Box2D_NET_B2JointId_" data-uid="Box2D.NET.B2Joints.b2Joint_GetConstraintTorque(Box2D.NET.B2JointId)">
+  b2Joint_GetConstraintTorque(B2JointId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L1027"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float b2Joint_GetConstraintTorque(B2JointId jointId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2Joint_GetLinearSeparation_" data-uid="Box2D.NET.B2Joints.b2Joint_GetLinearSeparation*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2Joint_GetLinearSeparation_Box2D_NET_B2JointId_" data-uid="Box2D.NET.B2Joints.b2Joint_GetLinearSeparation(Box2D.NET.B2JointId)">
+  b2Joint_GetLinearSeparation(B2JointId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L1066"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float b2Joint_GetLinearSeparation(B2JointId jointId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2Joint_GetLocalAnchorA_" data-uid="Box2D.NET.B2Joints.b2Joint_GetLocalAnchorA*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2Joint_GetLocalAnchorA_Box2D_NET_B2JointId_" data-uid="Box2D.NET.B2Joints.b2Joint_GetLocalAnchorA(Box2D.NET.B2JointId)">
+  b2Joint_GetLocalAnchorA(B2JointId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L879"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Vec2 b2Joint_GetLocalAnchorA(B2JointId jointId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2Joint_GetLocalAnchorB_" data-uid="Box2D.NET.B2Joints.b2Joint_GetLocalAnchorB*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2Joint_GetLocalAnchorB_Box2D_NET_B2JointId_" data-uid="Box2D.NET.B2Joints.b2Joint_GetLocalAnchorB(Box2D.NET.B2JointId)">
+  b2Joint_GetLocalAnchorB(B2JointId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L898"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Vec2 b2Joint_GetLocalAnchorB(B2JointId jointId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2Joint_GetType_" data-uid="Box2D.NET.B2Joints.b2Joint_GetType*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2Joint_GetType_Box2D_NET_B2JointId_" data-uid="Box2D.NET.B2Joints.b2Joint_GetType(Box2D.NET.B2JointId)">
+  b2Joint_GetType(B2JointId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L840"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2JointType b2Joint_GetType(B2JointId jointId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2JointType.html">B2JointType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2Joint_GetUserData_" data-uid="Box2D.NET.B2Joints.b2Joint_GetUserData*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2Joint_GetUserData_Box2D_NET_B2JointId_" data-uid="Box2D.NET.B2Joints.b2Joint_GetUserData(Box2D.NET.B2JointId)">
+  b2Joint_GetUserData(B2JointId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L965"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object b2Joint_GetUserData(B2JointId jointId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2Joint_GetWorld_" data-uid="Box2D.NET.B2Joints.b2Joint_GetWorld*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2Joint_GetWorld_Box2D_NET_B2JointId_" data-uid="Box2D.NET.B2Joints.b2Joint_GetWorld(Box2D.NET.B2JointId)">
+  b2Joint_GetWorld(B2JointId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L862"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2WorldId b2Joint_GetWorld(B2JointId jointId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2Joint_SetCollideConnected_" data-uid="Box2D.NET.B2Joints.b2Joint_SetCollideConnected*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2Joint_SetCollideConnected_Box2D_NET_B2JointId_System_Boolean_" data-uid="Box2D.NET.B2Joints.b2Joint_SetCollideConnected(Box2D.NET.B2JointId,System.Boolean)">
+  b2Joint_SetCollideConnected(B2JointId, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L906"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2Joint_SetCollideConnected(B2JointId jointId, bool shouldCollide)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+    <dt><code>shouldCollide</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2Joint_SetLocalAnchorA_" data-uid="Box2D.NET.B2Joints.b2Joint_SetLocalAnchorA*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2Joint_SetLocalAnchorA_Box2D_NET_B2JointId_Box2D_NET_B2Vec2_" data-uid="Box2D.NET.B2Joints.b2Joint_SetLocalAnchorA(Box2D.NET.B2JointId,Box2D.NET.B2Vec2)">
+  b2Joint_SetLocalAnchorA(B2JointId, B2Vec2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L869"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2Joint_SetLocalAnchorA(B2JointId jointId, B2Vec2 localAnchor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+    <dt><code>localAnchor</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2Joint_SetLocalAnchorB_" data-uid="Box2D.NET.B2Joints.b2Joint_SetLocalAnchorB*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2Joint_SetLocalAnchorB_Box2D_NET_B2JointId_Box2D_NET_B2Vec2_" data-uid="Box2D.NET.B2Joints.b2Joint_SetLocalAnchorB(Box2D.NET.B2JointId,Box2D.NET.B2Vec2)">
+  b2Joint_SetLocalAnchorB(B2JointId, B2Vec2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L888"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2Joint_SetLocalAnchorB(B2JointId jointId, B2Vec2 localAnchor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+    <dt><code>localAnchor</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2Joint_SetUserData_" data-uid="Box2D.NET.B2Joints.b2Joint_SetUserData*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2Joint_SetUserData_Box2D_NET_B2JointId_System_Object_" data-uid="Box2D.NET.B2Joints.b2Joint_SetUserData(Box2D.NET.B2JointId,System.Object)">
+  b2Joint_SetUserData(B2JointId, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L958"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2Joint_SetUserData(B2JointId jointId, object userData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2Joint_WakeBodies_" data-uid="Box2D.NET.B2Joints.b2Joint_WakeBodies*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2Joint_WakeBodies_Box2D_NET_B2JointId_" data-uid="Box2D.NET.B2Joints.b2Joint_WakeBodies(Box2D.NET.B2JointId)">
+  b2Joint_WakeBodies(B2JointId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L972"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2Joint_WakeBodies(B2JointId jointId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointId</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2PrepareJoint_" data-uid="Box2D.NET.B2Joints.b2PrepareJoint*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2PrepareJoint_Box2D_NET_B2JointSim_Box2D_NET_B2StepContext_" data-uid="Box2D.NET.B2Joints.b2PrepareJoint(Box2D.NET.B2JointSim,Box2D.NET.B2StepContext)">
+  b2PrepareJoint(B2JointSim, B2StepContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L1257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2PrepareJoint(B2JointSim joint, B2StepContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joint</code> <a class="xref" href="Box2D.NET.B2JointSim.html">B2JointSim</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2PrepareOverflowJoints_" data-uid="Box2D.NET.B2Joints.b2PrepareOverflowJoints*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2PrepareOverflowJoints_Box2D_NET_B2StepContext_" data-uid="Box2D.NET.B2Joints.b2PrepareOverflowJoints(Box2D.NET.B2StepContext)">
+  b2PrepareOverflowJoints(B2StepContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L1380"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2PrepareOverflowJoints(B2StepContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2SolveJoint_" data-uid="Box2D.NET.B2Joints.b2SolveJoint*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2SolveJoint_Box2D_NET_B2JointSim_Box2D_NET_B2StepContext_System_Boolean_" data-uid="Box2D.NET.B2Joints.b2SolveJoint(Box2D.NET.B2JointSim,Box2D.NET.B2StepContext,System.Boolean)">
+  b2SolveJoint(B2JointSim, B2StepContext, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L1339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2SolveJoint(B2JointSim joint, B2StepContext context, bool useBias)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joint</code> <a class="xref" href="Box2D.NET.B2JointSim.html">B2JointSim</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+    <dt><code>useBias</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2SolveOverflowJoints_" data-uid="Box2D.NET.B2Joints.b2SolveOverflowJoints*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2SolveOverflowJoints_Box2D_NET_B2StepContext_System_Boolean_" data-uid="Box2D.NET.B2Joints.b2SolveOverflowJoints(Box2D.NET.B2StepContext,System.Boolean)">
+  b2SolveOverflowJoints(B2StepContext, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L1414"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2SolveOverflowJoints(B2StepContext context, bool useBias)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+    <dt><code>useBias</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2WarmStartJoint_" data-uid="Box2D.NET.B2Joints.b2WarmStartJoint*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2WarmStartJoint_Box2D_NET_B2JointSim_Box2D_NET_B2StepContext_" data-uid="Box2D.NET.B2Joints.b2WarmStartJoint(Box2D.NET.B2JointSim,Box2D.NET.B2StepContext)">
+  b2WarmStartJoint(B2JointSim, B2StepContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L1298"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2WarmStartJoint(B2JointSim joint, B2StepContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joint</code> <a class="xref" href="Box2D.NET.B2JointSim.html">B2JointSim</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Joints_b2WarmStartOverflowJoints_" data-uid="Box2D.NET.B2Joints.b2WarmStartOverflowJoints*"></a>
+
+  <h3 id="Box2D_NET_B2Joints_b2WarmStartOverflowJoints_Box2D_NET_B2StepContext_" data-uid="Box2D.NET.B2Joints.b2WarmStartOverflowJoints(Box2D.NET.B2StepContext)">
+  b2WarmStartOverflowJoints(B2StepContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L1397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2WarmStartOverflowJoints(B2StepContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Joints.cs/#L31" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

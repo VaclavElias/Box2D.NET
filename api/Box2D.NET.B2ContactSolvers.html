@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class B2ContactSolvers | Box2D API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class B2ContactSolvers | Box2D API ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ikpil/Box2D.NET/new/master/apiSpec/new?filename=Box2D_NET_B2ContactSolvers.md&amp;value=---%0Auid%3A%20Box2D.NET.B2ContactSolvers%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/box2d_logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Box2D.NET.B2ContactSolvers">
+
+
+
+  <h1 id="Box2D_NET_B2ContactSolvers" data-uid="Box2D.NET.B2ContactSolvers" class="text-break">
+Class B2ContactSolvers  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Box2D.html">Box2D</a>.<a class="xref" href="Box2D.NET.html">NET</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class B2ContactSolvers</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">B2ContactSolvers</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2AddW_" data-uid="Box2D.NET.B2ContactSolvers.b2AddW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2AddW_Box2D_NET_B2FloatW_Box2D_NET_B2FloatW_" data-uid="Box2D.NET.B2ContactSolvers.b2AddW(Box2D.NET.B2FloatW,Box2D.NET.B2FloatW)">
+  b2AddW(B2FloatW, B2FloatW)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L622"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2FloatW b2AddW(B2FloatW a, B2FloatW b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2AddW_" data-uid="Box2D.NET.B2ContactSolvers.b2AddW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2AddW_System_Numerics_Vector_System_Single__System_Numerics_Vector_System_Single__" data-uid="Box2D.NET.B2ContactSolvers.b2AddW(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
+  b2AddW(Vector&lt;float&gt;, Vector&lt;float&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L518"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector&lt;float&gt; b2AddW(Vector&lt;float&gt; a, Vector&lt;float&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2AllZeroW_" data-uid="Box2D.NET.B2ContactSolvers.b2AllZeroW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2AllZeroW_Box2D_NET_B2FloatW_" data-uid="Box2D.NET.B2ContactSolvers.b2AllZeroW(Box2D.NET.B2FloatW)">
+  b2AllZeroW(B2FloatW)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L720"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2AllZeroW(B2FloatW a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2AllZeroW_" data-uid="Box2D.NET.B2ContactSolvers.b2AllZeroW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2AllZeroW_System_Numerics_Vector_System_Single__" data-uid="Box2D.NET.B2ContactSolvers.b2AllZeroW(System.Numerics.Vector{System.Single})">
+  b2AllZeroW(Vector&lt;float&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L603"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2AllZeroW(Vector&lt;float&gt; a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2ApplyOverflowRestitution_" data-uid="Box2D.NET.B2ContactSolvers.b2ApplyOverflowRestitution*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2ApplyOverflowRestitution_Box2D_NET_B2StepContext_" data-uid="Box2D.NET.B2ContactSolvers.b2ApplyOverflowRestitution(Box2D.NET.B2StepContext)">
+  b2ApplyOverflowRestitution(B2StepContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L389"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2ApplyOverflowRestitution(B2StepContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2ApplyRestitutionTask_" data-uid="Box2D.NET.B2ContactSolvers.b2ApplyRestitutionTask*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2ApplyRestitutionTask_System_Int32_System_Int32_Box2D_NET_B2StepContext_System_Int32_" data-uid="Box2D.NET.B2ContactSolvers.b2ApplyRestitutionTask(System.Int32,System.Int32,Box2D.NET.B2StepContext,System.Int32)">
+  b2ApplyRestitutionTask(int, int, B2StepContext, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L1650"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2ApplyRestitutionTask(int startIndex, int endIndex, B2StepContext context, int colorIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+    <dt><code>colorIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2BlendW_" data-uid="Box2D.NET.B2ContactSolvers.b2BlendW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2BlendW_Box2D_NET_B2FloatW_Box2D_NET_B2FloatW_Box2D_NET_B2FloatW_" data-uid="Box2D.NET.B2ContactSolvers.b2BlendW(Box2D.NET.B2FloatW,Box2D.NET.B2FloatW,Box2D.NET.B2FloatW)">
+  b2BlendW(B2FloatW, B2FloatW, B2FloatW)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L726"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2FloatW b2BlendW(B2FloatW a, B2FloatW b, B2FloatW mask)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+    <dt><code>mask</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2BlendW_" data-uid="Box2D.NET.B2ContactSolvers.b2BlendW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2BlendW_System_Numerics_Vector_System_Single__System_Numerics_Vector_System_Single__System_Numerics_Vector_System_Single__" data-uid="Box2D.NET.B2ContactSolvers.b2BlendW(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
+  b2BlendW(Vector&lt;float&gt;, Vector&lt;float&gt;, Vector&lt;float&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L595"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector&lt;float&gt; b2BlendW(Vector&lt;float&gt; a, Vector&lt;float&gt; b, Vector&lt;float&gt; mask)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>mask</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2CrossW_" data-uid="Box2D.NET.B2ContactSolvers.b2CrossW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2CrossW_Box2D_NET_B2Vec2W_Box2D_NET_B2Vec2W_" data-uid="Box2D.NET.B2ContactSolvers.b2CrossW(Box2D.NET.B2Vec2W,Box2D.NET.B2Vec2W)">
+  b2CrossW(B2Vec2W, B2Vec2W)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L745"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2FloatW b2CrossW(B2Vec2W a, B2Vec2W b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Box2D.NET.B2Vec2W.html">B2Vec2W</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Box2D.NET.B2Vec2W.html">B2Vec2W</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2DotW_" data-uid="Box2D.NET.B2ContactSolvers.b2DotW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2DotW_Box2D_NET_B2Vec2W_Box2D_NET_B2Vec2W_" data-uid="Box2D.NET.B2ContactSolvers.b2DotW(Box2D.NET.B2Vec2W,Box2D.NET.B2Vec2W)">
+  b2DotW(B2Vec2W, B2Vec2W)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L739"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2FloatW b2DotW(B2Vec2W a, B2Vec2W b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Box2D.NET.B2Vec2W.html">B2Vec2W</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Box2D.NET.B2Vec2W.html">B2Vec2W</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2EqualsW_" data-uid="Box2D.NET.B2ContactSolvers.b2EqualsW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2EqualsW_Box2D_NET_B2FloatW_Box2D_NET_B2FloatW_" data-uid="Box2D.NET.B2ContactSolvers.b2EqualsW(Box2D.NET.B2FloatW,Box2D.NET.B2FloatW)">
+  b2EqualsW(B2FloatW, B2FloatW)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L708"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2FloatW b2EqualsW(B2FloatW a, B2FloatW b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2EqualsW_" data-uid="Box2D.NET.B2ContactSolvers.b2EqualsW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2EqualsW_System_Numerics_Vector_System_Single__System_Numerics_Vector_System_Single__" data-uid="Box2D.NET.B2ContactSolvers.b2EqualsW(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
+  b2EqualsW(Vector&lt;float&gt;, Vector&lt;float&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L588"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector&lt;float&gt; b2EqualsW(Vector&lt;float&gt; a, Vector&lt;float&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2GatherBodies_" data-uid="Box2D.NET.B2ContactSolvers.b2GatherBodies*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2GatherBodies_Box2D_NET_B2BodyState___System_ReadOnlySpan_System_Int32__" data-uid="Box2D.NET.B2ContactSolvers.b2GatherBodies(Box2D.NET.B2BodyState[],System.ReadOnlySpan{System.Int32})">
+  b2GatherBodies(B2BodyState[], ReadOnlySpan&lt;int&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L1057"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2BodyStateW b2GatherBodies(B2BodyState[] states, ReadOnlySpan&lt;int&gt; indices)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>states</code> <a class="xref" href="Box2D.NET.B2BodyState.html">B2BodyState</a>[]</dt>
+    <dd></dd>
+    <dt><code>indices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2BodyStateW.html">B2BodyStateW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2GetContactConstraintSIMDByteCount_" data-uid="Box2D.NET.B2ContactSolvers.b2GetContactConstraintSIMDByteCount*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2GetContactConstraintSIMDByteCount" data-uid="Box2D.NET.B2ContactSolvers.b2GetContactConstraintSIMDByteCount">
+  b2GetContactConstraintSIMDByteCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L758"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int b2GetContactConstraintSIMDByteCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2GreaterThanW_" data-uid="Box2D.NET.B2ContactSolvers.b2GreaterThanW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2GreaterThanW_Box2D_NET_B2FloatW_Box2D_NET_B2FloatW_" data-uid="Box2D.NET.B2ContactSolvers.b2GreaterThanW(Box2D.NET.B2FloatW,Box2D.NET.B2FloatW)">
+  b2GreaterThanW(B2FloatW, B2FloatW)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L697"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2FloatW b2GreaterThanW(B2FloatW a, B2FloatW b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2GreaterThanW_" data-uid="Box2D.NET.B2ContactSolvers.b2GreaterThanW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2GreaterThanW_System_Numerics_Vector_System_Single__System_Numerics_Vector_System_Single__" data-uid="Box2D.NET.B2ContactSolvers.b2GreaterThanW(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
+  b2GreaterThanW(Vector&lt;float&gt;, Vector&lt;float&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L581"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector&lt;float&gt; b2GreaterThanW(Vector&lt;float&gt; a, Vector&lt;float&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2MaxW_" data-uid="Box2D.NET.B2ContactSolvers.b2MaxW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2MaxW_Box2D_NET_B2FloatW_Box2D_NET_B2FloatW_" data-uid="Box2D.NET.B2ContactSolvers.b2MaxW(Box2D.NET.B2FloatW,Box2D.NET.B2FloatW)">
+  b2MaxW(B2FloatW, B2FloatW)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L663"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2FloatW b2MaxW(B2FloatW a, B2FloatW b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2MaxW_" data-uid="Box2D.NET.B2ContactSolvers.b2MaxW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2MaxW_System_Numerics_Vector_System_Single__System_Numerics_Vector_System_Single__" data-uid="Box2D.NET.B2ContactSolvers.b2MaxW(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
+  b2MaxW(Vector&lt;float&gt;, Vector&lt;float&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L554"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector&lt;float&gt; b2MaxW(Vector&lt;float&gt; a, Vector&lt;float&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2MinW_" data-uid="Box2D.NET.B2ContactSolvers.b2MinW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2MinW_Box2D_NET_B2FloatW_Box2D_NET_B2FloatW_" data-uid="Box2D.NET.B2ContactSolvers.b2MinW(Box2D.NET.B2FloatW,Box2D.NET.B2FloatW)">
+  b2MinW(B2FloatW, B2FloatW)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L652"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2FloatW b2MinW(B2FloatW a, B2FloatW b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2MinW_" data-uid="Box2D.NET.B2ContactSolvers.b2MinW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2MinW_System_Numerics_Vector_System_Single__System_Numerics_Vector_System_Single__" data-uid="Box2D.NET.B2ContactSolvers.b2MinW(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
+  b2MinW(Vector&lt;float&gt;, Vector&lt;float&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L548"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector&lt;float&gt; b2MinW(Vector&lt;float&gt; a, Vector&lt;float&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2MulAddW_" data-uid="Box2D.NET.B2ContactSolvers.b2MulAddW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2MulAddW_Box2D_NET_B2FloatW_Box2D_NET_B2FloatW_Box2D_NET_B2FloatW_" data-uid="Box2D.NET.B2ContactSolvers.b2MulAddW(Box2D.NET.B2FloatW,Box2D.NET.B2FloatW,Box2D.NET.B2FloatW)">
+  b2MulAddW(B2FloatW, B2FloatW, B2FloatW)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L640"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2FloatW b2MulAddW(B2FloatW a, B2FloatW b, B2FloatW c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2MulAddW_" data-uid="Box2D.NET.B2ContactSolvers.b2MulAddW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2MulAddW_System_Numerics_Vector_System_Single__System_Numerics_Vector_System_Single__System_Numerics_Vector_System_Single__" data-uid="Box2D.NET.B2ContactSolvers.b2MulAddW(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
+  b2MulAddW(Vector&lt;float&gt;, Vector&lt;float&gt;, Vector&lt;float&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L536"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector&lt;float&gt; b2MulAddW(Vector&lt;float&gt; a, Vector&lt;float&gt; b, Vector&lt;float&gt; c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2MulSubW_" data-uid="Box2D.NET.B2ContactSolvers.b2MulSubW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2MulSubW_Box2D_NET_B2FloatW_Box2D_NET_B2FloatW_Box2D_NET_B2FloatW_" data-uid="Box2D.NET.B2ContactSolvers.b2MulSubW(Box2D.NET.B2FloatW,Box2D.NET.B2FloatW,Box2D.NET.B2FloatW)">
+  b2MulSubW(B2FloatW, B2FloatW, B2FloatW)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L646"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2FloatW b2MulSubW(B2FloatW a, B2FloatW b, B2FloatW c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2MulSubW_" data-uid="Box2D.NET.B2ContactSolvers.b2MulSubW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2MulSubW_System_Numerics_Vector_System_Single__System_Numerics_Vector_System_Single__System_Numerics_Vector_System_Single__" data-uid="Box2D.NET.B2ContactSolvers.b2MulSubW(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
+  b2MulSubW(Vector&lt;float&gt;, Vector&lt;float&gt;, Vector&lt;float&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L542"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector&lt;float&gt; b2MulSubW(Vector&lt;float&gt; a, Vector&lt;float&gt; b, Vector&lt;float&gt; c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2MulW_" data-uid="Box2D.NET.B2ContactSolvers.b2MulW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2MulW_Box2D_NET_B2FloatW_Box2D_NET_B2FloatW_" data-uid="Box2D.NET.B2ContactSolvers.b2MulW(Box2D.NET.B2FloatW,Box2D.NET.B2FloatW)">
+  b2MulW(B2FloatW, B2FloatW)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L634"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2FloatW b2MulW(B2FloatW a, B2FloatW b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2MulW_" data-uid="Box2D.NET.B2ContactSolvers.b2MulW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2MulW_System_Numerics_Vector_System_Single__System_Numerics_Vector_System_Single__" data-uid="Box2D.NET.B2ContactSolvers.b2MulW(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
+  b2MulW(Vector&lt;float&gt;, Vector&lt;float&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L530"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector&lt;float&gt; b2MulW(Vector&lt;float&gt; a, Vector&lt;float&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2OrW_" data-uid="Box2D.NET.B2ContactSolvers.b2OrW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2OrW_Box2D_NET_B2FloatW_Box2D_NET_B2FloatW_" data-uid="Box2D.NET.B2ContactSolvers.b2OrW(Box2D.NET.B2FloatW,Box2D.NET.B2FloatW)">
+  b2OrW(B2FloatW, B2FloatW)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L686"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2FloatW b2OrW(B2FloatW a, B2FloatW b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2OrW_" data-uid="Box2D.NET.B2ContactSolvers.b2OrW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2OrW_System_Numerics_Vector_System_Single__System_Numerics_Vector_System_Single__" data-uid="Box2D.NET.B2ContactSolvers.b2OrW(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
+  b2OrW(Vector&lt;float&gt;, Vector&lt;float&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L568"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector&lt;float&gt; b2OrW(Vector&lt;float&gt; a, Vector&lt;float&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2PrepareContactsTask_" data-uid="Box2D.NET.B2ContactSolvers.b2PrepareContactsTask*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2PrepareContactsTask_System_Int32_System_Int32_Box2D_NET_B2StepContext_" data-uid="Box2D.NET.B2ContactSolvers.b2PrepareContactsTask(System.Int32,System.Int32,Box2D.NET.B2StepContext)">
+  b2PrepareContactsTask(int, int, B2StepContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L1120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2PrepareContactsTask(int startIndex, int endIndex, B2StepContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2PrepareOverflowContacts_" data-uid="Box2D.NET.B2ContactSolvers.b2PrepareOverflowContacts*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2PrepareOverflowContacts_Box2D_NET_B2StepContext_" data-uid="Box2D.NET.B2ContactSolvers.b2PrepareOverflowContacts(Box2D.NET.B2StepContext)">
+  b2PrepareOverflowContacts(B2StepContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2PrepareOverflowContacts(B2StepContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2RotateVectorW_" data-uid="Box2D.NET.B2ContactSolvers.b2RotateVectorW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2RotateVectorW_Box2D_NET_B2RotW_Box2D_NET_B2Vec2W_" data-uid="Box2D.NET.B2ContactSolvers.b2RotateVectorW(Box2D.NET.B2RotW,Box2D.NET.B2Vec2W)">
+  b2RotateVectorW(B2RotW, B2Vec2W)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L751"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Vec2W b2RotateVectorW(B2RotW q, B2Vec2W v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>q</code> <a class="xref" href="Box2D.NET.B2RotW.html">B2RotW</a></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="Box2D.NET.B2Vec2W.html">B2Vec2W</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Vec2W.html">B2Vec2W</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2ScatterBodies_" data-uid="Box2D.NET.B2ContactSolvers.b2ScatterBodies*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2ScatterBodies_Box2D_NET_B2BodyState___System_ReadOnlySpan_System_Int32__Box2D_NET_B2BodyStateW__" data-uid="Box2D.NET.B2ContactSolvers.b2ScatterBodies(Box2D.NET.B2BodyState[],System.ReadOnlySpan{System.Int32},Box2D.NET.B2BodyStateW@)">
+  b2ScatterBodies(B2BodyState[], ReadOnlySpan&lt;int&gt;, ref B2BodyStateW)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L1080"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2ScatterBodies(B2BodyState[] states, ReadOnlySpan&lt;int&gt; indices, ref B2BodyStateW simdBody)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>states</code> <a class="xref" href="Box2D.NET.B2BodyState.html">B2BodyState</a>[]</dt>
+    <dd></dd>
+    <dt><code>indices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>simdBody</code> <a class="xref" href="Box2D.NET.B2BodyStateW.html">B2BodyStateW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2SolveContactsTask_" data-uid="Box2D.NET.B2ContactSolvers.b2SolveContactsTask*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2SolveContactsTask_System_Int32_System_Int32_Box2D_NET_B2StepContext_System_Int32_System_Boolean_" data-uid="Box2D.NET.B2ContactSolvers.b2SolveContactsTask(System.Int32,System.Int32,Box2D.NET.B2StepContext,System.Int32,System.Boolean)">
+  b2SolveContactsTask(int, int, B2StepContext, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L1412"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2SolveContactsTask(int startIndex, int endIndex, B2StepContext context, int colorIndex, bool useBias)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+    <dt><code>colorIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>useBias</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2SolveOverflowContacts_" data-uid="Box2D.NET.B2ContactSolvers.b2SolveOverflowContacts*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2SolveOverflowContacts_Box2D_NET_B2StepContext_System_Boolean_" data-uid="Box2D.NET.B2ContactSolvers.b2SolveOverflowContacts(Box2D.NET.B2StepContext,System.Boolean)">
+  b2SolveOverflowContacts(B2StepContext, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2SolveOverflowContacts(B2StepContext context, bool useBias)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+    <dt><code>useBias</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2SplatW_" data-uid="Box2D.NET.B2ContactSolvers.b2SplatW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2SplatW_System_Single_" data-uid="Box2D.NET.B2ContactSolvers.b2SplatW(System.Single)">
+  b2SplatW(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L616"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2FloatW b2SplatW(float scalar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scalar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2StoreImpulsesTask_" data-uid="Box2D.NET.B2ContactSolvers.b2StoreImpulsesTask*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2StoreImpulsesTask_System_Int32_System_Int32_Box2D_NET_B2StepContext_" data-uid="Box2D.NET.B2ContactSolvers.b2StoreImpulsesTask(System.Int32,System.Int32,Box2D.NET.B2StepContext)">
+  b2StoreImpulsesTask(int, int, B2StepContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L1759"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2StoreImpulsesTask(int startIndex, int endIndex, B2StepContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2StoreOverflowImpulses_" data-uid="Box2D.NET.B2ContactSolvers.b2StoreOverflowImpulses*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2StoreOverflowImpulses_Box2D_NET_B2StepContext_" data-uid="Box2D.NET.B2ContactSolvers.b2StoreOverflowImpulses(Box2D.NET.B2StepContext)">
+  b2StoreOverflowImpulses(B2StepContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L487"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2StoreOverflowImpulses(B2StepContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2SubW_" data-uid="Box2D.NET.B2ContactSolvers.b2SubW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2SubW_Box2D_NET_B2FloatW_Box2D_NET_B2FloatW_" data-uid="Box2D.NET.B2ContactSolvers.b2SubW(Box2D.NET.B2FloatW,Box2D.NET.B2FloatW)">
+  b2SubW(B2FloatW, B2FloatW)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2FloatW b2SubW(B2FloatW a, B2FloatW b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2SubW_" data-uid="Box2D.NET.B2ContactSolvers.b2SubW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2SubW_System_Numerics_Vector_System_Single__System_Numerics_Vector_System_Single__" data-uid="Box2D.NET.B2ContactSolvers.b2SubW(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
+  b2SubW(Vector&lt;float&gt;, Vector&lt;float&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L524"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector&lt;float&gt; b2SubW(Vector&lt;float&gt; a, Vector&lt;float&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2SymClampW_" data-uid="Box2D.NET.B2ContactSolvers.b2SymClampW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2SymClampW_Box2D_NET_B2FloatW_Box2D_NET_B2FloatW_" data-uid="Box2D.NET.B2ContactSolvers.b2SymClampW(Box2D.NET.B2FloatW,Box2D.NET.B2FloatW)">
+  b2SymClampW(B2FloatW, B2FloatW)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L674"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2FloatW b2SymClampW(B2FloatW a, B2FloatW b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2SymClampW_" data-uid="Box2D.NET.B2ContactSolvers.b2SymClampW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2SymClampW_System_Numerics_Vector_System_Single__System_Numerics_Vector_System_Single__" data-uid="Box2D.NET.B2ContactSolvers.b2SymClampW(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})">
+  b2SymClampW(Vector&lt;float&gt;, Vector&lt;float&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L560"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector&lt;float&gt; b2SymClampW(Vector&lt;float&gt; a, Vector&lt;float&gt; b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector-1">Vector</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2WarmStartContactsTask_" data-uid="Box2D.NET.B2ContactSolvers.b2WarmStartContactsTask*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2WarmStartContactsTask_System_Int32_System_Int32_Box2D_NET_B2StepContext_System_Int32_" data-uid="Box2D.NET.B2ContactSolvers.b2WarmStartContactsTask(System.Int32,System.Int32,Box2D.NET.B2StepContext,System.Int32)">
+  b2WarmStartContactsTask(int, int, B2StepContext, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L1354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2WarmStartContactsTask(int startIndex, int endIndex, B2StepContext context, int colorIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+    <dt><code>colorIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2WarmStartOverflowContacts_" data-uid="Box2D.NET.B2ContactSolvers.b2WarmStartOverflowContacts*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2WarmStartOverflowContacts_Box2D_NET_B2StepContext_" data-uid="Box2D.NET.B2ContactSolvers.b2WarmStartOverflowContacts(Box2D.NET.B2StepContext)">
+  b2WarmStartOverflowContacts(B2StepContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2WarmStartOverflowContacts(B2StepContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2ContactSolvers_b2ZeroW_" data-uid="Box2D.NET.B2ContactSolvers.b2ZeroW*"></a>
+
+  <h3 id="Box2D_NET_B2ContactSolvers_b2ZeroW" data-uid="Box2D.NET.B2ContactSolvers.b2ZeroW">
+  b2ZeroW()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L610"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2FloatW b2ZeroW()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2FloatW.html">B2FloatW</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactSolvers.cs/#L19" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

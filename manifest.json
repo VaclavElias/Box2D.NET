@@ -1,0 +1,2578 @@
+{
+  "source_base_path": "D:/a/Box2D.NET/Box2D.NET/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2AABB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2AABB.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2AABBs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2AABBs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ArenaAllocator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ArenaAllocator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ArenaAllocatorTyped-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ArenaAllocatorTyped-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ArenaAllocators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ArenaAllocators.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ArenaEntry-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ArenaEntry-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Array-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Array-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Arrays.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Arrays.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2AtomicInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2AtomicInt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2AtomicU32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2AtomicU32.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Atomics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Atomics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2BitSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2BitSet.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2BitSets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2BitSets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2BoardPhases.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2BoardPhases.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Bodies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Bodies.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Body.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Body.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2BodyDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2BodyDef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2BodyEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2BodyEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2BodyId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2BodyId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2BodyMoveEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2BodyMoveEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2BodySim.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2BodySim.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2BodyState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2BodyState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2BodyStateW.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2BodyStateW.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2BodyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2BodyType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2BroadPhase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2BroadPhase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Buffers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Buffers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2CTZs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2CTZs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Capsule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Capsule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2CastOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2CastOutput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ChainDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ChainDef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ChainId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ChainId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ChainSegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ChainSegment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ChainSegmentParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ChainSegmentParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ChainShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ChainShape.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Circle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Circle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2CollisionPlane.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2CollisionPlane.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Collisions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Collisions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Constants.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ConstraintGraph.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ConstraintGraph.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ConstraintGraphs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ConstraintGraphs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Contact.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Contact.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ContactBeginTouchEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ContactBeginTouchEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ContactConstraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ContactConstraint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ContactConstraintPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ContactConstraintPoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ContactConstraintSIMD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ContactConstraintSIMD.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ContactData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ContactData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ContactEdge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ContactEdge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ContactEndTouchEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ContactEndTouchEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ContactEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ContactEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ContactFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ContactFlags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ContactHitEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ContactHitEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ContactRegister.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ContactRegister.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ContactSim.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ContactSim.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ContactSimFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ContactSimFlags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ContactSolvers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ContactSolvers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Contacts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Contacts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ContinuousContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ContinuousContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Cores.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Cores.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2CosSin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2CosSin.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Counters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Counters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2DebugDraw.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2DebugDraw.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Diagnostics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Diagnostics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2DistanceInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2DistanceInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2DistanceJoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2DistanceJoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2DistanceJointDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2DistanceJointDef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2DistanceJoints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2DistanceJoints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2DistanceOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2DistanceOutput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Distances.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Distances.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2DrawContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2DrawContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2DynamicTree.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2DynamicTree.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2DynamicTrees.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2DynamicTrees.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ExplosionContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ExplosionContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ExplosionDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ExplosionDef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Filter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Filter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2FixedArray1-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2FixedArray1-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2FixedArray1024-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2FixedArray1024-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2FixedArray11-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2FixedArray11-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2FixedArray12-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2FixedArray12-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2FixedArray16-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2FixedArray16-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2FixedArray2-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2FixedArray2-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2FixedArray3-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2FixedArray3-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2FixedArray4-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2FixedArray4-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2FixedArray64-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2FixedArray64-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2FixedArray7-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2FixedArray7-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2FixedArray8-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2FixedArray8-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2FloatW.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2FloatW.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Geometries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Geometries.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2GraphColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2GraphColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2HashSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2HashSet.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2HexColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2HexColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Hull.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Hull.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Hulls.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Hulls.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2IdPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2IdPool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2IdPools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2IdPools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Ids.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Ids.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Island.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Island.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2IslandSim.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2IslandSim.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Islands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Islands.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Joint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Joint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2JointEdge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2JointEdge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2JointId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2JointId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2JointPair.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2JointPair.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2JointSim.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2JointSim.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2JointType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2JointType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2JointUnion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2JointUnion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Joints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Joints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Manifold.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Manifold.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ManifoldPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ManifoldPoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Manifolds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Manifolds.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2MassData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2MassData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Mat22.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Mat22.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2MathFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2MathFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2MotorJoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2MotorJoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2MotorJointDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2MotorJointDef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2MotorJoints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2MotorJoints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2MouseJoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2MouseJoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2MouseJointDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2MouseJointDef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2MouseJoints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2MouseJoints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2MovePair.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2MovePair.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2MoveResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2MoveResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2MoverContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2MoverContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Movers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Movers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2NormalType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2NormalType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Plane.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Plane.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2PlaneResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2PlaneResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2PlaneSolverResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2PlaneSolverResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Polygon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Polygon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2PrismaticJoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2PrismaticJoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2PrismaticJointDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2PrismaticJointDef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2PrismaticJoints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2PrismaticJoints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Profile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Profile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Profiling.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Profiling.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2QueryFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2QueryFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2QueryPairContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2QueryPairContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2RayCastInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2RayCastInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2RayResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2RayResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2RebuildItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2RebuildItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2RevoluteJoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2RevoluteJoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2RevoluteJointDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2RevoluteJointDef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2RevoluteJoints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2RevoluteJoints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Rot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Rot.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2RotW.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2RotW.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2RotateType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2RotateType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2RuntimeValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2RuntimeValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Segment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Segment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SegmentDistanceResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SegmentDistanceResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Sensor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Sensor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SensorBeginTouchEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SensorBeginTouchEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SensorEndTouchEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SensorEndTouchEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SensorEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SensorEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SensorOverlaps.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SensorOverlaps.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SensorQueryContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SensorQueryContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SensorTaskContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SensorTaskContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Sensors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Sensors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SeparationFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SeparationFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SeparationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SeparationType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SetItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SetItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SetType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SetType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Shape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Shape.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ShapeCastInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ShapeCastInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ShapeCastPairInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ShapeCastPairInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ShapeDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ShapeDef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ShapeExtent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ShapeExtent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ShapeId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ShapeId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ShapeProxy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ShapeProxy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ShapeRef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ShapeRef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ShapeRefComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ShapeRefComparer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ShapeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ShapeType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2ShapeUnion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2ShapeUnion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Shapes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Shapes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Simplex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Simplex.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SimplexCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SimplexCache.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SimplexVertex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SimplexVertex.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Softness.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Softness.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SolverBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SolverBlock.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SolverBlockType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SolverBlockType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SolverSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SolverSet.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SolverSets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SolverSets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SolverStage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SolverStage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SolverStageType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SolverStageType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Solvers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Solvers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2StepContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2StepContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2SurfaceMaterial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2SurfaceMaterial.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Sweep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Sweep.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2TOIInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2TOIInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2TOIOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2TOIOutput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2TOIState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2TOIState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Tables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Tables.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2TaskContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2TaskContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Timers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Timers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2TracyCZone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2TracyCZone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Transform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Transform.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2TreeBin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2TreeBin.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2TreeNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2TreeNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2TreeNodeConnectionUnion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2TreeNodeConnectionUnion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2TreeNodeDataUnion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2TreeNodeDataUnion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2TreeNodeFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2TreeNodeFlags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2TreePlane.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2TreePlane.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2TreeStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2TreeStats.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Types.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Types.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Vec2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Vec2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Vec2W.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Vec2W.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Version.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Version.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2WeldJoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2WeldJoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2WeldJointDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2WeldJointDef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2WeldJoints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2WeldJoints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2WheelJoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2WheelJoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2WheelJointDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2WheelJointDef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2WheelJoints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2WheelJoints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2WorkerContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2WorkerContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2World.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2World.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2WorldDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2WorldDef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2WorldId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2WorldId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2WorldMoverCastContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2WorldMoverCastContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2WorldMoverContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2WorldMoverContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2WorldOverlapContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2WorldOverlapContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2WorldQueryContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2WorldQueryContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2WorldRayCastContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2WorldRayCastContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.B2Worlds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.B2Worlds.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.DrawCircleFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.DrawCircleFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.DrawPointFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.DrawPointFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.DrawPolygonFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.DrawPolygonFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.DrawSegmentFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.DrawSegmentFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.DrawSolidCapsuleFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.DrawSolidCapsuleFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.DrawSolidCircleFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.DrawSolidCircleFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.DrawSolidPolygonFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.DrawSolidPolygonFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.DrawStringFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.DrawStringFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.DrawTransformFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.DrawTransformFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.IB2ArenaAllocatable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.IB2ArenaAllocatable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2AllocFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2AllocFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2AssertFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2AssertFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2CastResultFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2CastResultFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2CustomFilterFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2CustomFilterFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2EnqueueTaskCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2EnqueueTaskCallback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2FilterJointDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2FilterJointDef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2FinishTaskCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2FinishTaskCallback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2FreeFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2FreeFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2FrictionCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2FrictionCallback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2ManifoldFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2ManifoldFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2OverlapResultFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2OverlapResultFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2PlaneResultFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2PlaneResultFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2PreSolveFcn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2PreSolveFcn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2RestitutionCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2RestitutionCallback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2TaskCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2TaskCallback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2TreeQueryCallbackFcn-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2TreeQueryCallbackFcn-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2TreeRayCastCallbackFcn-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2TreeRayCastCallbackFcn-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.b2TreeShapeCastCallbackFcn-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.b2TreeShapeCastCallbackFcn-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Box2D.NET.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Box2D.NET.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/box2d_logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/box2d_logo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

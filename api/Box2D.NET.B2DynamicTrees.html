@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class B2DynamicTrees | Box2D API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class B2DynamicTrees | Box2D API ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ikpil/Box2D.NET/new/master/apiSpec/new?filename=Box2D_NET_B2DynamicTrees.md&amp;value=---%0Auid%3A%20Box2D.NET.B2DynamicTrees%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/box2d_logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Box2D.NET.B2DynamicTrees">
+
+
+
+  <h1 id="Box2D_NET_B2DynamicTrees" data-uid="Box2D.NET.B2DynamicTrees" class="text-break">
+Class B2DynamicTrees  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Box2D.html">Box2D</a>.<a class="xref" href="Box2D.NET.html">NET</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class B2DynamicTrees</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">B2DynamicTrees</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Box2D_NET_B2DynamicTrees_B2_BIN_COUNT" data-uid="Box2D.NET.B2DynamicTrees.B2_BIN_COUNT">
+  B2_BIN_COUNT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L1578"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int B2_BIN_COUNT = 8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Box2D_NET_B2DynamicTrees_B2_TREE_STACK_SIZE" data-uid="Box2D.NET.B2DynamicTrees.B2_TREE_STACK_SIZE">
+  B2_TREE_STACK_SIZE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int B2_TREE_STACK_SIZE = 1024</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2_defaultTreeNode" data-uid="Box2D.NET.B2DynamicTrees.b2_defaultTreeNode">
+  b2_defaultTreeNode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly B2TreeNode b2_defaultTreeNode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2TreeNode.html">B2TreeNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2AllocateNode_" data-uid="Box2D.NET.B2DynamicTrees.b2AllocateNode*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2AllocateNode_Box2D_NET_B2DynamicTree_" data-uid="Box2D.NET.B2DynamicTrees.b2AllocateNode(Box2D.NET.B2DynamicTree)">
+  b2AllocateNode(B2DynamicTree)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int b2AllocateNode(B2DynamicTree tree)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2BuildTree_" data-uid="Box2D.NET.B2DynamicTrees.b2BuildTree*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2BuildTree_Box2D_NET_B2DynamicTree_System_Int32_" data-uid="Box2D.NET.B2DynamicTrees.b2BuildTree(Box2D.NET.B2DynamicTree,System.Int32)">
+  b2BuildTree(B2DynamicTree, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L1738"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int b2BuildTree(B2DynamicTree tree, int leafCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>leafCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_Create_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_Create*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_Create" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_Create">
+  b2DynamicTree_Create()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2DynamicTree b2DynamicTree_Create()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_CreateProxy_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_CreateProxy*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_CreateProxy_Box2D_NET_B2DynamicTree_Box2D_NET_B2AABB_System_UInt64_System_UInt64_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_CreateProxy(Box2D.NET.B2DynamicTree,Box2D.NET.B2AABB,System.UInt64,System.UInt64)">
+  b2DynamicTree_CreateProxy(B2DynamicTree, B2AABB, ulong, ulong)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L744"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int b2DynamicTree_CreateProxy(B2DynamicTree tree, B2AABB aabb, ulong categoryBits, ulong userData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>aabb</code> <a class="xref" href="Box2D.NET.B2AABB.html">B2AABB</a></dt>
+    <dd></dd>
+    <dt><code>categoryBits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_Destroy_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_Destroy*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_Destroy_Box2D_NET_B2DynamicTree_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_Destroy(Box2D.NET.B2DynamicTree)">
+  b2DynamicTree_Destroy(B2DynamicTree)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2DynamicTree_Destroy(B2DynamicTree tree)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_DestroyProxy_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_DestroyProxy*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_DestroyProxy_Box2D_NET_B2DynamicTree_System_Int32_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_DestroyProxy(Box2D.NET.B2DynamicTree,System.Int32)">
+  b2DynamicTree_DestroyProxy(B2DynamicTree, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L769"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2DynamicTree_DestroyProxy(B2DynamicTree tree, int proxyId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>proxyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_EnlargeProxy_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_EnlargeProxy*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_EnlargeProxy_Box2D_NET_B2DynamicTree_System_Int32_Box2D_NET_B2AABB_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_EnlargeProxy(Box2D.NET.B2DynamicTree,System.Int32,Box2D.NET.B2AABB)">
+  b2DynamicTree_EnlargeProxy(B2DynamicTree, int, B2AABB)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L806"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2DynamicTree_EnlargeProxy(B2DynamicTree tree, int proxyId, B2AABB aabb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>proxyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>aabb</code> <a class="xref" href="Box2D.NET.B2AABB.html">B2AABB</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_GetAABB_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_GetAABB*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_GetAABB_Box2D_NET_B2DynamicTree_System_Int32_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_GetAABB(Box2D.NET.B2DynamicTree,System.Int32)">
+  b2DynamicTree_GetAABB(B2DynamicTree, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L1106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2AABB b2DynamicTree_GetAABB(B2DynamicTree tree, int proxyId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>proxyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2AABB.html">B2AABB</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_GetAreaRatio_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_GetAreaRatio*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_GetAreaRatio_Box2D_NET_B2DynamicTree_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_GetAreaRatio(Box2D.NET.B2DynamicTree)">
+  b2DynamicTree_GetAreaRatio(B2DynamicTree)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L892"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float b2DynamicTree_GetAreaRatio(B2DynamicTree tree)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_GetByteCount_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_GetByteCount*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_GetByteCount_Box2D_NET_B2DynamicTree_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_GetByteCount(Box2D.NET.B2DynamicTree)">
+  b2DynamicTree_GetByteCount(B2DynamicTree)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L1087"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int b2DynamicTree_GetByteCount(B2DynamicTree tree)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_GetCategoryBits_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_GetCategoryBits*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_GetCategoryBits_Box2D_NET_B2DynamicTree_System_Int32_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_GetCategoryBits(Box2D.NET.B2DynamicTree,System.Int32)">
+  b2DynamicTree_GetCategoryBits(B2DynamicTree, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L874"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong b2DynamicTree_GetCategoryBits(B2DynamicTree tree, int proxyId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>proxyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_GetHeight_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_GetHeight*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_GetHeight_Box2D_NET_B2DynamicTree_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_GetHeight(Box2D.NET.B2DynamicTree)">
+  b2DynamicTree_GetHeight(B2DynamicTree)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L881"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int b2DynamicTree_GetHeight(B2DynamicTree tree)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_GetProxyCount_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_GetProxyCount*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_GetProxyCount_Box2D_NET_B2DynamicTree_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_GetProxyCount(Box2D.NET.B2DynamicTree)">
+  b2DynamicTree_GetProxyCount(B2DynamicTree)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L782"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int b2DynamicTree_GetProxyCount(B2DynamicTree tree)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_GetRootBounds_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_GetRootBounds*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_GetRootBounds_Box2D_NET_B2DynamicTree_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_GetRootBounds(Box2D.NET.B2DynamicTree)">
+  b2DynamicTree_GetRootBounds(B2DynamicTree)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L918"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2AABB b2DynamicTree_GetRootBounds(B2DynamicTree tree)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2AABB.html">B2AABB</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_GetUserData_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_GetUserData*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_GetUserData_Box2D_NET_B2DynamicTree_System_Int32_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_GetUserData(Box2D.NET.B2DynamicTree,System.Int32)">
+  b2DynamicTree_GetUserData(B2DynamicTree, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L1098"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong b2DynamicTree_GetUserData(B2DynamicTree tree, int proxyId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>proxyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_MoveProxy_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_MoveProxy*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_MoveProxy_Box2D_NET_B2DynamicTree_System_Int32_Box2D_NET_B2AABB_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_MoveProxy(Box2D.NET.B2DynamicTree,System.Int32,Box2D.NET.B2AABB)">
+  b2DynamicTree_MoveProxy(B2DynamicTree, int, B2AABB)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L789"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2DynamicTree_MoveProxy(B2DynamicTree tree, int proxyId, B2AABB aabb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>proxyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>aabb</code> <a class="xref" href="Box2D.NET.B2AABB.html">B2AABB</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_Query_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_Query*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_Query__1_Box2D_NET_B2DynamicTree_Box2D_NET_B2AABB_System_UInt64_Box2D_NET_b2TreeQueryCallbackFcn___0____0__" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_Query``1(Box2D.NET.B2DynamicTree,Box2D.NET.B2AABB,System.UInt64,Box2D.NET.b2TreeQueryCallbackFcn{``0},``0@)">
+  b2DynamicTree_Query&lt;T&gt;(B2DynamicTree, B2AABB, ulong, b2TreeQueryCallbackFcn&lt;T&gt;, ref T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L1115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2TreeStats b2DynamicTree_Query&lt;T&gt;(B2DynamicTree tree, B2AABB aabb, ulong maskBits, b2TreeQueryCallbackFcn&lt;T&gt; callback, ref T context) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>aabb</code> <a class="xref" href="Box2D.NET.B2AABB.html">B2AABB</a></dt>
+    <dd></dd>
+    <dt><code>maskBits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="Box2D.NET.b2TreeQueryCallbackFcn-1.html">b2TreeQueryCallbackFcn</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>context</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2TreeStats.html">B2TreeStats</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_RayCast_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_RayCast*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_RayCast__1_Box2D_NET_B2DynamicTree_Box2D_NET_B2RayCastInput__System_UInt64_Box2D_NET_b2TreeRayCastCallbackFcn___0____0__" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_RayCast``1(Box2D.NET.B2DynamicTree,Box2D.NET.B2RayCastInput@,System.UInt64,Box2D.NET.b2TreeRayCastCallbackFcn{``0},``0@)">
+  b2DynamicTree_RayCast&lt;T&gt;(B2DynamicTree, ref B2RayCastInput, ulong, b2TreeRayCastCallbackFcn&lt;T&gt;, ref T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L1188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2TreeStats b2DynamicTree_RayCast&lt;T&gt;(B2DynamicTree tree, ref B2RayCastInput input, ulong maskBits, b2TreeRayCastCallbackFcn&lt;T&gt; callback, ref T context) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>input</code> <a class="xref" href="Box2D.NET.B2RayCastInput.html">B2RayCastInput</a></dt>
+    <dd></dd>
+    <dt><code>maskBits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="Box2D.NET.b2TreeRayCastCallbackFcn-1.html">b2TreeRayCastCallbackFcn</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>context</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2TreeStats.html">B2TreeStats</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_Rebuild_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_Rebuild*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_Rebuild_Box2D_NET_B2DynamicTree_System_Boolean_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_Rebuild(Box2D.NET.B2DynamicTree,System.Boolean)">
+  b2DynamicTree_Rebuild(B2DynamicTree, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L1897"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int b2DynamicTree_Rebuild(B2DynamicTree tree, bool fullBuild)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>fullBuild</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_SetCategoryBits_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_SetCategoryBits*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_SetCategoryBits_Box2D_NET_B2DynamicTree_System_Int32_System_UInt64_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_SetCategoryBits(Box2D.NET.B2DynamicTree,System.Int32,System.UInt64)">
+  b2DynamicTree_SetCategoryBits(B2DynamicTree, int, ulong)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L848"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2DynamicTree_SetCategoryBits(B2DynamicTree tree, int proxyId, ulong categoryBits)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>proxyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>categoryBits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_ShapeCast_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_ShapeCast*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_ShapeCast__1_Box2D_NET_B2DynamicTree_Box2D_NET_B2ShapeCastInput__System_UInt64_Box2D_NET_b2TreeShapeCastCallbackFcn___0____0__" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_ShapeCast``1(Box2D.NET.B2DynamicTree,Box2D.NET.B2ShapeCastInput@,System.UInt64,Box2D.NET.b2TreeShapeCastCallbackFcn{``0},``0@)">
+  b2DynamicTree_ShapeCast&lt;T&gt;(B2DynamicTree, ref B2ShapeCastInput, ulong, b2TreeShapeCastCallbackFcn&lt;T&gt;, ref T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L1321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2TreeStats b2DynamicTree_ShapeCast&lt;T&gt;(B2DynamicTree tree, ref B2ShapeCastInput input, ulong maskBits, b2TreeShapeCastCallbackFcn&lt;T&gt; callback, ref T context) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>input</code> <a class="xref" href="Box2D.NET.B2ShapeCastInput.html">B2ShapeCastInput</a></dt>
+    <dd></dd>
+    <dt><code>maskBits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="Box2D.NET.b2TreeShapeCastCallbackFcn-1.html">b2TreeShapeCastCallbackFcn</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>context</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2TreeStats.html">B2TreeStats</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_Validate_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_Validate*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_Validate_Box2D_NET_B2DynamicTree_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_Validate(Box2D.NET.B2DynamicTree)">
+  b2DynamicTree_Validate(B2DynamicTree)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L1032"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2DynamicTree_Validate(B2DynamicTree tree)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2DynamicTree_ValidateNoEnlarged_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_ValidateNoEnlarged*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2DynamicTree_ValidateNoEnlarged_Box2D_NET_B2DynamicTree_" data-uid="Box2D.NET.B2DynamicTrees.b2DynamicTree_ValidateNoEnlarged(Box2D.NET.B2DynamicTree)">
+  b2DynamicTree_ValidateNoEnlarged(B2DynamicTree)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L1063"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2DynamicTree_ValidateNoEnlarged(B2DynamicTree tree)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2FindBestSibling_" data-uid="Box2D.NET.B2DynamicTrees.b2FindBestSibling*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2FindBestSibling_Box2D_NET_B2DynamicTree_Box2D_NET_B2AABB_" data-uid="Box2D.NET.B2DynamicTrees.b2FindBestSibling(Box2D.NET.B2DynamicTree,Box2D.NET.B2AABB)">
+  b2FindBestSibling(B2DynamicTree, B2AABB)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int b2FindBestSibling(B2DynamicTree tree, B2AABB boxD)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>boxD</code> <a class="xref" href="Box2D.NET.B2AABB.html">B2AABB</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2FreeNode_" data-uid="Box2D.NET.B2DynamicTrees.b2FreeNode*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2FreeNode_Box2D_NET_B2DynamicTree_System_Int32_" data-uid="Box2D.NET.B2DynamicTrees.b2FreeNode(Box2D.NET.B2DynamicTree,System.Int32)">
+  b2FreeNode(B2DynamicTree, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2FreeNode(B2DynamicTree tree, int nodeId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>nodeId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2InsertLeaf_" data-uid="Box2D.NET.B2DynamicTrees.b2InsertLeaf*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2InsertLeaf_Box2D_NET_B2DynamicTree_System_Int32_System_Boolean_" data-uid="Box2D.NET.B2DynamicTrees.b2InsertLeaf(Box2D.NET.B2DynamicTree,System.Int32,System.Boolean)">
+  b2InsertLeaf(B2DynamicTree, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L597"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2InsertLeaf(B2DynamicTree tree, int leaf, bool shouldRotate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>leaf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>shouldRotate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2IsAllocated_" data-uid="Box2D.NET.B2DynamicTrees.b2IsAllocated*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2IsAllocated_Box2D_NET_B2TreeNode__" data-uid="Box2D.NET.B2DynamicTrees.b2IsAllocated(Box2D.NET.B2TreeNode@)">
+  b2IsAllocated(ref B2TreeNode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2IsAllocated(ref B2TreeNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="Box2D.NET.B2TreeNode.html">B2TreeNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2IsLeaf_" data-uid="Box2D.NET.B2DynamicTrees.b2IsLeaf*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2IsLeaf_Box2D_NET_B2TreeNode__" data-uid="Box2D.NET.B2DynamicTrees.b2IsLeaf(Box2D.NET.B2TreeNode@)">
+  b2IsLeaf(ref B2TreeNode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2IsLeaf(ref B2TreeNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="Box2D.NET.B2TreeNode.html">B2TreeNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2MaxUInt16_" data-uid="Box2D.NET.B2DynamicTrees.b2MaxUInt16*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2MaxUInt16_System_UInt16_System_UInt16_" data-uid="Box2D.NET.B2DynamicTrees.b2MaxUInt16(System.UInt16,System.UInt16)">
+  b2MaxUInt16(ushort, ushort)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ushort b2MaxUInt16(ushort a, ushort b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2PartitionMid_" data-uid="Box2D.NET.B2DynamicTrees.b2PartitionMid*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2PartitionMid_System_Span_System_Int32__System_Span_Box2D_NET_B2Vec2__System_Int32_" data-uid="Box2D.NET.B2DynamicTrees.b2PartitionMid(System.Span{System.Int32},System.Span{Box2D.NET.B2Vec2},System.Int32)">
+  b2PartitionMid(Span&lt;int&gt;, Span&lt;B2Vec2&gt;, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L1459"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int b2PartitionMid(Span&lt;int&gt; indices, Span&lt;B2Vec2&gt; centers, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>indices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>centers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2PartitionSAH_" data-uid="Box2D.NET.B2DynamicTrees.b2PartitionSAH*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2PartitionSAH_System_Int32___System_Int32___Box2D_NET_B2AABB___System_Int32_" data-uid="Box2D.NET.B2DynamicTrees.b2PartitionSAH(System.Int32[],System.Int32[],Box2D.NET.B2AABB[],System.Int32)">
+  b2PartitionSAH(int[], int[], B2AABB[], int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L1583"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int b2PartitionSAH(int[] indices, int[] binIndices, B2AABB[] boxes, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>indices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+    <dt><code>binIndices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+    <dt><code>boxes</code> <a class="xref" href="Box2D.NET.B2AABB.html">B2AABB</a>[]</dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2RemoveLeaf_" data-uid="Box2D.NET.B2DynamicTrees.b2RemoveLeaf*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2RemoveLeaf_Box2D_NET_B2DynamicTree_System_Int32_" data-uid="Box2D.NET.B2DynamicTrees.b2RemoveLeaf(Box2D.NET.B2DynamicTree,System.Int32)">
+  b2RemoveLeaf(B2DynamicTree, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L673"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2RemoveLeaf(B2DynamicTree tree, int leaf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>leaf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2DynamicTrees_b2RotateNodes_" data-uid="Box2D.NET.B2DynamicTrees.b2RotateNodes*"></a>
+
+  <h3 id="Box2D_NET_B2DynamicTrees_b2RotateNodes_Box2D_NET_B2DynamicTree_System_Int32_" data-uid="Box2D.NET.B2DynamicTrees.b2RotateNodes(Box2D.NET.B2DynamicTree,System.Int32)">
+  b2RotateNodes(B2DynamicTree, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2RotateNodes(B2DynamicTree tree, int iA)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Box2D.NET.B2DynamicTree.html">B2DynamicTree</a></dt>
+    <dd></dd>
+    <dt><code>iA</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2DynamicTrees.cs/#L15" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

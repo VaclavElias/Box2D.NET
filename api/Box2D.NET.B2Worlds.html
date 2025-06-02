@@ -1,0 +1,2839 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class B2Worlds | Box2D API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class B2Worlds | Box2D API ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ikpil/Box2D.NET/new/master/apiSpec/new?filename=Box2D_NET_B2Worlds.md&amp;value=---%0Auid%3A%20Box2D.NET.B2Worlds%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/box2d_logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Box2D.NET.B2Worlds">
+
+
+
+  <h1 id="Box2D_NET_B2Worlds" data-uid="Box2D.NET.B2Worlds" class="text-break">
+Class B2Worlds  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Box2D.html">Box2D</a>.<a class="xref" href="Box2D.NET.html">NET</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class B2Worlds</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">B2Worlds</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Box2D_NET_B2Worlds_DrawQueryCallback_" data-uid="Box2D.NET.B2Worlds.DrawQueryCallback*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_DrawQueryCallback_System_Int32_System_UInt64_Box2D_NET_B2DrawContext__" data-uid="Box2D.NET.B2Worlds.DrawQueryCallback(System.Int32,System.UInt64,Box2D.NET.B2DrawContext@)">
+  DrawQueryCallback(int, ulong, ref B2DrawContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L892"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DrawQueryCallback(int proxyId, ulong userData, ref B2DrawContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>proxyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2DrawContext.html">B2DrawContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_ExplosionCallback_" data-uid="Box2D.NET.B2Worlds.ExplosionCallback*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_ExplosionCallback_System_Int32_System_UInt64_Box2D_NET_B2ExplosionContext__" data-uid="Box2D.NET.B2Worlds.ExplosionCallback(System.Int32,System.UInt64,Box2D.NET.B2ExplosionContext@)">
+  ExplosionCallback(int, ulong, ref B2ExplosionContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2642"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ExplosionCallback(int proxyId, ulong userData, ref B2ExplosionContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>proxyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2ExplosionContext.html">B2ExplosionContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_MoverCastCallback_" data-uid="Box2D.NET.B2Worlds.MoverCastCallback*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_MoverCastCallback_Box2D_NET_B2ShapeCastInput__System_Int32_System_UInt64_Box2D_NET_B2WorldMoverCastContext__" data-uid="Box2D.NET.B2Worlds.MoverCastCallback(Box2D.NET.B2ShapeCastInput@,System.Int32,System.UInt64,Box2D.NET.B2WorldMoverCastContext@)">
+  MoverCastCallback(ref B2ShapeCastInput, int, ulong, ref B2WorldMoverCastContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2418"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float MoverCastCallback(ref B2ShapeCastInput input, int proxyId, ulong userData, ref B2WorldMoverCastContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="Box2D.NET.B2ShapeCastInput.html">B2ShapeCastInput</a></dt>
+    <dd></dd>
+    <dt><code>proxyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2WorldMoverCastContext.html">B2WorldMoverCastContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_RayCastCallback_" data-uid="Box2D.NET.B2Worlds.RayCastCallback*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_RayCastCallback_Box2D_NET_B2RayCastInput__System_Int32_System_UInt64_Box2D_NET_B2WorldRayCastContext__" data-uid="Box2D.NET.B2Worlds.RayCastCallback(Box2D.NET.B2RayCastInput@,System.Int32,System.UInt64,Box2D.NET.B2WorldRayCastContext@)">
+  RayCastCallback(ref B2RayCastInput, int, ulong, ref B2WorldRayCastContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float RayCastCallback(ref B2RayCastInput input, int proxyId, ulong userData, ref B2WorldRayCastContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="Box2D.NET.B2RayCastInput.html">B2RayCastInput</a></dt>
+    <dd></dd>
+    <dt><code>proxyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2WorldRayCastContext.html">B2WorldRayCastContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_ShapeCastCallback_" data-uid="Box2D.NET.B2Worlds.ShapeCastCallback*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_ShapeCastCallback_Box2D_NET_B2ShapeCastInput__System_Int32_System_UInt64_Box2D_NET_B2WorldRayCastContext__" data-uid="Box2D.NET.B2Worlds.ShapeCastCallback(Box2D.NET.B2ShapeCastInput@,System.Int32,System.UInt64,Box2D.NET.B2WorldRayCastContext@)">
+  ShapeCastCallback(ref B2ShapeCastInput, int, ulong, ref B2WorldRayCastContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ShapeCastCallback(ref B2ShapeCastInput input, int proxyId, ulong userData, ref B2WorldRayCastContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="Box2D.NET.B2ShapeCastInput.html">B2ShapeCastInput</a></dt>
+    <dd></dd>
+    <dt><code>proxyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2WorldRayCastContext.html">B2WorldRayCastContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_TreeCollideCallback_" data-uid="Box2D.NET.B2Worlds.TreeCollideCallback*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_TreeCollideCallback_System_Int32_System_UInt64_Box2D_NET_B2WorldMoverContext__" data-uid="Box2D.NET.B2Worlds.TreeCollideCallback(System.Int32,System.UInt64,Box2D.NET.B2WorldMoverContext@)">
+  TreeCollideCallback(int, ulong, ref B2WorldMoverContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2487"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TreeCollideCallback(int proxyId, ulong userData, ref B2WorldMoverContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>proxyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2WorldMoverContext.html">B2WorldMoverContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_TreeOverlapCallback_" data-uid="Box2D.NET.B2Worlds.TreeOverlapCallback*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_TreeOverlapCallback_System_Int32_System_UInt64_Box2D_NET_B2WorldOverlapContext__" data-uid="Box2D.NET.B2Worlds.TreeOverlapCallback(System.Int32,System.UInt64,Box2D.NET.B2WorldOverlapContext@)">
+  TreeOverlapCallback(int, ulong, ref B2WorldOverlapContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TreeOverlapCallback(int proxyId, ulong userData, ref B2WorldOverlapContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>proxyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2WorldOverlapContext.html">B2WorldOverlapContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2AddNonTouchingContact_" data-uid="Box2D.NET.B2Worlds.b2AddNonTouchingContact*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2AddNonTouchingContact_Box2D_NET_B2World_Box2D_NET_B2Contact_Box2D_NET_B2ContactSim_" data-uid="Box2D.NET.B2Worlds.b2AddNonTouchingContact(Box2D.NET.B2World,Box2D.NET.B2Contact,Box2D.NET.B2ContactSim)">
+  b2AddNonTouchingContact(B2World, B2Contact, B2ContactSim)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L482"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2AddNonTouchingContact(B2World world, B2Contact contact, B2ContactSim contactSim)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+    <dt><code>contact</code> <a class="xref" href="Box2D.NET.B2Contact.html">B2Contact</a></dt>
+    <dd></dd>
+    <dt><code>contactSim</code> <a class="xref" href="Box2D.NET.B2ContactSim.html">B2ContactSim</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2Body_IsValid_" data-uid="Box2D.NET.B2Worlds.b2Body_IsValid*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2Body_IsValid_Box2D_NET_B2BodyId_" data-uid="Box2D.NET.B2Worlds.b2Body_IsValid(Box2D.NET.B2BodyId)">
+  b2Body_IsValid(B2BodyId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1605"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2Body_IsValid(B2BodyId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="Box2D.NET.B2BodyId.html">B2BodyId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2Chain_IsValid_" data-uid="Box2D.NET.B2Worlds.b2Chain_IsValid*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2Chain_IsValid_Box2D_NET_B2ChainId_" data-uid="Box2D.NET.B2Worlds.b2Chain_IsValid(Box2D.NET.B2ChainId)">
+  b2Chain_IsValid(B2ChainId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1676"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2Chain_IsValid(B2ChainId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="Box2D.NET.B2ChainId.html">B2ChainId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2Collide_" data-uid="Box2D.NET.B2Worlds.b2Collide*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2Collide_Box2D_NET_B2StepContext_" data-uid="Box2D.NET.B2Worlds.b2Collide(Box2D.NET.B2StepContext)">
+  b2Collide(B2StepContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2Collide(B2StepContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Box2D.NET.B2StepContext.html">B2StepContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2CollideTask_" data-uid="Box2D.NET.B2Worlds.b2CollideTask*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2CollideTask_System_Int32_System_Int32_System_UInt32_System_Object_" data-uid="Box2D.NET.B2Worlds.b2CollideTask(System.Int32,System.Int32,System.UInt32,System.Object)">
+  b2CollideTask(int, int, uint, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2CollideTask(int startIndex, int endIndex, uint threadIndex, object context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>threadIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2CreateWorld_" data-uid="Box2D.NET.B2Worlds.b2CreateWorld*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2CreateWorld_Box2D_NET_B2WorldDef__" data-uid="Box2D.NET.B2Worlds.b2CreateWorld(Box2D.NET.B2WorldDef@)">
+  b2CreateWorld(ref B2WorldDef)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2WorldId b2CreateWorld(ref B2WorldDef def)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>def</code> <a class="xref" href="Box2D.NET.B2WorldDef.html">B2WorldDef</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2DefaultAddTaskFcn_" data-uid="Box2D.NET.B2Worlds.b2DefaultAddTaskFcn*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2DefaultAddTaskFcn_Box2D_NET_b2TaskCallback_System_Int32_System_Int32_System_Object_System_Object_" data-uid="Box2D.NET.B2Worlds.b2DefaultAddTaskFcn(Box2D.NET.b2TaskCallback,System.Int32,System.Int32,System.Object,System.Object)">
+  b2DefaultAddTaskFcn(b2TaskCallback, int, int, object, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object b2DefaultAddTaskFcn(b2TaskCallback task, int count, int minRange, object taskContext, object userContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>task</code> <a class="xref" href="Box2D.NET.b2TaskCallback.html">b2TaskCallback</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>minRange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>taskContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>userContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2DefaultFinishTaskFcn_" data-uid="Box2D.NET.B2Worlds.b2DefaultFinishTaskFcn*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2DefaultFinishTaskFcn_System_Object_System_Object_" data-uid="Box2D.NET.B2Worlds.b2DefaultFinishTaskFcn(System.Object,System.Object)">
+  b2DefaultFinishTaskFcn(object, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2DefaultFinishTaskFcn(object userTask, object userContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userTask</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>userContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2DefaultFrictionCallback_" data-uid="Box2D.NET.B2Worlds.b2DefaultFrictionCallback*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2DefaultFrictionCallback_System_Single_System_Int32_System_Single_System_Int32_" data-uid="Box2D.NET.B2Worlds.b2DefaultFrictionCallback(System.Single,System.Int32,System.Single,System.Int32)">
+  b2DefaultFrictionCallback(float, int, float, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float b2DefaultFrictionCallback(float frictionA, int materialA, float frictionB, int materialB)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frictionA</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>materialA</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>frictionB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>materialB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2DefaultRestitutionCallback_" data-uid="Box2D.NET.B2Worlds.b2DefaultRestitutionCallback*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2DefaultRestitutionCallback_System_Single_System_Int32_System_Single_System_Int32_" data-uid="Box2D.NET.B2Worlds.b2DefaultRestitutionCallback(System.Single,System.Int32,System.Single,System.Int32)">
+  b2DefaultRestitutionCallback(float, int, float, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float b2DefaultRestitutionCallback(float restitutionA, int materialA, float restitutionB, int materialB)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>restitutionA</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>materialA</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>restitutionB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>materialB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2DestroyWorld_" data-uid="Box2D.NET.B2Worlds.b2DestroyWorld*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2DestroyWorld_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2DestroyWorld(Box2D.NET.B2WorldId)">
+  b2DestroyWorld(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2DestroyWorld(B2WorldId worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2DrawShape_" data-uid="Box2D.NET.B2Worlds.b2DrawShape*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2DrawShape_Box2D_NET_B2DebugDraw_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2HexColor_" data-uid="Box2D.NET.B2Worlds.b2DrawShape(Box2D.NET.B2DebugDraw,Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2HexColor)">
+  b2DrawShape(B2DebugDraw, B2Shape, B2Transform, B2HexColor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L838"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2DrawShape(B2DebugDraw draw, B2Shape shape, B2Transform xf, B2HexColor color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>draw</code> <a class="xref" href="Box2D.NET.B2DebugDraw.html">B2DebugDraw</a></dt>
+    <dd></dd>
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xf</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>color</code> <a class="xref" href="Box2D.NET.B2HexColor.html">B2HexColor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2DrawWithBounds_" data-uid="Box2D.NET.B2Worlds.b2DrawWithBounds*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2DrawWithBounds_Box2D_NET_B2World_Box2D_NET_B2DebugDraw_" data-uid="Box2D.NET.B2Worlds.b2DrawWithBounds(Box2D.NET.B2World,Box2D.NET.B2DebugDraw)">
+  b2DrawWithBounds(B2World, B2DebugDraw)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L982"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2DrawWithBounds(B2World world, B2DebugDraw draw)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+    <dt><code>draw</code> <a class="xref" href="Box2D.NET.B2DebugDraw.html">B2DebugDraw</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2GetWorld_" data-uid="Box2D.NET.B2Worlds.b2GetWorld*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2GetWorld_System_Int32_" data-uid="Box2D.NET.B2Worlds.b2GetWorld(System.Int32)">
+  b2GetWorld(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2World b2GetWorld(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2GetWorldFromId_" data-uid="Box2D.NET.B2Worlds.b2GetWorldFromId*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2GetWorldFromId_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2GetWorldFromId(Box2D.NET.B2WorldId)">
+  b2GetWorldFromId(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2World b2GetWorldFromId(B2WorldId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2GetWorldLocked_" data-uid="Box2D.NET.B2Worlds.b2GetWorldLocked*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2GetWorldLocked_System_Int32_" data-uid="Box2D.NET.B2Worlds.b2GetWorldLocked(System.Int32)">
+  b2GetWorldLocked(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2World b2GetWorldLocked(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2Joint_IsValid_" data-uid="Box2D.NET.B2Worlds.b2Joint_IsValid*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2Joint_IsValid_Box2D_NET_B2JointId_" data-uid="Box2D.NET.B2Worlds.b2Joint_IsValid(Box2D.NET.B2JointId)">
+  b2Joint_IsValid(B2JointId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1708"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2Joint_IsValid(B2JointId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="Box2D.NET.B2JointId.html">B2JointId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2RayCastClosestFcn_" data-uid="Box2D.NET.B2Worlds.b2RayCastClosestFcn*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2RayCastClosestFcn_Box2D_NET_B2ShapeId_Box2D_NET_B2Vec2_Box2D_NET_B2Vec2_System_Single_System_Object_" data-uid="Box2D.NET.B2Worlds.b2RayCastClosestFcn(Box2D.NET.B2ShapeId,Box2D.NET.B2Vec2,Box2D.NET.B2Vec2,System.Single,System.Object)">
+  b2RayCastClosestFcn(B2ShapeId, B2Vec2, B2Vec2, float, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float b2RayCastClosestFcn(B2ShapeId shapeId, B2Vec2 point, B2Vec2 normal, float fraction, object context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shapeId</code> <a class="xref" href="Box2D.NET.B2ShapeId.html">B2ShapeId</a></dt>
+    <dd></dd>
+    <dt><code>point</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+    <dt><code>normal</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+    <dt><code>fraction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2RemoveNonTouchingContact_" data-uid="Box2D.NET.B2Worlds.b2RemoveNonTouchingContact*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2RemoveNonTouchingContact_Box2D_NET_B2World_System_Int32_System_Int32_" data-uid="Box2D.NET.B2Worlds.b2RemoveNonTouchingContact(Box2D.NET.B2World,System.Int32,System.Int32)">
+  b2RemoveNonTouchingContact(B2World, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L494"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2RemoveNonTouchingContact(B2World world, int setIndex, int localIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+    <dt><code>setIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>localIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2Shape_IsValid_" data-uid="Box2D.NET.B2Worlds.b2Shape_IsValid*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2Shape_IsValid_Box2D_NET_B2ShapeId_" data-uid="Box2D.NET.B2Worlds.b2Shape_IsValid(Box2D.NET.B2ShapeId)">
+  b2Shape_IsValid(B2ShapeId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1644"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2Shape_IsValid(B2ShapeId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="Box2D.NET.B2ShapeId.html">B2ShapeId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2UpdateTreesTask_" data-uid="Box2D.NET.B2Worlds.b2UpdateTreesTask*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2UpdateTreesTask_System_Int32_System_Int32_System_UInt32_System_Object_" data-uid="Box2D.NET.B2Worlds.b2UpdateTreesTask(System.Int32,System.Int32,System.UInt32,System.Object)">
+  b2UpdateTreesTask(int, int, uint, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L468"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2UpdateTreesTask(int startIndex, int endIndex, uint threadIndex, object context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>threadIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2ValidateConnectivity_" data-uid="Box2D.NET.B2Worlds.b2ValidateConnectivity*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2ValidateConnectivity_Box2D_NET_B2World_" data-uid="Box2D.NET.B2Worlds.b2ValidateConnectivity(Box2D.NET.B2World)">
+  b2ValidateConnectivity(B2World)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L3259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2ValidateConnectivity(B2World world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2ValidateContacts_" data-uid="Box2D.NET.B2Worlds.b2ValidateContacts*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2ValidateContacts_Box2D_NET_B2World_" data-uid="Box2D.NET.B2Worlds.b2ValidateContacts(Box2D.NET.B2World)">
+  b2ValidateContacts(B2World)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L3269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2ValidateContacts(B2World world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2ValidateSolverSets_" data-uid="Box2D.NET.B2Worlds.b2ValidateSolverSets*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2ValidateSolverSets_Box2D_NET_B2World_" data-uid="Box2D.NET.B2Worlds.b2ValidateSolverSets(Box2D.NET.B2World)">
+  b2ValidateSolverSets(B2World)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L3264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2ValidateSolverSets(B2World world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_CastMover_" data-uid="Box2D.NET.B2Worlds.b2World_CastMover*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_CastMover_Box2D_NET_B2WorldId_Box2D_NET_B2Capsule__Box2D_NET_B2Vec2_Box2D_NET_B2QueryFilter_" data-uid="Box2D.NET.B2Worlds.b2World_CastMover(Box2D.NET.B2WorldId,Box2D.NET.B2Capsule@,Box2D.NET.B2Vec2,Box2D.NET.B2QueryFilter)">
+  b2World_CastMover(B2WorldId, ref B2Capsule, B2Vec2, B2QueryFilter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2449"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float b2World_CastMover(B2WorldId worldId, ref B2Capsule mover, B2Vec2 translation, B2QueryFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>mover</code> <a class="xref" href="Box2D.NET.B2Capsule.html">B2Capsule</a></dt>
+    <dd></dd>
+    <dt><code>translation</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="Box2D.NET.B2QueryFilter.html">B2QueryFilter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_CastRay_" data-uid="Box2D.NET.B2Worlds.b2World_CastRay*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_CastRay_Box2D_NET_B2WorldId_Box2D_NET_B2Vec2_Box2D_NET_B2Vec2_Box2D_NET_B2QueryFilter_Box2D_NET_b2CastResultFcn_System_Object_" data-uid="Box2D.NET.B2Worlds.b2World_CastRay(Box2D.NET.B2WorldId,Box2D.NET.B2Vec2,Box2D.NET.B2Vec2,Box2D.NET.B2QueryFilter,Box2D.NET.b2CastResultFcn,System.Object)">
+  b2World_CastRay(B2WorldId, B2Vec2, B2Vec2, B2QueryFilter, b2CastResultFcn, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2TreeStats b2World_CastRay(B2WorldId worldId, B2Vec2 origin, B2Vec2 translation, B2QueryFilter filter, b2CastResultFcn fcn, object context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>origin</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+    <dt><code>translation</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="Box2D.NET.B2QueryFilter.html">B2QueryFilter</a></dt>
+    <dd></dd>
+    <dt><code>fcn</code> <a class="xref" href="Box2D.NET.b2CastResultFcn.html">b2CastResultFcn</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2TreeStats.html">B2TreeStats</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_CastRayClosest_" data-uid="Box2D.NET.B2Worlds.b2World_CastRayClosest*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_CastRayClosest_Box2D_NET_B2WorldId_Box2D_NET_B2Vec2_Box2D_NET_B2Vec2_Box2D_NET_B2QueryFilter_" data-uid="Box2D.NET.B2Worlds.b2World_CastRayClosest(Box2D.NET.B2WorldId,Box2D.NET.B2Vec2,Box2D.NET.B2Vec2,Box2D.NET.B2QueryFilter)">
+  b2World_CastRayClosest(B2WorldId, B2Vec2, B2Vec2, B2QueryFilter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2304"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2RayResult b2World_CastRayClosest(B2WorldId worldId, B2Vec2 origin, B2Vec2 translation, B2QueryFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>origin</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+    <dt><code>translation</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="Box2D.NET.B2QueryFilter.html">B2QueryFilter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2RayResult.html">B2RayResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_CastShape_" data-uid="Box2D.NET.B2Worlds.b2World_CastShape*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_CastShape_Box2D_NET_B2WorldId_Box2D_NET_B2ShapeProxy__Box2D_NET_B2Vec2_Box2D_NET_B2QueryFilter_Box2D_NET_b2CastResultFcn_System_Object_" data-uid="Box2D.NET.B2Worlds.b2World_CastShape(Box2D.NET.B2WorldId,Box2D.NET.B2ShapeProxy@,Box2D.NET.B2Vec2,Box2D.NET.B2QueryFilter,Box2D.NET.b2CastResultFcn,System.Object)">
+  b2World_CastShape(B2WorldId, ref B2ShapeProxy, B2Vec2, B2QueryFilter, b2CastResultFcn, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2TreeStats b2World_CastShape(B2WorldId worldId, ref B2ShapeProxy proxy, B2Vec2 translation, B2QueryFilter filter, b2CastResultFcn fcn, object context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>proxy</code> <a class="xref" href="Box2D.NET.B2ShapeProxy.html">B2ShapeProxy</a></dt>
+    <dd></dd>
+    <dt><code>translation</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="Box2D.NET.B2QueryFilter.html">B2QueryFilter</a></dt>
+    <dd></dd>
+    <dt><code>fcn</code> <a class="xref" href="Box2D.NET.b2CastResultFcn.html">b2CastResultFcn</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2TreeStats.html">B2TreeStats</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_CollideMover_" data-uid="Box2D.NET.B2Worlds.b2World_CollideMover*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_CollideMover_Box2D_NET_B2WorldId_Box2D_NET_B2Capsule__Box2D_NET_B2QueryFilter_Box2D_NET_b2PlaneResultFcn_System_Object_" data-uid="Box2D.NET.B2Worlds.b2World_CollideMover(Box2D.NET.B2WorldId,Box2D.NET.B2Capsule@,Box2D.NET.B2QueryFilter,Box2D.NET.b2PlaneResultFcn,System.Object)">
+  b2World_CollideMover(B2WorldId, ref B2Capsule, B2QueryFilter, b2PlaneResultFcn, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2522"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_CollideMover(B2WorldId worldId, ref B2Capsule mover, B2QueryFilter filter, b2PlaneResultFcn fcn, object context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>mover</code> <a class="xref" href="Box2D.NET.B2Capsule.html">B2Capsule</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="Box2D.NET.B2QueryFilter.html">B2QueryFilter</a></dt>
+    <dd></dd>
+    <dt><code>fcn</code> <a class="xref" href="Box2D.NET.b2PlaneResultFcn.html">b2PlaneResultFcn</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_Draw_" data-uid="Box2D.NET.B2Worlds.b2World_Draw*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_Draw_Box2D_NET_B2WorldId_Box2D_NET_B2DebugDraw_" data-uid="Box2D.NET.B2Worlds.b2World_Draw(Box2D.NET.B2WorldId,Box2D.NET.B2DebugDraw)">
+  b2World_Draw(B2WorldId, B2DebugDraw)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_Draw(B2WorldId worldId, B2DebugDraw draw)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>draw</code> <a class="xref" href="Box2D.NET.B2DebugDraw.html">B2DebugDraw</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_DumpMemoryStats_" data-uid="Box2D.NET.B2Worlds.b2World_DumpMemoryStats*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_DumpMemoryStats_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2World_DumpMemoryStats(Box2D.NET.B2WorldId)">
+  b2World_DumpMemoryStats(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1987"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_DumpMemoryStats(B2WorldId worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_EnableContinuous_" data-uid="Box2D.NET.B2Worlds.b2World_EnableContinuous*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_EnableContinuous_Box2D_NET_B2WorldId_System_Boolean_" data-uid="Box2D.NET.B2Worlds.b2World_EnableContinuous(Box2D.NET.B2WorldId,System.Boolean)">
+  b2World_EnableContinuous(B2WorldId, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1803"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_EnableContinuous(B2WorldId worldId, bool flag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>flag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_EnableSleeping_" data-uid="Box2D.NET.B2Worlds.b2World_EnableSleeping*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_EnableSleeping_Box2D_NET_B2WorldId_System_Boolean_" data-uid="Box2D.NET.B2Worlds.b2World_EnableSleeping(Box2D.NET.B2WorldId,System.Boolean)">
+  b2World_EnableSleeping(B2WorldId, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1740"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_EnableSleeping(B2WorldId worldId, bool flag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>flag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_EnableSpeculative_" data-uid="Box2D.NET.B2Worlds.b2World_EnableSpeculative*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_EnableSpeculative_Box2D_NET_B2WorldId_System_Boolean_" data-uid="Box2D.NET.B2Worlds.b2World_EnableSpeculative(Box2D.NET.B2WorldId,System.Boolean)">
+  b2World_EnableSpeculative(B2WorldId, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2764"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_EnableSpeculative(B2WorldId worldId, bool flag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>flag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_EnableWarmStarting_" data-uid="Box2D.NET.B2Worlds.b2World_EnableWarmStarting*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_EnableWarmStarting_Box2D_NET_B2WorldId_System_Boolean_" data-uid="Box2D.NET.B2Worlds.b2World_EnableWarmStarting(Box2D.NET.B2WorldId,System.Boolean)">
+  b2World_EnableWarmStarting(B2WorldId, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1778"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_EnableWarmStarting(B2WorldId worldId, bool flag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>flag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_Explode_" data-uid="Box2D.NET.B2Worlds.b2World_Explode*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_Explode_Box2D_NET_B2WorldId_Box2D_NET_B2ExplosionDef__" data-uid="Box2D.NET.B2Worlds.b2World_Explode(Box2D.NET.B2WorldId,Box2D.NET.B2ExplosionDef@)">
+  b2World_Explode(B2WorldId, ref B2ExplosionDef)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2720"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_Explode(B2WorldId worldId, ref B2ExplosionDef explosionDef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>explosionDef</code> <a class="xref" href="Box2D.NET.B2ExplosionDef.html">B2ExplosionDef</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_GetAwakeBodyCount_" data-uid="Box2D.NET.B2Worlds.b2World_GetAwakeBodyCount*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_GetAwakeBodyCount_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2World_GetAwakeBodyCount(Box2D.NET.B2WorldId)">
+  b2World_GetAwakeBodyCount(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1796"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int b2World_GetAwakeBodyCount(B2WorldId worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_GetBodyEvents_" data-uid="Box2D.NET.B2Worlds.b2World_GetBodyEvents*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_GetBodyEvents_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2World_GetBodyEvents(Box2D.NET.B2WorldId)">
+  b2World_GetBodyEvents(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1519"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2BodyEvents b2World_GetBodyEvents(B2WorldId worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2BodyEvents.html">B2BodyEvents</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_GetContactEvents_" data-uid="Box2D.NET.B2Worlds.b2World_GetContactEvents*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_GetContactEvents_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2World_GetContactEvents(Box2D.NET.B2WorldId)">
+  b2World_GetContactEvents(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1558"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2ContactEvents b2World_GetContactEvents(B2WorldId worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2ContactEvents.html">B2ContactEvents</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_GetCounters_" data-uid="Box2D.NET.B2Worlds.b2World_GetCounters*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_GetCounters_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2World_GetCounters(Box2D.NET.B2WorldId)">
+  b2World_GetCounters(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1910"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Counters b2World_GetCounters(B2WorldId worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Counters.html">B2Counters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_GetGravity_" data-uid="Box2D.NET.B2Worlds.b2World_GetGravity*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_GetGravity_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2World_GetGravity(Box2D.NET.B2WorldId)">
+  b2World_GetGravity(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2636"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Vec2 b2World_GetGravity(B2WorldId worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_GetHitEventThreshold_" data-uid="Box2D.NET.B2Worlds.b2World_GetHitEventThreshold*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_GetHitEventThreshold_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2World_GetHitEventThreshold(Box2D.NET.B2WorldId)">
+  b2World_GetHitEventThreshold(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1851"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float b2World_GetHitEventThreshold(B2WorldId worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_GetMaximumLinearSpeed_" data-uid="Box2D.NET.B2Worlds.b2World_GetMaximumLinearSpeed*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_GetMaximumLinearSpeed_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2World_GetMaximumLinearSpeed(Box2D.NET.B2WorldId)">
+  b2World_GetMaximumLinearSpeed(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1898"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float b2World_GetMaximumLinearSpeed(B2WorldId worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_GetProfile_" data-uid="Box2D.NET.B2Worlds.b2World_GetProfile*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_GetProfile_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2World_GetProfile(Box2D.NET.B2WorldId)">
+  b2World_GetProfile(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1904"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Profile b2World_GetProfile(B2WorldId worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Profile.html">B2Profile</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_GetRestitutionThreshold_" data-uid="Box2D.NET.B2Worlds.b2World_GetRestitutionThreshold*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_GetRestitutionThreshold_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2World_GetRestitutionThreshold(Box2D.NET.B2WorldId)">
+  b2World_GetRestitutionThreshold(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1833"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float b2World_GetRestitutionThreshold(B2WorldId worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_GetSensorEvents_" data-uid="Box2D.NET.B2Worlds.b2World_GetSensorEvents*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_GetSensorEvents_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2World_GetSensorEvents(Box2D.NET.B2WorldId)">
+  b2World_GetSensorEvents(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1533"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2SensorEvents b2World_GetSensorEvents(B2WorldId worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2SensorEvents.html">B2SensorEvents</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_GetUserData_" data-uid="Box2D.NET.B2Worlds.b2World_GetUserData*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_GetUserData_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2World_GetUserData(Box2D.NET.B2WorldId)">
+  b2World_GetUserData(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1945"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object b2World_GetUserData(B2WorldId worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_IsContinuousEnabled_" data-uid="Box2D.NET.B2Worlds.b2World_IsContinuousEnabled*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_IsContinuousEnabled_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2World_IsContinuousEnabled(Box2D.NET.B2WorldId)">
+  b2World_IsContinuousEnabled(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1815"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2World_IsContinuousEnabled(B2WorldId worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_IsSleepingEnabled_" data-uid="Box2D.NET.B2Worlds.b2World_IsSleepingEnabled*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_IsSleepingEnabled_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2World_IsSleepingEnabled(Box2D.NET.B2WorldId)">
+  b2World_IsSleepingEnabled(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1770"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2World_IsSleepingEnabled(B2WorldId worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_IsValid_" data-uid="Box2D.NET.B2Worlds.b2World_IsValid*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_IsValid_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2World_IsValid(Box2D.NET.B2WorldId)">
+  b2World_IsValid(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1587"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2World_IsValid(B2WorldId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_IsWarmStartingEnabled_" data-uid="Box2D.NET.B2Worlds.b2World_IsWarmStartingEnabled*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_IsWarmStartingEnabled_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2World_IsWarmStartingEnabled(Box2D.NET.B2WorldId)">
+  b2World_IsWarmStartingEnabled(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1790"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2World_IsWarmStartingEnabled(B2WorldId worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_OverlapAABB_" data-uid="Box2D.NET.B2Worlds.b2World_OverlapAABB*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_OverlapAABB_Box2D_NET_B2WorldId_Box2D_NET_B2AABB_Box2D_NET_B2QueryFilter_Box2D_NET_b2OverlapResultFcn_System_Object_" data-uid="Box2D.NET.B2Worlds.b2World_OverlapAABB(Box2D.NET.B2WorldId,Box2D.NET.B2AABB,Box2D.NET.B2QueryFilter,Box2D.NET.b2OverlapResultFcn,System.Object)">
+  b2World_OverlapAABB(B2WorldId, B2AABB, B2QueryFilter, b2OverlapResultFcn, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2TreeStats b2World_OverlapAABB(B2WorldId worldId, B2AABB aabb, B2QueryFilter filter, b2OverlapResultFcn fcn, object context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>aabb</code> <a class="xref" href="Box2D.NET.B2AABB.html">B2AABB</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="Box2D.NET.B2QueryFilter.html">B2QueryFilter</a></dt>
+    <dd></dd>
+    <dt><code>fcn</code> <a class="xref" href="Box2D.NET.b2OverlapResultFcn.html">b2OverlapResultFcn</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2TreeStats.html">B2TreeStats</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_OverlapShape_" data-uid="Box2D.NET.B2Worlds.b2World_OverlapShape*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_OverlapShape_Box2D_NET_B2WorldId_Box2D_NET_B2ShapeProxy__Box2D_NET_B2QueryFilter_Box2D_NET_b2OverlapResultFcn_System_Object_" data-uid="Box2D.NET.B2Worlds.b2World_OverlapShape(Box2D.NET.B2WorldId,Box2D.NET.B2ShapeProxy@,Box2D.NET.B2QueryFilter,Box2D.NET.b2OverlapResultFcn,System.Object)">
+  b2World_OverlapShape(B2WorldId, ref B2ShapeProxy, B2QueryFilter, b2OverlapResultFcn, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2TreeStats b2World_OverlapShape(B2WorldId worldId, ref B2ShapeProxy proxy, B2QueryFilter filter, b2OverlapResultFcn fcn, object context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>proxy</code> <a class="xref" href="Box2D.NET.B2ShapeProxy.html">B2ShapeProxy</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="Box2D.NET.B2QueryFilter.html">B2QueryFilter</a></dt>
+    <dd></dd>
+    <dt><code>fcn</code> <a class="xref" href="Box2D.NET.b2OverlapResultFcn.html">b2OverlapResultFcn</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2TreeStats.html">B2TreeStats</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_RebuildStaticTree_" data-uid="Box2D.NET.B2Worlds.b2World_RebuildStaticTree*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_RebuildStaticTree_Box2D_NET_B2WorldId_" data-uid="Box2D.NET.B2Worlds.b2World_RebuildStaticTree(Box2D.NET.B2WorldId)">
+  b2World_RebuildStaticTree(B2WorldId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2751"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_RebuildStaticTree(B2WorldId worldId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_SetContactTuning_" data-uid="Box2D.NET.B2Worlds.b2World_SetContactTuning*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_SetContactTuning_Box2D_NET_B2WorldId_System_Single_System_Single_System_Single_" data-uid="Box2D.NET.B2Worlds.b2World_SetContactTuning(Box2D.NET.B2WorldId,System.Single,System.Single,System.Single)">
+  b2World_SetContactTuning(B2WorldId, float, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1857"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_SetContactTuning(B2WorldId worldId, float hertz, float dampingRatio, float pushSpeed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>hertz</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>dampingRatio</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>pushSpeed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_SetCustomFilterCallback_" data-uid="Box2D.NET.B2Worlds.b2World_SetCustomFilterCallback*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_SetCustomFilterCallback_Box2D_NET_B2WorldId_Box2D_NET_b2CustomFilterFcn_System_Object_" data-uid="Box2D.NET.B2Worlds.b2World_SetCustomFilterCallback(Box2D.NET.B2WorldId,Box2D.NET.b2CustomFilterFcn,System.Object)">
+  b2World_SetCustomFilterCallback(B2WorldId, b2CustomFilterFcn, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2616"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_SetCustomFilterCallback(B2WorldId worldId, b2CustomFilterFcn fcn, object context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>fcn</code> <a class="xref" href="Box2D.NET.b2CustomFilterFcn.html">b2CustomFilterFcn</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_SetFrictionCallback_" data-uid="Box2D.NET.B2Worlds.b2World_SetFrictionCallback*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_SetFrictionCallback_Box2D_NET_B2WorldId_Box2D_NET_b2FrictionCallback_" data-uid="Box2D.NET.B2Worlds.b2World_SetFrictionCallback(Box2D.NET.B2WorldId,Box2D.NET.b2FrictionCallback)">
+  b2World_SetFrictionCallback(B2WorldId, b2FrictionCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1951"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_SetFrictionCallback(B2WorldId worldId, b2FrictionCallback callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="Box2D.NET.b2FrictionCallback.html">b2FrictionCallback</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_SetGravity_" data-uid="Box2D.NET.B2Worlds.b2World_SetGravity*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_SetGravity_Box2D_NET_B2WorldId_Box2D_NET_B2Vec2_" data-uid="Box2D.NET.B2Worlds.b2World_SetGravity(Box2D.NET.B2WorldId,Box2D.NET.B2Vec2)">
+  b2World_SetGravity(B2WorldId, B2Vec2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2630"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_SetGravity(B2WorldId worldId, B2Vec2 gravity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>gravity</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_SetHitEventThreshold_" data-uid="Box2D.NET.B2Worlds.b2World_SetHitEventThreshold*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_SetHitEventThreshold_Box2D_NET_B2WorldId_System_Single_" data-uid="Box2D.NET.B2Worlds.b2World_SetHitEventThreshold(Box2D.NET.B2WorldId,System.Single)">
+  b2World_SetHitEventThreshold(B2WorldId, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1839"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_SetHitEventThreshold(B2WorldId worldId, float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_SetJointTuning_" data-uid="Box2D.NET.B2Worlds.b2World_SetJointTuning*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_SetJointTuning_Box2D_NET_B2WorldId_System_Single_System_Single_" data-uid="Box2D.NET.B2Worlds.b2World_SetJointTuning(Box2D.NET.B2WorldId,System.Single,System.Single)">
+  b2World_SetJointTuning(B2WorldId, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1871"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_SetJointTuning(B2WorldId worldId, float hertz, float dampingRatio)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>hertz</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>dampingRatio</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_SetMaximumLinearSpeed_" data-uid="Box2D.NET.B2Worlds.b2World_SetMaximumLinearSpeed*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_SetMaximumLinearSpeed_Box2D_NET_B2WorldId_System_Single_" data-uid="Box2D.NET.B2Worlds.b2World_SetMaximumLinearSpeed(Box2D.NET.B2WorldId,System.Single)">
+  b2World_SetMaximumLinearSpeed(B2WorldId, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1884"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_SetMaximumLinearSpeed(B2WorldId worldId, float maximumLinearSpeed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>maximumLinearSpeed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_SetPreSolveCallback_" data-uid="Box2D.NET.B2Worlds.b2World_SetPreSolveCallback*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_SetPreSolveCallback_Box2D_NET_B2WorldId_Box2D_NET_b2PreSolveFcn_System_Object_" data-uid="Box2D.NET.B2Worlds.b2World_SetPreSolveCallback(Box2D.NET.B2WorldId,Box2D.NET.b2PreSolveFcn,System.Object)">
+  b2World_SetPreSolveCallback(B2WorldId, b2PreSolveFcn, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L2623"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_SetPreSolveCallback(B2WorldId worldId, b2PreSolveFcn fcn, object context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>fcn</code> <a class="xref" href="Box2D.NET.b2PreSolveFcn.html">b2PreSolveFcn</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_SetRestitutionCallback_" data-uid="Box2D.NET.B2Worlds.b2World_SetRestitutionCallback*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_SetRestitutionCallback_Box2D_NET_B2WorldId_Box2D_NET_b2RestitutionCallback_" data-uid="Box2D.NET.B2Worlds.b2World_SetRestitutionCallback(Box2D.NET.B2WorldId,Box2D.NET.b2RestitutionCallback)">
+  b2World_SetRestitutionCallback(B2WorldId, b2RestitutionCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1969"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_SetRestitutionCallback(B2WorldId worldId, b2RestitutionCallback callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="Box2D.NET.b2RestitutionCallback.html">b2RestitutionCallback</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_SetRestitutionThreshold_" data-uid="Box2D.NET.B2Worlds.b2World_SetRestitutionThreshold*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_SetRestitutionThreshold_Box2D_NET_B2WorldId_System_Single_" data-uid="Box2D.NET.B2Worlds.b2World_SetRestitutionThreshold(Box2D.NET.B2WorldId,System.Single)">
+  b2World_SetRestitutionThreshold(B2WorldId, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1821"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_SetRestitutionThreshold(B2WorldId worldId, float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_SetUserData_" data-uid="Box2D.NET.B2Worlds.b2World_SetUserData*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_SetUserData_Box2D_NET_B2WorldId_System_Object_" data-uid="Box2D.NET.B2Worlds.b2World_SetUserData(Box2D.NET.B2WorldId,System.Object)">
+  b2World_SetUserData(B2WorldId, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L1939"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_SetUserData(B2WorldId worldId, object userData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Worlds_b2World_Step_" data-uid="Box2D.NET.B2Worlds.b2World_Step*"></a>
+
+  <h3 id="Box2D_NET_B2Worlds_b2World_Step_Box2D_NET_B2WorldId_System_Single_System_Int32_" data-uid="Box2D.NET.B2Worlds.b2World_Step(Box2D.NET.B2WorldId,System.Single,System.Int32)">
+  b2World_Step(B2WorldId, float, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L717"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2World_Step(B2WorldId worldId, float timeStep, int subStepCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldId</code> <a class="xref" href="Box2D.NET.B2WorldId.html">B2WorldId</a></dt>
+    <dd></dd>
+    <dt><code>timeStep</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>subStepCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Worlds.cs/#L36" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

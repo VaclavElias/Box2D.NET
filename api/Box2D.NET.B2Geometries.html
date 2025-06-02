@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class B2Geometries | Box2D API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class B2Geometries | Box2D API ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ikpil/Box2D.NET/new/master/apiSpec/new?filename=Box2D_NET_B2Geometries.md&amp;value=---%0Auid%3A%20Box2D.NET.B2Geometries%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/box2d_logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Box2D.NET.B2Geometries">
+
+
+
+  <h1 id="Box2D_NET_B2Geometries" data-uid="Box2D.NET.B2Geometries" class="text-break">
+Class B2Geometries  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Box2D.html">Box2D</a>.<a class="xref" href="Box2D.NET.html">NET</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class B2Geometries</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">B2Geometries</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Box2D_NET_B2Geometries_b2CollideMoverAndCapsule_" data-uid="Box2D.NET.B2Geometries.b2CollideMoverAndCapsule*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2CollideMoverAndCapsule_Box2D_NET_B2Capsule__Box2D_NET_B2Capsule__" data-uid="Box2D.NET.B2Geometries.b2CollideMoverAndCapsule(Box2D.NET.B2Capsule@,Box2D.NET.B2Capsule@)">
+  b2CollideMoverAndCapsule(ref B2Capsule, ref B2Capsule)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L1024"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2PlaneResult b2CollideMoverAndCapsule(ref B2Capsule shape, ref B2Capsule mover)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Capsule.html">B2Capsule</a></dt>
+    <dd></dd>
+    <dt><code>mover</code> <a class="xref" href="Box2D.NET.B2Capsule.html">B2Capsule</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2PlaneResult.html">B2PlaneResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2CollideMoverAndCircle_" data-uid="Box2D.NET.B2Geometries.b2CollideMoverAndCircle*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2CollideMoverAndCircle_Box2D_NET_B2Circle__Box2D_NET_B2Capsule__" data-uid="Box2D.NET.B2Geometries.b2CollideMoverAndCircle(Box2D.NET.B2Circle@,Box2D.NET.B2Capsule@)">
+  b2CollideMoverAndCircle(ref B2Circle, ref B2Capsule)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L1001"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2PlaneResult b2CollideMoverAndCircle(ref B2Circle shape, ref B2Capsule mover)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Circle.html">B2Circle</a></dt>
+    <dd></dd>
+    <dt><code>mover</code> <a class="xref" href="Box2D.NET.B2Capsule.html">B2Capsule</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2PlaneResult.html">B2PlaneResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2CollideMoverAndPolygon_" data-uid="Box2D.NET.B2Geometries.b2CollideMoverAndPolygon*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2CollideMoverAndPolygon_Box2D_NET_B2Polygon__Box2D_NET_B2Capsule__" data-uid="Box2D.NET.B2Geometries.b2CollideMoverAndPolygon(Box2D.NET.B2Polygon@,Box2D.NET.B2Capsule@)">
+  b2CollideMoverAndPolygon(ref B2Polygon, ref B2Capsule)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L1047"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2PlaneResult b2CollideMoverAndPolygon(ref B2Polygon shape, ref B2Capsule mover)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Polygon.html">B2Polygon</a></dt>
+    <dd></dd>
+    <dt><code>mover</code> <a class="xref" href="Box2D.NET.B2Capsule.html">B2Capsule</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2PlaneResult.html">B2PlaneResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2CollideMoverAndSegment_" data-uid="Box2D.NET.B2Geometries.b2CollideMoverAndSegment*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2CollideMoverAndSegment_Box2D_NET_B2Segment__Box2D_NET_B2Capsule__" data-uid="Box2D.NET.B2Geometries.b2CollideMoverAndSegment(Box2D.NET.B2Segment@,Box2D.NET.B2Capsule@)">
+  b2CollideMoverAndSegment(ref B2Segment, ref B2Capsule)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L1070"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2PlaneResult b2CollideMoverAndSegment(ref B2Segment shape, ref B2Capsule mover)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Segment.html">B2Segment</a></dt>
+    <dd></dd>
+    <dt><code>mover</code> <a class="xref" href="Box2D.NET.B2Capsule.html">B2Capsule</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2PlaneResult.html">B2PlaneResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2ComputeCapsuleAABB_" data-uid="Box2D.NET.B2Geometries.b2ComputeCapsuleAABB*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2ComputeCapsuleAABB_Box2D_NET_B2Capsule__Box2D_NET_B2Transform_" data-uid="Box2D.NET.B2Geometries.b2ComputeCapsuleAABB(Box2D.NET.B2Capsule@,Box2D.NET.B2Transform)">
+  b2ComputeCapsuleAABB(ref B2Capsule, B2Transform)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L444"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2AABB b2ComputeCapsuleAABB(ref B2Capsule shape, B2Transform xf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Capsule.html">B2Capsule</a></dt>
+    <dd></dd>
+    <dt><code>xf</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2AABB.html">B2AABB</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2ComputeCapsuleMass_" data-uid="Box2D.NET.B2Geometries.b2ComputeCapsuleMass*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2ComputeCapsuleMass_Box2D_NET_B2Capsule__System_Single_" data-uid="Box2D.NET.B2Geometries.b2ComputeCapsuleMass(Box2D.NET.B2Capsule@,System.Single)">
+  b2ComputeCapsuleMass(ref B2Capsule, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2MassData b2ComputeCapsuleMass(ref B2Capsule shape, float density)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Capsule.html">B2Capsule</a></dt>
+    <dd></dd>
+    <dt><code>density</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2MassData.html">B2MassData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2ComputeCircleAABB_" data-uid="Box2D.NET.B2Geometries.b2ComputeCircleAABB*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2ComputeCircleAABB_Box2D_NET_B2Circle__Box2D_NET_B2Transform_" data-uid="Box2D.NET.B2Geometries.b2ComputeCircleAABB(Box2D.NET.B2Circle@,Box2D.NET.B2Transform)">
+  b2ComputeCircleAABB(ref B2Circle, B2Transform)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2AABB b2ComputeCircleAABB(ref B2Circle shape, B2Transform xf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Circle.html">B2Circle</a></dt>
+    <dd></dd>
+    <dt><code>xf</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2AABB.html">B2AABB</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2ComputeCircleMass_" data-uid="Box2D.NET.B2Geometries.b2ComputeCircleMass*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2ComputeCircleMass_Box2D_NET_B2Circle__System_Single_" data-uid="Box2D.NET.B2Geometries.b2ComputeCircleMass(Box2D.NET.B2Circle@,System.Single)">
+  b2ComputeCircleMass(ref B2Circle, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2MassData b2ComputeCircleMass(ref B2Circle shape, float density)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Circle.html">B2Circle</a></dt>
+    <dd></dd>
+    <dt><code>density</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2MassData.html">B2MassData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2ComputePolygonAABB_" data-uid="Box2D.NET.B2Geometries.b2ComputePolygonAABB*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2ComputePolygonAABB_Box2D_NET_B2Polygon__Box2D_NET_B2Transform_" data-uid="Box2D.NET.B2Geometries.b2ComputePolygonAABB(Box2D.NET.B2Polygon@,Box2D.NET.B2Transform)">
+  b2ComputePolygonAABB(ref B2Polygon, B2Transform)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2AABB b2ComputePolygonAABB(ref B2Polygon shape, B2Transform xf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Polygon.html">B2Polygon</a></dt>
+    <dd></dd>
+    <dt><code>xf</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2AABB.html">B2AABB</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2ComputePolygonCentroid_" data-uid="Box2D.NET.B2Geometries.b2ComputePolygonCentroid*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2ComputePolygonCentroid_System_ReadOnlySpan_Box2D_NET_B2Vec2__System_Int32_" data-uid="Box2D.NET.B2Geometries.b2ComputePolygonCentroid(System.ReadOnlySpan{Box2D.NET.B2Vec2},System.Int32)">
+  b2ComputePolygonCentroid(ReadOnlySpan&lt;B2Vec2&gt;, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Vec2 b2ComputePolygonCentroid(ReadOnlySpan&lt;B2Vec2&gt; vertices, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vertices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2ComputePolygonMass_" data-uid="Box2D.NET.B2Geometries.b2ComputePolygonMass*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2ComputePolygonMass_Box2D_NET_B2Polygon__System_Single_" data-uid="Box2D.NET.B2Geometries.b2ComputePolygonMass(Box2D.NET.B2Polygon@,System.Single)">
+  b2ComputePolygonMass(ref B2Polygon, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2MassData b2ComputePolygonMass(ref B2Polygon shape, float density)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Polygon.html">B2Polygon</a></dt>
+    <dd></dd>
+    <dt><code>density</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2MassData.html">B2MassData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2ComputeSegmentAABB_" data-uid="Box2D.NET.B2Geometries.b2ComputeSegmentAABB*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2ComputeSegmentAABB_Box2D_NET_B2Segment__Box2D_NET_B2Transform_" data-uid="Box2D.NET.B2Geometries.b2ComputeSegmentAABB(Box2D.NET.B2Segment@,Box2D.NET.B2Transform)">
+  b2ComputeSegmentAABB(ref B2Segment, B2Transform)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L480"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2AABB b2ComputeSegmentAABB(ref B2Segment shape, B2Transform xf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Segment.html">B2Segment</a></dt>
+    <dd></dd>
+    <dt><code>xf</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2AABB.html">B2AABB</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2IsValidRay_" data-uid="Box2D.NET.B2Geometries.b2IsValidRay*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2IsValidRay_Box2D_NET_B2RayCastInput__" data-uid="Box2D.NET.B2Geometries.b2IsValidRay(Box2D.NET.B2RayCastInput@)">
+  b2IsValidRay(ref B2RayCastInput)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2IsValidRay(ref B2RayCastInput input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="Box2D.NET.B2RayCastInput.html">B2RayCastInput</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2MakeBox_" data-uid="Box2D.NET.B2Geometries.b2MakeBox*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2MakeBox_System_Single_System_Single_" data-uid="Box2D.NET.B2Geometries.b2MakeBox(System.Single,System.Single)">
+  b2MakeBox(float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Polygon b2MakeBox(float halfWidth, float halfHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>halfWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>halfHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Polygon.html">B2Polygon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2MakeOffsetBox_" data-uid="Box2D.NET.B2Geometries.b2MakeOffsetBox*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2MakeOffsetBox_System_Single_System_Single_Box2D_NET_B2Vec2_Box2D_NET_B2Rot_" data-uid="Box2D.NET.B2Geometries.b2MakeOffsetBox(System.Single,System.Single,Box2D.NET.B2Vec2,Box2D.NET.B2Rot)">
+  b2MakeOffsetBox(float, float, B2Vec2, B2Rot)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Polygon b2MakeOffsetBox(float halfWidth, float halfHeight, B2Vec2 center, B2Rot rotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>halfWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>halfHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>center</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="Box2D.NET.B2Rot.html">B2Rot</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Polygon.html">B2Polygon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2MakeOffsetPolygon_" data-uid="Box2D.NET.B2Geometries.b2MakeOffsetPolygon*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2MakeOffsetPolygon_Box2D_NET_B2Hull__Box2D_NET_B2Vec2_Box2D_NET_B2Rot_" data-uid="Box2D.NET.B2Geometries.b2MakeOffsetPolygon(Box2D.NET.B2Hull@,Box2D.NET.B2Vec2,Box2D.NET.B2Rot)">
+  b2MakeOffsetPolygon(ref B2Hull, B2Vec2, B2Rot)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Polygon b2MakeOffsetPolygon(ref B2Hull hull, B2Vec2 position, B2Rot rotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hull</code> <a class="xref" href="Box2D.NET.B2Hull.html">B2Hull</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="Box2D.NET.B2Rot.html">B2Rot</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Polygon.html">B2Polygon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2MakeOffsetRoundedBox_" data-uid="Box2D.NET.B2Geometries.b2MakeOffsetRoundedBox*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2MakeOffsetRoundedBox_System_Single_System_Single_Box2D_NET_B2Vec2_Box2D_NET_B2Rot_System_Single_" data-uid="Box2D.NET.B2Geometries.b2MakeOffsetRoundedBox(System.Single,System.Single,Box2D.NET.B2Vec2,Box2D.NET.B2Rot,System.Single)">
+  b2MakeOffsetRoundedBox(float, float, B2Vec2, B2Rot, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Polygon b2MakeOffsetRoundedBox(float halfWidth, float halfHeight, B2Vec2 center, B2Rot rotation, float radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>halfWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>halfHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>center</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="Box2D.NET.B2Rot.html">B2Rot</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Polygon.html">B2Polygon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2MakeOffsetRoundedPolygon_" data-uid="Box2D.NET.B2Geometries.b2MakeOffsetRoundedPolygon*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2MakeOffsetRoundedPolygon_Box2D_NET_B2Hull__Box2D_NET_B2Vec2_Box2D_NET_B2Rot_System_Single_" data-uid="Box2D.NET.B2Geometries.b2MakeOffsetRoundedPolygon(Box2D.NET.B2Hull@,Box2D.NET.B2Vec2,Box2D.NET.B2Rot,System.Single)">
+  b2MakeOffsetRoundedPolygon(ref B2Hull, B2Vec2, B2Rot, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Polygon b2MakeOffsetRoundedPolygon(ref B2Hull hull, B2Vec2 position, B2Rot rotation, float radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hull</code> <a class="xref" href="Box2D.NET.B2Hull.html">B2Hull</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="Box2D.NET.B2Rot.html">B2Rot</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Polygon.html">B2Polygon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2MakePolygon_" data-uid="Box2D.NET.B2Geometries.b2MakePolygon*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2MakePolygon_Box2D_NET_B2Hull__System_Single_" data-uid="Box2D.NET.B2Geometries.b2MakePolygon(Box2D.NET.B2Hull@,System.Single)">
+  b2MakePolygon(ref B2Hull, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Polygon b2MakePolygon(ref B2Hull hull, float radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hull</code> <a class="xref" href="Box2D.NET.B2Hull.html">B2Hull</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Polygon.html">B2Polygon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2MakeRoundedBox_" data-uid="Box2D.NET.B2Geometries.b2MakeRoundedBox*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2MakeRoundedBox_System_Single_System_Single_System_Single_" data-uid="Box2D.NET.B2Geometries.b2MakeRoundedBox(System.Single,System.Single,System.Single)">
+  b2MakeRoundedBox(float, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Polygon b2MakeRoundedBox(float halfWidth, float halfHeight, float radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>halfWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>halfHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Polygon.html">B2Polygon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2MakeSquare_" data-uid="Box2D.NET.B2Geometries.b2MakeSquare*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2MakeSquare_System_Single_" data-uid="Box2D.NET.B2Geometries.b2MakeSquare(System.Single)">
+  b2MakeSquare(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Polygon b2MakeSquare(float halfWidth)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>halfWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Polygon.html">B2Polygon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2PointInCapsule_" data-uid="Box2D.NET.B2Geometries.b2PointInCapsule*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2PointInCapsule_Box2D_NET_B2Vec2_Box2D_NET_B2Capsule__" data-uid="Box2D.NET.B2Geometries.b2PointInCapsule(Box2D.NET.B2Vec2,Box2D.NET.B2Capsule@)">
+  b2PointInCapsule(B2Vec2, ref B2Capsule)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L500"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2PointInCapsule(B2Vec2 point, ref B2Capsule shape)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Capsule.html">B2Capsule</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2PointInCircle_" data-uid="Box2D.NET.B2Geometries.b2PointInCircle*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2PointInCircle_Box2D_NET_B2Vec2_Box2D_NET_B2Circle__" data-uid="Box2D.NET.B2Geometries.b2PointInCircle(Box2D.NET.B2Vec2,Box2D.NET.B2Circle@)">
+  b2PointInCircle(B2Vec2, ref B2Circle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L493"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2PointInCircle(B2Vec2 point, ref B2Circle shape)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Circle.html">B2Circle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2PointInPolygon_" data-uid="Box2D.NET.B2Geometries.b2PointInPolygon*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2PointInPolygon_Box2D_NET_B2Vec2_Box2D_NET_B2Polygon__" data-uid="Box2D.NET.B2Geometries.b2PointInPolygon(Box2D.NET.B2Vec2,Box2D.NET.B2Polygon@)">
+  b2PointInPolygon(B2Vec2, ref B2Polygon)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L528"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2PointInPolygon(B2Vec2 point, ref B2Polygon shape)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Polygon.html">B2Polygon</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2RayCastCapsule_" data-uid="Box2D.NET.B2Geometries.b2RayCastCapsule*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2RayCastCapsule_Box2D_NET_B2RayCastInput__Box2D_NET_B2Capsule__" data-uid="Box2D.NET.B2Geometries.b2RayCastCapsule(Box2D.NET.B2RayCastInput@,Box2D.NET.B2Capsule@)">
+  b2RayCastCapsule(ref B2RayCastInput, ref B2Capsule)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L623"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2CastOutput b2RayCastCapsule(ref B2RayCastInput input, ref B2Capsule shape)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="Box2D.NET.B2RayCastInput.html">B2RayCastInput</a></dt>
+    <dd></dd>
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Capsule.html">B2Capsule</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2CastOutput.html">B2CastOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2RayCastCircle_" data-uid="Box2D.NET.B2Geometries.b2RayCastCircle*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2RayCastCircle_Box2D_NET_B2RayCastInput__Box2D_NET_B2Circle__" data-uid="Box2D.NET.B2Geometries.b2RayCastCircle(Box2D.NET.B2RayCastInput@,Box2D.NET.B2Circle@)">
+  b2RayCastCircle(ref B2RayCastInput, ref B2Circle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2CastOutput b2RayCastCircle(ref B2RayCastInput input, ref B2Circle shape)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="Box2D.NET.B2RayCastInput.html">B2RayCastInput</a></dt>
+    <dd></dd>
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Circle.html">B2Circle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2CastOutput.html">B2CastOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2RayCastPolygon_" data-uid="Box2D.NET.B2Geometries.b2RayCastPolygon*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2RayCastPolygon_Box2D_NET_B2RayCastInput__Box2D_NET_B2Polygon__" data-uid="Box2D.NET.B2Geometries.b2RayCastPolygon(Box2D.NET.B2RayCastInput@,Box2D.NET.B2Polygon@)">
+  b2RayCastPolygon(ref B2RayCastInput, ref B2Polygon)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L843"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2CastOutput b2RayCastPolygon(ref B2RayCastInput input, ref B2Polygon shape)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="Box2D.NET.B2RayCastInput.html">B2RayCastInput</a></dt>
+    <dd></dd>
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Polygon.html">B2Polygon</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2CastOutput.html">B2CastOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2RayCastSegment_" data-uid="Box2D.NET.B2Geometries.b2RayCastSegment*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2RayCastSegment_Box2D_NET_B2RayCastInput__Box2D_NET_B2Segment__System_Boolean_" data-uid="Box2D.NET.B2Geometries.b2RayCastSegment(Box2D.NET.B2RayCastInput@,Box2D.NET.B2Segment@,System.Boolean)">
+  b2RayCastSegment(ref B2RayCastInput, ref B2Segment, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L761"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2CastOutput b2RayCastSegment(ref B2RayCastInput input, ref B2Segment shape, bool oneSided)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="Box2D.NET.B2RayCastInput.html">B2RayCastInput</a></dt>
+    <dd></dd>
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Segment.html">B2Segment</a></dt>
+    <dd></dd>
+    <dt><code>oneSided</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2CastOutput.html">B2CastOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2ShapeCastCapsule_" data-uid="Box2D.NET.B2Geometries.b2ShapeCastCapsule*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2ShapeCastCapsule_Box2D_NET_B2ShapeCastInput__Box2D_NET_B2Capsule__" data-uid="Box2D.NET.B2Geometries.b2ShapeCastCapsule(Box2D.NET.B2ShapeCastInput@,Box2D.NET.B2Capsule@)">
+  b2ShapeCastCapsule(ref B2ShapeCastInput, ref B2Capsule)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L954"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2CastOutput b2ShapeCastCapsule(ref B2ShapeCastInput input, ref B2Capsule shape)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="Box2D.NET.B2ShapeCastInput.html">B2ShapeCastInput</a></dt>
+    <dd></dd>
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Capsule.html">B2Capsule</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2CastOutput.html">B2CastOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2ShapeCastCircle_" data-uid="Box2D.NET.B2Geometries.b2ShapeCastCircle*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2ShapeCastCircle_Box2D_NET_B2ShapeCastInput__Box2D_NET_B2Circle__" data-uid="Box2D.NET.B2Geometries.b2ShapeCastCircle(Box2D.NET.B2ShapeCastInput@,Box2D.NET.B2Circle@)">
+  b2ShapeCastCircle(ref B2ShapeCastInput, ref B2Circle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L938"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2CastOutput b2ShapeCastCircle(ref B2ShapeCastInput input, ref B2Circle shape)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="Box2D.NET.B2ShapeCastInput.html">B2ShapeCastInput</a></dt>
+    <dd></dd>
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Circle.html">B2Circle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2CastOutput.html">B2CastOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2ShapeCastPolygon_" data-uid="Box2D.NET.B2Geometries.b2ShapeCastPolygon*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2ShapeCastPolygon_Box2D_NET_B2ShapeCastInput__Box2D_NET_B2Polygon__" data-uid="Box2D.NET.B2Geometries.b2ShapeCastPolygon(Box2D.NET.B2ShapeCastInput@,Box2D.NET.B2Polygon@)">
+  b2ShapeCastPolygon(ref B2ShapeCastInput, ref B2Polygon)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L986"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2CastOutput b2ShapeCastPolygon(ref B2ShapeCastInput input, ref B2Polygon shape)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="Box2D.NET.B2ShapeCastInput.html">B2ShapeCastInput</a></dt>
+    <dd></dd>
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Polygon.html">B2Polygon</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2CastOutput.html">B2CastOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2ShapeCastSegment_" data-uid="Box2D.NET.B2Geometries.b2ShapeCastSegment*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2ShapeCastSegment_Box2D_NET_B2ShapeCastInput__Box2D_NET_B2Segment__" data-uid="Box2D.NET.B2Geometries.b2ShapeCastSegment(Box2D.NET.B2ShapeCastInput@,Box2D.NET.B2Segment@)">
+  b2ShapeCastSegment(ref B2ShapeCastInput, ref B2Segment)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L970"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2CastOutput b2ShapeCastSegment(ref B2ShapeCastInput input, ref B2Segment shape)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="Box2D.NET.B2ShapeCastInput.html">B2ShapeCastInput</a></dt>
+    <dd></dd>
+    <dt><code>shape</code> <a class="xref" href="Box2D.NET.B2Segment.html">B2Segment</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2CastOutput.html">B2CastOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Geometries_b2TransformPolygon_" data-uid="Box2D.NET.B2Geometries.b2TransformPolygon*"></a>
+
+  <h3 id="Box2D_NET_B2Geometries_b2TransformPolygon_Box2D_NET_B2Transform_Box2D_NET_B2Polygon__" data-uid="Box2D.NET.B2Geometries.b2TransformPolygon(Box2D.NET.B2Transform,Box2D.NET.B2Polygon@)">
+  b2TransformPolygon(B2Transform, ref B2Polygon)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Polygon b2TransformPolygon(B2Transform transform, ref B2Polygon polygon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>polygon</code> <a class="xref" href="Box2D.NET.B2Polygon.html">B2Polygon</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Polygon.html">B2Polygon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Geometries.cs/#L14" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

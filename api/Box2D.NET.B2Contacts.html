@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class B2Contacts | Box2D API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class B2Contacts | Box2D API ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ikpil/Box2D.NET/new/master/apiSpec/new?filename=Box2D_NET_B2Contacts.md&amp;value=---%0Auid%3A%20Box2D.NET.B2Contacts%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/box2d_logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Box2D.NET.B2Contacts">
+
+
+
+  <h1 id="Box2D_NET_B2Contacts" data-uid="Box2D.NET.B2Contacts" class="text-break">
+Class B2Contacts  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Box2D.html">Box2D</a>.<a class="xref" href="Box2D.NET.html">NET</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class B2Contacts</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">B2Contacts</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Box2D_NET_B2Contacts_b2AddType_" data-uid="Box2D.NET.B2Contacts.b2AddType*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2AddType_Box2D_NET_b2ManifoldFcn_Box2D_NET_B2ShapeType_Box2D_NET_B2ShapeType_" data-uid="Box2D.NET.B2Contacts.b2AddType(Box2D.NET.b2ManifoldFcn,Box2D.NET.B2ShapeType,Box2D.NET.B2ShapeType)">
+  b2AddType(b2ManifoldFcn, B2ShapeType, B2ShapeType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2AddType(b2ManifoldFcn fcn, B2ShapeType type1, B2ShapeType type2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fcn</code> <a class="xref" href="Box2D.NET.b2ManifoldFcn.html">b2ManifoldFcn</a></dt>
+    <dd></dd>
+    <dt><code>type1</code> <a class="xref" href="Box2D.NET.B2ShapeType.html">B2ShapeType</a></dt>
+    <dd></dd>
+    <dt><code>type2</code> <a class="xref" href="Box2D.NET.B2ShapeType.html">B2ShapeType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2CapsuleAndCircleManifold_" data-uid="Box2D.NET.B2Contacts.b2CapsuleAndCircleManifold*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2CapsuleAndCircleManifold_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2SimplexCache__" data-uid="Box2D.NET.B2Contacts.b2CapsuleAndCircleManifold(Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2SimplexCache@)">
+  b2CapsuleAndCircleManifold(B2Shape, B2Transform, B2Shape, B2Transform, ref B2SimplexCache)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Manifold b2CapsuleAndCircleManifold(B2Shape shapeA, B2Transform xfA, B2Shape shapeB, B2Transform xfB, ref B2SimplexCache cache)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shapeA</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfA</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>shapeB</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfB</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>cache</code> <a class="xref" href="Box2D.NET.B2SimplexCache.html">B2SimplexCache</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Manifold.html">B2Manifold</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2CapsuleManifold_" data-uid="Box2D.NET.B2Contacts.b2CapsuleManifold*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2CapsuleManifold_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2SimplexCache__" data-uid="Box2D.NET.B2Contacts.b2CapsuleManifold(Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2SimplexCache@)">
+  b2CapsuleManifold(B2Shape, B2Transform, B2Shape, B2Transform, ref B2SimplexCache)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Manifold b2CapsuleManifold(B2Shape shapeA, B2Transform xfA, B2Shape shapeB, B2Transform xfB, ref B2SimplexCache cache)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shapeA</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfA</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>shapeB</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfB</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>cache</code> <a class="xref" href="Box2D.NET.B2SimplexCache.html">B2SimplexCache</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Manifold.html">B2Manifold</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2ChainSegmentAndCapsuleManifold_" data-uid="Box2D.NET.B2Contacts.b2ChainSegmentAndCapsuleManifold*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2ChainSegmentAndCapsuleManifold_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2SimplexCache__" data-uid="Box2D.NET.B2Contacts.b2ChainSegmentAndCapsuleManifold(Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2SimplexCache@)">
+  b2ChainSegmentAndCapsuleManifold(B2Shape, B2Transform, B2Shape, B2Transform, ref B2SimplexCache)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Manifold b2ChainSegmentAndCapsuleManifold(B2Shape shapeA, B2Transform xfA, B2Shape shapeB, B2Transform xfB, ref B2SimplexCache cache)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shapeA</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfA</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>shapeB</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfB</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>cache</code> <a class="xref" href="Box2D.NET.B2SimplexCache.html">B2SimplexCache</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Manifold.html">B2Manifold</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2ChainSegmentAndCircleManifold_" data-uid="Box2D.NET.B2Contacts.b2ChainSegmentAndCircleManifold*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2ChainSegmentAndCircleManifold_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2SimplexCache__" data-uid="Box2D.NET.B2Contacts.b2ChainSegmentAndCircleManifold(Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2SimplexCache@)">
+  b2ChainSegmentAndCircleManifold(B2Shape, B2Transform, B2Shape, B2Transform, ref B2SimplexCache)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Manifold b2ChainSegmentAndCircleManifold(B2Shape shapeA, B2Transform xfA, B2Shape shapeB, B2Transform xfB, ref B2SimplexCache cache)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shapeA</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfA</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>shapeB</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfB</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>cache</code> <a class="xref" href="Box2D.NET.B2SimplexCache.html">B2SimplexCache</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Manifold.html">B2Manifold</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2ChainSegmentAndPolygonManifold_" data-uid="Box2D.NET.B2Contacts.b2ChainSegmentAndPolygonManifold*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2ChainSegmentAndPolygonManifold_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2SimplexCache__" data-uid="Box2D.NET.B2Contacts.b2ChainSegmentAndPolygonManifold(Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2SimplexCache@)">
+  b2ChainSegmentAndPolygonManifold(B2Shape, B2Transform, B2Shape, B2Transform, ref B2SimplexCache)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Manifold b2ChainSegmentAndPolygonManifold(B2Shape shapeA, B2Transform xfA, B2Shape shapeB, B2Transform xfB, ref B2SimplexCache cache)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shapeA</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfA</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>shapeB</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfB</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>cache</code> <a class="xref" href="Box2D.NET.B2SimplexCache.html">B2SimplexCache</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Manifold.html">B2Manifold</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2CircleManifold_" data-uid="Box2D.NET.B2Contacts.b2CircleManifold*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2CircleManifold_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2SimplexCache__" data-uid="Box2D.NET.B2Contacts.b2CircleManifold(Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2SimplexCache@)">
+  b2CircleManifold(B2Shape, B2Transform, B2Shape, B2Transform, ref B2SimplexCache)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Manifold b2CircleManifold(B2Shape shapeA, B2Transform xfA, B2Shape shapeB, B2Transform xfB, ref B2SimplexCache cache)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shapeA</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfA</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>shapeB</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfB</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>cache</code> <a class="xref" href="Box2D.NET.B2SimplexCache.html">B2SimplexCache</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Manifold.html">B2Manifold</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2ComputeManifold_" data-uid="Box2D.NET.B2Contacts.b2ComputeManifold*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2ComputeManifold_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Shape_Box2D_NET_B2Transform_" data-uid="Box2D.NET.B2Contacts.b2ComputeManifold(Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Shape,Box2D.NET.B2Transform)">
+  b2ComputeManifold(B2Shape, B2Transform, B2Shape, B2Transform)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L602"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Manifold b2ComputeManifold(B2Shape shapeA, B2Transform transformA, B2Shape shapeB, B2Transform transformB)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shapeA</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>transformA</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>shapeB</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>transformB</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Manifold.html">B2Manifold</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2CreateContact_" data-uid="Box2D.NET.B2Contacts.b2CreateContact*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2CreateContact_Box2D_NET_B2World_Box2D_NET_B2Shape_Box2D_NET_B2Shape_" data-uid="Box2D.NET.B2Contacts.b2CreateContact(Box2D.NET.B2World,Box2D.NET.B2Shape,Box2D.NET.B2Shape)">
+  b2CreateContact(B2World, B2Shape, B2Shape)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2CreateContact(B2World world, B2Shape shapeA, B2Shape shapeB)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+    <dt><code>shapeA</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>shapeB</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2DestroyContact_" data-uid="Box2D.NET.B2Contacts.b2DestroyContact*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2DestroyContact_Box2D_NET_B2World_Box2D_NET_B2Contact_System_Boolean_" data-uid="Box2D.NET.B2Contacts.b2DestroyContact(Box2D.NET.B2World,Box2D.NET.B2Contact,System.Boolean)">
+  b2DestroyContact(B2World, B2Contact, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2DestroyContact(B2World world, B2Contact contact, bool wakeBodies)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+    <dt><code>contact</code> <a class="xref" href="Box2D.NET.B2Contact.html">B2Contact</a></dt>
+    <dd></dd>
+    <dt><code>wakeBodies</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2GetContactSim_" data-uid="Box2D.NET.B2Contacts.b2GetContactSim*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2GetContactSim_Box2D_NET_B2World_Box2D_NET_B2Contact_" data-uid="Box2D.NET.B2Contacts.b2GetContactSim(Box2D.NET.B2World,Box2D.NET.B2Contact)">
+  b2GetContactSim(B2World, B2Contact)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L422"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2ContactSim b2GetContactSim(B2World world, B2Contact contact)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+    <dt><code>contact</code> <a class="xref" href="Box2D.NET.B2Contact.html">B2Contact</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2ContactSim.html">B2ContactSim</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2InitializeContactRegisters_" data-uid="Box2D.NET.B2Contacts.b2InitializeContactRegisters*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2InitializeContactRegisters" data-uid="Box2D.NET.B2Contacts.b2InitializeContactRegisters">
+  b2InitializeContactRegisters()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void b2InitializeContactRegisters()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2PolygonAndCapsuleManifold_" data-uid="Box2D.NET.B2Contacts.b2PolygonAndCapsuleManifold*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2PolygonAndCapsuleManifold_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2SimplexCache__" data-uid="Box2D.NET.B2Contacts.b2PolygonAndCapsuleManifold(Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2SimplexCache@)">
+  b2PolygonAndCapsuleManifold(B2Shape, B2Transform, B2Shape, B2Transform, ref B2SimplexCache)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Manifold b2PolygonAndCapsuleManifold(B2Shape shapeA, B2Transform xfA, B2Shape shapeB, B2Transform xfB, ref B2SimplexCache cache)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shapeA</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfA</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>shapeB</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfB</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>cache</code> <a class="xref" href="Box2D.NET.B2SimplexCache.html">B2SimplexCache</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Manifold.html">B2Manifold</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2PolygonAndCircleManifold_" data-uid="Box2D.NET.B2Contacts.b2PolygonAndCircleManifold*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2PolygonAndCircleManifold_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2SimplexCache__" data-uid="Box2D.NET.B2Contacts.b2PolygonAndCircleManifold(Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2SimplexCache@)">
+  b2PolygonAndCircleManifold(B2Shape, B2Transform, B2Shape, B2Transform, ref B2SimplexCache)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Manifold b2PolygonAndCircleManifold(B2Shape shapeA, B2Transform xfA, B2Shape shapeB, B2Transform xfB, ref B2SimplexCache cache)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shapeA</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfA</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>shapeB</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfB</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>cache</code> <a class="xref" href="Box2D.NET.B2SimplexCache.html">B2SimplexCache</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Manifold.html">B2Manifold</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2PolygonManifold_" data-uid="Box2D.NET.B2Contacts.b2PolygonManifold*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2PolygonManifold_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2SimplexCache__" data-uid="Box2D.NET.B2Contacts.b2PolygonManifold(Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2SimplexCache@)">
+  b2PolygonManifold(B2Shape, B2Transform, B2Shape, B2Transform, ref B2SimplexCache)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Manifold b2PolygonManifold(B2Shape shapeA, B2Transform xfA, B2Shape shapeB, B2Transform xfB, ref B2SimplexCache cache)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shapeA</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfA</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>shapeB</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfB</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>cache</code> <a class="xref" href="Box2D.NET.B2SimplexCache.html">B2SimplexCache</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Manifold.html">B2Manifold</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2SegmentAndCapsuleManifold_" data-uid="Box2D.NET.B2Contacts.b2SegmentAndCapsuleManifold*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2SegmentAndCapsuleManifold_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2SimplexCache__" data-uid="Box2D.NET.B2Contacts.b2SegmentAndCapsuleManifold(Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2SimplexCache@)">
+  b2SegmentAndCapsuleManifold(B2Shape, B2Transform, B2Shape, B2Transform, ref B2SimplexCache)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Manifold b2SegmentAndCapsuleManifold(B2Shape shapeA, B2Transform xfA, B2Shape shapeB, B2Transform xfB, ref B2SimplexCache cache)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shapeA</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfA</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>shapeB</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfB</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>cache</code> <a class="xref" href="Box2D.NET.B2SimplexCache.html">B2SimplexCache</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Manifold.html">B2Manifold</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2SegmentAndCircleManifold_" data-uid="Box2D.NET.B2Contacts.b2SegmentAndCircleManifold*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2SegmentAndCircleManifold_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2SimplexCache__" data-uid="Box2D.NET.B2Contacts.b2SegmentAndCircleManifold(Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2SimplexCache@)">
+  b2SegmentAndCircleManifold(B2Shape, B2Transform, B2Shape, B2Transform, ref B2SimplexCache)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Manifold b2SegmentAndCircleManifold(B2Shape shapeA, B2Transform xfA, B2Shape shapeB, B2Transform xfB, ref B2SimplexCache cache)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shapeA</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfA</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>shapeB</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfB</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>cache</code> <a class="xref" href="Box2D.NET.B2SimplexCache.html">B2SimplexCache</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Manifold.html">B2Manifold</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2SegmentAndPolygonManifold_" data-uid="Box2D.NET.B2Contacts.b2SegmentAndPolygonManifold*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2SegmentAndPolygonManifold_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2SimplexCache__" data-uid="Box2D.NET.B2Contacts.b2SegmentAndPolygonManifold(Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2SimplexCache@)">
+  b2SegmentAndPolygonManifold(B2Shape, B2Transform, B2Shape, B2Transform, ref B2SimplexCache)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static B2Manifold b2SegmentAndPolygonManifold(B2Shape shapeA, B2Transform xfA, B2Shape shapeB, B2Transform xfB, ref B2SimplexCache cache)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shapeA</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfA</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>shapeB</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>xfB</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>cache</code> <a class="xref" href="Box2D.NET.B2SimplexCache.html">B2SimplexCache</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Box2D.NET.B2Manifold.html">B2Manifold</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Box2D_NET_B2Contacts_b2UpdateContact_" data-uid="Box2D.NET.B2Contacts.b2UpdateContact*"></a>
+
+  <h3 id="Box2D_NET_B2Contacts_b2UpdateContact_Box2D_NET_B2World_Box2D_NET_B2ContactSim_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Vec2_Box2D_NET_B2Shape_Box2D_NET_B2Transform_Box2D_NET_B2Vec2_" data-uid="Box2D.NET.B2Contacts.b2UpdateContact(Box2D.NET.B2World,Box2D.NET.B2ContactSim,Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Vec2,Box2D.NET.B2Shape,Box2D.NET.B2Transform,Box2D.NET.B2Vec2)">
+  b2UpdateContact(B2World, B2ContactSim, B2Shape, B2Transform, B2Vec2, B2Shape, B2Transform, B2Vec2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool b2UpdateContact(B2World world, B2ContactSim contactSim, B2Shape shapeA, B2Transform transformA, B2Vec2 centerOffsetA, B2Shape shapeB, B2Transform transformB, B2Vec2 centerOffsetB)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Box2D.NET.B2World.html">B2World</a></dt>
+    <dd></dd>
+    <dt><code>contactSim</code> <a class="xref" href="Box2D.NET.B2ContactSim.html">B2ContactSim</a></dt>
+    <dd></dd>
+    <dt><code>shapeA</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>transformA</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>centerOffsetA</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+    <dt><code>shapeB</code> <a class="xref" href="Box2D.NET.B2Shape.html">B2Shape</a></dt>
+    <dd></dd>
+    <dt><code>transformB</code> <a class="xref" href="Box2D.NET.B2Transform.html">B2Transform</a></dt>
+    <dd></dd>
+    <dt><code>centerOffsetB</code> <a class="xref" href="Box2D.NET.B2Vec2.html">B2Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2Contacts.cs/#L21" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
