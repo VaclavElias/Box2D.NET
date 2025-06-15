@@ -1,5 +1,5 @@
 {
-  "source_base_path": "D:/a/Box2D.NET/Box2D.NET/docs",
+  "source_base_path": "C:/a/Box2D.NET/Box2D.NET/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -2528,10 +2528,20 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "favicon.ico",
+      "source_relative_path": "favicon-16x16.png",
       "output": {
         "resource": {
-          "relative_path": "favicon.ico"
+          "relative_path": "favicon-16x16.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon-32x32.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon-32x32.png"
         }
       },
       "version": ""

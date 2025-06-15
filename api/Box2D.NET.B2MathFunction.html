@@ -7,7 +7,7 @@
       <meta name="title" content="Class B2MathFunction | Box2D API ">
       
       
-      <link rel="icon" href="../favicon.ico">
+      <link rel="icon" href="../favicon-32x32.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
@@ -676,7 +676,11 @@ Class B2MathFunction  <a class="header-action link-secondary" title="View source
   <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2MathFunction.cs/#L712"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://stackoverflow.com/questions/46210708/atan2-approximation-with-11bits-in-mantissa-on-x86with-sse2-and-armwith-vfpv4">https://stackoverflow.com/questions/46210708/atan2-approximation-with-11bits-in-mantissa-on-x86with-sse2-and-armwith-vfpv4</a></p>
+  <div class="markdown level1 summary"><p>Compute an approximate arctangent in the range [-pi, pi]
+This is hand coded for cross-platform determinism. The MathF.Atan2
+function in the standard library is not cross-platform deterministic.
+Accurate to around 0.0023 degrees
+<a href="https://stackoverflow.com/questions/46210708/atan2-approximation-with-11bits-in-mantissa-on-x86with-sse2-and-armwith-vfpv4">https://stackoverflow.com/questions/46210708/atan2-approximation-with-11bits-in-mantissa-on-x86with-sse2-and-armwith-vfpv4</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

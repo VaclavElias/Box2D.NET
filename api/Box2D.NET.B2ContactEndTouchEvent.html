@@ -6,8 +6,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct B2ContactEndTouchEvent | Box2D API ">
       
-      
-      <link rel="icon" href="../favicon.ico">
+      <meta name="description" content="An end touch event is generated when two shapes stop touching. You will get an end event if you do anything that destroys contacts previous to the last world step. These include things like setting the transform, destroying a body or shape, or changing a filter or body type.">
+      <link rel="icon" href="../favicon-32x32.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Box2D_NET_B2ContactEndTouchEvent" data-uid="Box2D.NET.B2ContactEndTouchEvent" class="text-break">
-Struct B2ContactEndTouchEvent  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactEndTouchEvent.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Struct B2ContactEndTouchEvent  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactEndTouchEvent.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,11 @@ Struct B2ContactEndTouchEvent  <a class="header-action link-secondary" title="Vi
   <dl><dt>Assembly</dt><dd>Box2D.NET.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>An end touch event is generated when two shapes stop touching.
+You will get an end event if you do anything that destroys contacts previous to the last
+world step. These include things like setting the transform, destroying a body
+or shape, or changing a filter or body type.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -146,7 +150,7 @@ Struct B2ContactEndTouchEvent  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Box2D_NET_B2ContactEndTouchEvent__ctor_Box2D_NET_B2ShapeId_Box2D_NET_B2ShapeId_" data-uid="Box2D.NET.B2ContactEndTouchEvent.#ctor(Box2D.NET.B2ShapeId,Box2D.NET.B2ShapeId)">
   B2ContactEndTouchEvent(B2ShapeId, B2ShapeId)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactEndTouchEvent.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactEndTouchEvent.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -182,10 +186,13 @@ Struct B2ContactEndTouchEvent  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Box2D_NET_B2ContactEndTouchEvent_shapeIdA" data-uid="Box2D.NET.B2ContactEndTouchEvent.shapeIdA">
   shapeIdA
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactEndTouchEvent.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactEndTouchEvent.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Id of the first shape
+@warning this shape may have been destroyed
+@see b2Shape_IsValid</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -212,10 +219,13 @@ Struct B2ContactEndTouchEvent  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Box2D_NET_B2ContactEndTouchEvent_shapeIdB" data-uid="Box2D.NET.B2ContactEndTouchEvent.shapeIdB">
   shapeIdB
-  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactEndTouchEvent.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactEndTouchEvent.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Id of the second shape
+@warning this shape may have been destroyed
+@see b2Shape_IsValid</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -243,7 +253,7 @@ Struct B2ContactEndTouchEvent  <a class="header-action link-secondary" title="Vi
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactEndTouchEvent.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/VaclavElias/Box2D.NET/blob/main/src/Box2D.NET/B2ContactEndTouchEvent.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
 

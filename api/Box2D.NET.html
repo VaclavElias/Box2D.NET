@@ -7,7 +7,7 @@
       <meta name="title" content="Namespace Box2D.NET | Box2D API ">
       
       
-      <link rel="icon" href="../favicon.ico">
+      <link rel="icon" href="../favicon-32x32.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
@@ -614,7 +614,11 @@ from shape A to shape B.
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ContactEndTouchEvent.html">B2ContactEndTouchEvent</a></dt>
-      <dd></dd>
+      <dd><p>An end touch event is generated when two shapes stop touching.
+You will get an end event if you do anything that destroys contacts previous to the last
+world step. These include things like setting the transform, destroying a body
+or shape, or changing a filter or body type.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2ContactEvents.html">B2ContactEvents</a></dt>
@@ -659,7 +663,8 @@ This uses a custom implementation designed for cross-platform determinism</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2DistanceJointDef.html">B2DistanceJointDef</a></dt>
-      <dd><p>This requires defining an anchor point on both
+      <dd><p>Distance joint definition</p>
+<p>This requires defining an anchor point on both
 bodies and the non-zero distance of the distance joint. The definition uses
 local anchor points so that the initial configuration can violate the
 constraint slightly. This helps when saving and loading a game.
@@ -808,7 +813,8 @@ the time step.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2MotorJointDef.html">B2MotorJointDef</a></dt>
-      <dd><p>A typical usage is to control the movement of a dynamic body with respect to the ground.
+      <dd><p>A motor joint is used to control the relative motion between two bodies</p>
+<p>A typical usage is to control the movement of a dynamic body with respect to the ground.
 @ingroup motor_joint</p>
 </dd>
     </dl>
@@ -818,7 +824,8 @@ the time step.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2MouseJointDef.html">B2MouseJointDef</a></dt>
-      <dd><p>This a soft constraint and allows the constraint to stretch without
+      <dd><p>A mouse joint is used to make a point on a body track a specified world point.</p>
+<p>This a soft constraint and allows the constraint to stretch without
 applying huge forces. This also applies rotation constraint heuristic to improve control.
 @ingroup mouse_joint</p>
 </dd>
@@ -858,7 +865,8 @@ b2MakePolygon or b2MakeBox.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2PrismaticJointDef.html">B2PrismaticJointDef</a></dt>
-      <dd><p>This requires defining a line of motion using an axis and an anchor point.
+      <dd><p>Prismatic joint definition</p>
+<p>This requires defining a line of motion using an axis and an anchor point.
 The definition uses local anchor points and a local axis so that the initial
 configuration can violate the constraint slightly. The joint translation is zero
 when the local anchor points coincide in world space.
@@ -898,7 +906,8 @@ but not debris.
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2RevoluteJointDef.html">B2RevoluteJointDef</a></dt>
-      <dd><p>This requires defining an anchor point where the bodies are joined.
+      <dd><p>Revolute joint definition</p>
+<p>This requires defining an anchor point where the bodies are joined.
 The definition uses local anchor points so that the
 initial configuration can violate the constraint slightly. You also need to
 specify the initial relative angle for joint limits. This helps when saving
@@ -938,7 +947,11 @@ rather than the center of mass because:</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2SensorEndTouchEvent.html">B2SensorEndTouchEvent</a></dt>
-      <dd></dd>
+      <dd><p>An end touch event is generated when a shape stops overlapping a sensor shape.
+These include things like setting the transform, destroying a body or shape, or changing
+a filter. You will also get an end event if the sensor or visitor are destroyed.
+Therefore you should always confirm the shape id is valid using b2Shape_IsValid.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2SensorEvents.html">B2SensorEvents</a></dt>
@@ -1111,7 +1124,8 @@ See <a href="https://semver.org/">https://semver.org/</a></p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2WeldJointDef.html">B2WeldJointDef</a></dt>
-      <dd><p>A weld joint connect to bodies together rigidly. This constraint provides springs to mimic
+      <dd><p>Weld joint definition</p>
+<p>A weld joint connect to bodies together rigidly. This constraint provides springs to mimic
 soft-body simulation.
 @note The approximate solver in Box2D cannot hold many bodies together rigidly
 @ingroup weld_joint</p>
@@ -1123,7 +1137,8 @@ soft-body simulation.
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2WheelJointDef.html">B2WheelJointDef</a></dt>
-      <dd><p>This requires defining a line of motion using an axis and an anchor point.
+      <dd><p>Wheel joint definition</p>
+<p>This requires defining a line of motion using an axis and an anchor point.
 The definition uses local  anchor points and a local axis so that the initial
 configuration can violate the constraint slightly. The joint translation is zero
 when the local anchor points coincide in world space.
@@ -1164,7 +1179,8 @@ Must be initialized using b2DefaultWorldDef().
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.b2FilterJointDef.html">b2FilterJointDef</a></dt>
-      <dd><p>@ingroup filter_joint</p>
+      <dd><p>A filter joint is used to disable collision between two specific bodies.</p>
+<p>@ingroup filter_joint</p>
 </dd>
     </dl>
     <h3 id="interfaces">
@@ -1208,7 +1224,8 @@ See <a href="https://www.rapidtables.com/web/color/index.html">https://www.rapid
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Box2D.NET.B2JointType.html">B2JointType</a></dt>
-      <dd><p>This is useful because all joint types use b2JointId and sometimes you
+      <dd><p>Joint type enumeration</p>
+<p>This is useful because all joint types use b2JointId and sometimes you
 want to get the type of a joint.
 @ingroup joint</p>
 </dd>
